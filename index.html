@@ -1,0 +1,1637 @@
+<title>PlantenTrainer</title>
+<style>
+:root{
+  /* diepe bosnacht als speelveld — foto's springen er zo uit */
+  --nacht:#0B120F; --nacht2:#121D18;
+  --paneel:rgba(255,255,255,.045); --paneel2:rgba(255,255,255,.07);
+  --lijn:rgba(255,255,255,.10); --lijn2:rgba(255,255,255,.18);
+  --limoen:#6EE7A0; --smaragd:#22C46E; --diepgroen:#0F3D28;
+  --goud:#FFC53D; --vuur:#FF8A3D; --koraal:#FF5D7A; --ijs:#7DD8E8; --paars:#B98CFF;
+  --tekst:#EAF6EE; --zacht:#93AB9E;
+  --r:16px; --r2:20px;
+  --glim:0 0 0 1px var(--lijn), 0 10px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box}
+html{-webkit-tap-highlight-color:transparent}
+body{margin:0;color:var(--tekst);background:var(--nacht);
+  font:16px/1.55 "Segoe UI Variable Display",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  -webkit-text-size-adjust:100%;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(900px 600px at 12% -8%, rgba(34,196,110,.20), transparent 62%),
+    radial-gradient(760px 520px at 100% 0%, rgba(125,216,232,.11), transparent 60%),
+    radial-gradient(800px 700px at 50% 112%, rgba(255,197,61,.09), transparent 62%),
+    linear-gradient(175deg,#0B120F,#101C17 55%,#0B120F)}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style",serif;font-weight:600;margin:0;
+  letter-spacing:-.015em}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px 110px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.verborgen{display:none!important}
+
+/* ───────── kop ───────── */
+header{position:sticky;top:0;z-index:40;
+  background:linear-gradient(180deg,rgba(11,18,15,.96),rgba(11,18,15,.80));
+  backdrop-filter:blur(14px);border-bottom:1px solid var(--lijn)}
+.kop{max-width:820px;margin:0 auto;padding:11px 16px;display:flex;align-items:center;gap:8px}
+.merk{font-family:Georgia,serif;font-size:19px;font-weight:600;margin-right:auto;
+  display:flex;align-items:center;gap:9px;
+  background:linear-gradient(92deg,var(--limoen),var(--ijs));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.merk svg{flex:none;filter:drop-shadow(0 0 10px rgba(110,231,160,.45))}
+.tel{display:flex;gap:6px;align-items:center;font-size:13.5px;font-weight:800;
+  padding:6px 12px;border-radius:999px;white-space:nowrap;border:1px solid var(--lijn);
+  background:var(--paneel);font-variant-numeric:tabular-nums;transition:transform .18s}
+.tel.vlam{color:var(--vuur);border-color:rgba(255,138,61,.38);
+  background:rgba(255,138,61,.13)}
+.tel.xp{color:var(--goud);border-color:rgba(255,197,61,.38);
+  background:rgba(255,197,61,.13)}
+.tel.stoot{transform:scale(1.22)}
+.mute{background:var(--paneel);border:1px solid var(--lijn);color:var(--zacht);
+  width:36px;height:36px;border-radius:11px;cursor:pointer;font-size:15px;flex:none}
+nav{max-width:820px;margin:0 auto;padding:0 10px 9px;display:flex;gap:3px;
+  overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:1 0 auto;background:none;border:0;border-radius:11px;padding:10px 15px;
+  font:inherit;font-size:14px;font-weight:700;color:var(--zacht);cursor:pointer;
+  white-space:nowrap;transition:.18s}
+nav button[aria-current="true"]{color:#06120C;
+  background:linear-gradient(135deg,var(--limoen),var(--smaragd));
+  box-shadow:0 6px 18px rgba(34,196,110,.35)}
+
+/* ───────── bouwstenen ───────── */
+.kaart{background:var(--paneel);border:1px solid var(--lijn);border-radius:var(--r);
+  backdrop-filter:blur(10px)}
+.pad{padding:18px}
+.knop{display:inline-flex;align-items:center;justify-content:center;gap:9px;position:relative;
+  border:0;border-radius:14px;padding:15px 22px;font:inherit;font-weight:800;font-size:15.5px;
+  cursor:pointer;min-height:52px;color:#06120C;overflow:hidden;
+  background:linear-gradient(135deg,var(--limoen),var(--smaragd));
+  box-shadow:0 6px 0 #14663E, 0 12px 26px rgba(34,196,110,.32);
+  transition:transform .09s,box-shadow .09s,filter .18s}
+.knop:hover{filter:brightness(1.07)}
+.knop:active{transform:translateY(4px);box-shadow:0 2px 0 #14663E,0 6px 14px rgba(34,196,110,.3)}
+.knop.licht{background:var(--paneel2);color:var(--tekst);border:1px solid var(--lijn2);
+  box-shadow:0 4px 0 rgba(0,0,0,.35)}
+.knop.licht:active{box-shadow:0 1px 0 rgba(0,0,0,.35)}
+.knop.vol{width:100%}
+.knop .loop{position:absolute;left:0;bottom:0;height:3px;width:0;
+  background:rgba(6,18,12,.45)}
+.klein{font-size:13px;color:var(--zacht)}
+.rij{display:flex;gap:10px;flex-wrap:wrap}
+.titelrij{display:flex;align-items:baseline;gap:10px;margin:28px 0 13px;flex-wrap:wrap}
+.titelrij h2{font-size:21px;flex:1 0 auto}
+.titelrij > span{flex:0 1 auto}
+.balk{height:11px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden;
+  border:1px solid var(--lijn)}
+.balk i{display:block;height:100%;border-radius:99px;position:relative;
+  background:linear-gradient(90deg,var(--smaragd),var(--limoen));
+  transition:width .55s cubic-bezier(.2,.8,.25,1)}
+.balk i::after{content:"";position:absolute;inset:0;border-radius:99px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);
+  transform:translateX(-100%);animation:glans 2.6s ease-in-out infinite}
+@keyframes glans{0%,55%{transform:translateX(-100%)}100%{transform:translateX(220%)}}
+.wetens{font-style:italic}
+
+/* ───────── home ───────── */
+.hero{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;
+  margin:18px 0;padding:22px;border-radius:var(--r2);border:1px solid var(--lijn);
+  background:linear-gradient(135deg,rgba(34,196,110,.16),rgba(125,216,232,.07) 55%,
+    rgba(255,197,61,.08));box-shadow:var(--glim);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;width:300px;height:300px;right:-90px;top:-130px;
+  border-radius:50%;background:radial-gradient(circle,rgba(110,231,160,.22),transparent 70%)}
+.hero h1{font-size:26px;margin-bottom:5px;
+  background:linear-gradient(92deg,#fff,var(--limoen));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.hero > div{position:relative;z-index:1}
+.ring{width:92px;height:92px;flex:none;position:relative;z-index:1}
+#ringPad{stroke:var(--limoen);filter:drop-shadow(0 0 6px rgba(110,231,160,.7))}
+#ringTekst{fill:#fff;font-family:system-ui;font-weight:800}
+.stats3{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin:14px 0}
+.stat{border-radius:15px;padding:14px 10px;text-align:center;border:1px solid var(--lijn);
+  background:var(--paneel)}
+.stat b{display:block;font-size:26px;line-height:1.1;font-weight:800;
+  font-variant-numeric:tabular-nums}
+.stat:nth-child(1) b{color:var(--limoen)}
+.stat:nth-child(2) b{color:var(--goud)}
+.stat:nth-child(3) b{color:var(--zacht)}
+.stat span{font-size:11px;color:var(--zacht);text-transform:uppercase;letter-spacing:.07em;
+  font-weight:700}
+.modi{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:12px}
+.modus{text-align:left;border:1px solid var(--lijn);border-radius:var(--r);padding:17px;
+  cursor:pointer;font:inherit;color:inherit;display:flex;gap:14px;align-items:flex-start;
+  background:var(--paneel);position:relative;overflow:hidden;
+  transition:transform .16s cubic-bezier(.2,.9,.3,1.3),border-color .16s,box-shadow .16s}
+.modus::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:var(--kleur,#6EE7A0)}
+.modus:hover{transform:translateY(-4px);border-color:var(--lijn2);
+  box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.modus:active{transform:translateY(-1px) scale(.99)}
+.modus .ic{flex:none;width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+  font-size:21px;background:color-mix(in srgb,var(--kleur,#6EE7A0) 22%,transparent);
+  border:1px solid color-mix(in srgb,var(--kleur,#6EE7A0) 38%,transparent)}
+.modus b{display:block;font-size:16px;margin-bottom:3px;font-weight:800}
+.modus span{font-size:13px;color:var(--zacht);line-height:1.45}
+
+/* niveaukiezer */
+.niveaus{display:grid;gap:9px;margin-top:12px}
+.niv{display:flex;gap:13px;align-items:center;padding:13px 15px;border-radius:14px;
+  border:1px solid var(--lijn);background:var(--paneel);cursor:pointer;font:inherit;
+  text-align:left;color:inherit;transition:.16s}
+.niv:hover{border-color:var(--lijn2)}
+.niv[aria-pressed="true"]{border-color:var(--limoen);
+  background:linear-gradient(120deg,rgba(34,196,110,.20),rgba(34,196,110,.05));
+  box-shadow:0 0 0 1px rgba(110,231,160,.35),0 8px 24px rgba(34,196,110,.16)}
+.niv b{font-size:15px;font-weight:800}
+.niv span{font-size:12.5px;color:var(--zacht);display:block}
+.niv .nr{flex:none;width:30px;height:30px;border-radius:10px;display:grid;place-items:center;
+  font-size:14px;font-weight:900;color:#06120C;
+  background:linear-gradient(135deg,var(--limoen),var(--smaragd))}
+
+/* ───────── spel ───────── */
+.spelkop{display:flex;align-items:center;gap:12px;margin:14px 0 12px}
+.spelkop .balk{flex:1}
+.combo{font-size:14px;font-weight:900;color:var(--vuur);white-space:nowrap;
+  text-shadow:0 0 14px rgba(255,138,61,.55)}
+.combo.knal{animation:knal .42s cubic-bezier(.2,.9,.3,1.6)}
+@keyframes knal{0%{transform:scale(1)}40%{transform:scale(1.45) rotate(-5deg)}100%{transform:scale(1)}}
+.klok{font-variant-numeric:tabular-nums;font-weight:900;font-size:16px;color:var(--ijs)}
+.klok.rood{color:var(--koraal);animation:tik .9s ease-in-out infinite}
+@keyframes tik{50%{transform:scale(1.14)}}
+.foto{width:100%;aspect-ratio:4/3;max-height:min(46vh,380px);object-fit:cover;display:block;
+  border-radius:var(--r);background:rgba(255,255,255,.05)}
+.fotowrap{position:relative;border-radius:var(--r);overflow:hidden;
+  box-shadow:0 16px 40px rgba(0,0,0,.55),0 0 0 1px var(--lijn);
+  animation:inzoom .45s cubic-bezier(.2,.9,.3,1.1)}
+@keyframes inzoom{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.fotolabel{position:absolute;left:11px;bottom:11px;background:rgba(6,18,12,.72);
+  color:var(--limoen);font-size:11px;font-weight:800;padding:5px 11px;border-radius:999px;
+  letter-spacing:.07em;text-transform:uppercase;backdrop-filter:blur(6px);
+  border:1px solid rgba(110,231,160,.3)}
+.vraag{font-family:Georgia,serif;font-size:19px;margin:18px 0 13px;line-height:1.35}
+.opties{display:grid;gap:10px}
+.optie{text-align:left;border:1px solid var(--lijn);border-radius:14px;padding:15px 17px;
+  font:inherit;font-size:16px;cursor:pointer;min-height:58px;display:flex;align-items:center;
+  gap:10px;background:var(--paneel);color:var(--tekst);transition:.14s;
+  animation:omhoog .32s backwards}
+.optie:nth-child(1){animation-delay:.03s}.optie:nth-child(2){animation-delay:.07s}
+.optie:nth-child(3){animation-delay:.11s}.optie:nth-child(4){animation-delay:.15s}
+@keyframes omhoog{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.optie:hover:not(:disabled){border-color:var(--lijn2);background:var(--paneel2);
+  transform:translateX(3px)}
+.optie:disabled{cursor:default}
+.optie.goed{border-color:var(--limoen);color:var(--limoen);font-weight:800;
+  background:linear-gradient(120deg,rgba(34,196,110,.26),rgba(34,196,110,.08));
+  box-shadow:0 0 0 1px var(--limoen),0 0 30px rgba(34,196,110,.35);
+  animation:stoot .45s cubic-bezier(.2,.9,.3,1.5)}
+@keyframes stoot{0%{transform:scale(1)}45%{transform:scale(1.035)}100%{transform:scale(1)}}
+.optie.fout{border-color:var(--koraal);color:var(--koraal);
+  background:linear-gradient(120deg,rgba(255,93,122,.22),rgba(255,93,122,.06));
+  animation:beef .42s}
+@keyframes beef{0%,100%{transform:translateX(0)}
+  15%{transform:translateX(-9px)}30%{transform:translateX(8px)}
+  45%{transform:translateX(-6px)}60%{transform:translateX(4px)}80%{transform:translateX(-2px)}}
+.optie .merkje{margin-left:auto;font-size:19px;font-weight:900}
+.typveld{width:100%;padding:16px 17px;font:inherit;font-size:18px;font-style:italic;
+  border:1px solid var(--lijn2);border-radius:14px;background:rgba(0,0,0,.28);
+  color:var(--tekst);min-height:58px}
+.typveld::placeholder{color:rgba(147,171,158,.6)}
+.typveld:focus{outline:0;border-color:var(--limoen);
+  box-shadow:0 0 0 3px rgba(34,196,110,.22)}
+.hint{font-size:14px;color:var(--ijs);margin-top:9px;letter-spacing:.14em;
+  font-family:ui-monospace,Menlo,Consolas,monospace}
+.terug{margin-top:15px;padding:16px;border-radius:15px;font-size:14.5px;line-height:1.55;
+  animation:omhoog .3s;border:1px solid var(--lijn)}
+.terug.j{background:linear-gradient(135deg,rgba(34,196,110,.20),rgba(34,196,110,.05));
+  border-color:rgba(110,231,160,.45)}
+.terug.n{background:linear-gradient(135deg,rgba(255,93,122,.18),rgba(255,93,122,.05));
+  border-color:rgba(255,93,122,.42)}
+.terug.b{background:linear-gradient(135deg,rgba(255,197,61,.18),rgba(255,197,61,.05));
+  border-color:rgba(255,197,61,.42)}
+.terug b{font-style:italic;font-size:16px}
+.terug .nlnaam{font-style:normal;color:var(--zacht);font-size:13.5px}
+
+/* familie sorteren */
+.sorteer{display:grid;grid-template-columns:repeat(auto-fill,minmax(102px,1fr));gap:10px;
+  margin-bottom:16px}
+.tegel{border:1px solid var(--lijn);border-radius:14px;overflow:hidden;cursor:pointer;
+  padding:0;font:inherit;text-align:center;background:var(--paneel);color:var(--tekst);
+  transition:.15s}
+.tegel[aria-pressed="true"]{border-color:var(--limoen);transform:translateY(-4px) scale(1.03);
+  box-shadow:0 0 0 2px var(--limoen),0 12px 28px rgba(34,196,110,.3)}
+.tegel.weg{opacity:.2;pointer-events:none;transform:scale(.9)}
+.tegel img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.tegel em{display:block;font-size:11.5px;padding:6px 4px;line-height:1.25;font-style:italic}
+.bakken{display:grid;gap:9px}
+.bak{border:1.5px dashed var(--lijn2);border-radius:14px;padding:13px 15px;cursor:pointer;
+  font:inherit;text-align:left;background:var(--paneel);color:var(--tekst);transition:.15s}
+.bak:hover{border-color:var(--limoen);background:var(--paneel2)}
+.bak b{font-size:15px;font-weight:800}
+.bak i{font-size:12.5px;color:var(--zacht);font-style:italic;display:block;margin-top:2px}
+
+/* ───────── uitslag ───────── */
+.uitslag{text-align:center;padding:34px 20px;border-radius:var(--r2)}
+.uitslag .score{font-size:62px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums;
+  background:linear-gradient(135deg,#fff,var(--limoen));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:stoot .6s cubic-bezier(.2,.9,.3,1.5)}
+.sterren{font-size:30px;letter-spacing:6px;margin-top:10px}
+.sterren span{display:inline-block;animation:ster .5s backwards cubic-bezier(.2,.9,.3,1.6)}
+.sterren span:nth-child(2){animation-delay:.14s}.sterren span:nth-child(3){animation-delay:.28s}
+@keyframes ster{from{opacity:0;transform:scale(0) rotate(-140deg)}to{opacity:1;transform:none}}
+.xpwin{display:inline-block;margin-top:12px;font-weight:900;font-size:15px;
+  padding:8px 18px;border-radius:999px;color:var(--goud);
+  background:rgba(255,197,61,.14);border:1px solid rgba(255,197,61,.45)}
+.foutlijst{text-align:left;margin-top:22px;border-top:1px solid var(--lijn);padding-top:16px}
+.foutlijst li{font-size:14.5px;margin-bottom:7px;font-style:italic}
+
+/* ───────── fiches ───────── */
+.zoek{width:100%;padding:14px 17px;font:inherit;border:1px solid var(--lijn);
+  border-radius:14px;background:rgba(0,0,0,.28);color:var(--tekst);margin-bottom:12px}
+.zoek:focus{outline:0;border-color:var(--limoen);box-shadow:0 0 0 3px rgba(34,196,110,.2)}
+.fiches{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:13px}
+.fiche{border:1px solid var(--lijn);border-radius:15px;overflow:hidden;cursor:pointer;
+  text-align:left;padding:0;font:inherit;color:inherit;background:var(--paneel);
+  transition:transform .16s,box-shadow .16s,border-color .16s}
+.fiche:hover{transform:translateY(-5px);border-color:var(--lijn2);
+  box-shadow:0 16px 36px rgba(0,0,0,.5)}
+.fiche img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.fiche .tx{padding:11px 12px}
+.fiche b{display:block;font-style:italic;font-size:14.5px;line-height:1.3}
+.fiche span{font-size:12px;color:var(--zacht)}
+.mrk{display:inline-block;width:8px;height:8px;border-radius:99px;margin-right:6px;
+  vertical-align:middle}
+.galerij{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:14px}
+.galerij img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:11px;cursor:pointer;
+  border:1px solid var(--lijn);transition:.15s}
+.galerij img:hover{transform:scale(1.05);border-color:var(--limoen)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:15px;margin:14px 0}
+.kv dt{color:var(--zacht);white-space:nowrap}
+.kv dd{margin:0;font-weight:600}
+.blok{margin-top:14px;padding:14px 16px;border-radius:14px;font-size:14.5px;line-height:1.6;
+  border:1px solid var(--lijn)}
+.blok.weet{background:rgba(255,197,61,.10);border-color:rgba(255,197,61,.32)}
+.blok.eco{background:rgba(34,196,110,.10);border-color:rgba(110,231,160,.3)}
+.blok.gif{background:rgba(255,93,122,.10);border-color:rgba(255,93,122,.32)}
+.blok h4{margin:0 0 5px;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--zacht);font-family:system-ui,sans-serif;font-weight:800}
+.cv{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}
+.cv em{background:var(--paneel2);border:1px solid var(--lijn);border-radius:9px;
+  padding:4px 11px;font-size:12.5px;font-style:normal}
+
+/* ───────── stats ───────── */
+.lijst{display:grid;gap:8px}
+.lr{display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--paneel);
+  border:1px solid var(--lijn);border-radius:13px;font-size:14.5px}
+.lr .nm{font-style:italic;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap}
+.lr .bl{width:76px;flex:none}
+.badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:11px}
+.badge{text-align:center;padding:16px 8px;border-radius:15px;border:1px solid var(--lijn);
+  background:var(--paneel);font-size:12.5px;font-weight:700}
+.badge.aan{background:linear-gradient(145deg,rgba(255,197,61,.20),rgba(255,138,61,.06));
+  border-color:rgba(255,197,61,.45);box-shadow:0 8px 26px rgba(255,197,61,.14)}
+.badge .em{font-size:30px;display:block;margin-bottom:5px;filter:grayscale(1);opacity:.22}
+.badge.aan .em{filter:none;opacity:1;animation:zweef 3.4s ease-in-out infinite}
+@keyframes zweef{50%{transform:translateY(-5px) rotate(5deg)}}
+.grafiek{width:100%;height:136px;margin-top:6px}
+
+/* ───────── dialoog ───────── */
+dialog{border:0;border-radius:22px;padding:0;max-width:660px;width:calc(100% - 26px);
+  background:linear-gradient(170deg,#152219,#0D1713);color:var(--tekst);
+  box-shadow:0 30px 90px rgba(0,0,0,.7),0 0 0 1px var(--lijn)}
+dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
+.dlgkop{position:sticky;top:0;background:linear-gradient(180deg,#152219,rgba(21,34,25,.92));
+  padding:18px 20px 12px;border-bottom:1px solid var(--lijn);display:flex;
+  align-items:flex-start;gap:12px;z-index:2;backdrop-filter:blur(10px)}
+.dlgkop h3{font-size:21px;font-style:italic;flex:1}
+.sluit{background:var(--paneel2);border:1px solid var(--lijn);border-radius:11px;width:36px;
+  height:36px;font-size:18px;cursor:pointer;color:var(--tekst);flex:none}
+.sluit:hover{border-color:var(--koraal);color:var(--koraal)}
+.dlgbody{padding:18px 20px 24px;max-height:min(74vh,720px);overflow:auto}
+
+/* ───────── effecten ───────── */
+#fxlaag{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}
+.snipper{position:absolute;width:11px;height:14px;border-radius:2px;will-change:transform}
+.xppop{position:fixed;z-index:95;font-weight:900;font-size:23px;color:var(--goud);
+  pointer-events:none;text-shadow:0 3px 14px rgba(0,0,0,.75)}
+#flits{position:fixed;inset:0;pointer-events:none;z-index:80;opacity:0}
+#flits.j{animation:flitsj .5s}
+#flits.n{animation:flitsn .45s}
+@keyframes flitsj{0%{opacity:0}18%{opacity:1;box-shadow:inset 0 0 130px rgba(34,196,110,.55)}
+  100%{opacity:0}}
+@keyframes flitsn{0%{opacity:0}18%{opacity:1;box-shadow:inset 0 0 130px rgba(255,93,122,.55)}
+  100%{opacity:0}}
+#rangop{position:fixed;inset:0;z-index:99;display:grid;place-items:center;
+  background:rgba(4,9,7,.82);backdrop-filter:blur(8px);text-align:center;padding:24px}
+#rangop .doos{animation:stoot .7s cubic-bezier(.2,.9,.3,1.6)}
+#rangop .em{font-size:64px;display:block;animation:zweef 2s ease-in-out infinite}
+#rangop h2{font-size:32px;margin:12px 0 6px;
+  background:linear-gradient(120deg,var(--goud),var(--limoen));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:560px){
+  .hero{grid-template-columns:1fr}.ring{display:none}
+  .galerij{grid-template-columns:repeat(2,1fr)}
+  .uitslag .score{font-size:52px}
+}
+
+/* ───────── beplanting in de achtergrond ───────── */
+#tuin{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+#tuin::after{content:"";position:absolute;left:0;right:0;bottom:0;height:36vh;
+  background:linear-gradient(0deg,rgba(15,61,40,.34),rgba(15,61,40,.10) 45%,transparent)}
+#tuin .p{position:absolute;transform-origin:50% 100%;animation:wieg 13s ease-in-out infinite}
+#tuin svg{width:100%;height:auto;display:block;overflow:visible}
+@keyframes wieg{0%,100%{transform:rotate(-1.4deg)}50%{transform:rotate(1.8deg)}}
+.pl{color:var(--limoen)}
+.varen ellipse{fill:currentColor}
+.varen .stam{fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round}
+.gras path{fill:none;stroke:currentColor;stroke-width:3.4;stroke-linecap:round}
+.blad path{fill:currentColor}
+.blad .nerf{fill:none;stroke:#0B120F;stroke-width:1.8;opacity:.55}
+.scherm circle{fill:currentColor}
+.scherm .straal,.scherm .stam{fill:none;stroke:currentColor;stroke-width:1.8;opacity:.75}
+
+/* de plek van elke plant: in de marges, nooit midden onder de tekst */
+#tuin .p1{left:-58px;bottom:-60px;width:146px;opacity:.055}
+#tuin .p2{right:-58px;bottom:-40px;width:180px;opacity:.05;animation-delay:-3.5s}
+#tuin .p2 .pl{color:var(--ijs)}
+#tuin .p3{left:1vw;top:30vh;width:104px;opacity:.04;animation-delay:-7s}
+#tuin .p3 .pl{color:var(--smaragd)}
+#tuin .p4{right:-34px;top:-96px;width:120px;opacity:.04;animation-delay:-10s;
+  transform-origin:50% 0}
+#tuin .p5{left:4vw;bottom:6vh;width:134px;opacity:.045;animation-delay:-5s}
+#tuin .p5 .pl{color:var(--goud)}
+#tuin .p6{right:6vw;top:46vh;width:150px;opacity:.035;animation-delay:-8.5s}
+#tuin .p6 .pl{color:var(--limoen)}
+@media(max-width:900px){                 /* op smalle schermen alleen de hoeken */
+  #tuin .p3,#tuin .p5,#tuin .p6{display:none}
+  #tuin .p1{opacity:.042;width:120px}#tuin .p2{opacity:.038;width:150px}
+  #tuin .p4{opacity:.03}
+}
+
+/* blaadje voor elk kopje */
+.titelrij h2::before{content:"";display:inline-block;width:11px;height:11px;margin-right:10px;
+  background:linear-gradient(135deg,var(--limoen),var(--smaragd));
+  border-radius:0 100% 0 100%;transform:rotate(-8deg) translateY(-1px)}
+</style>
+<header>
+  <div class="kop">
+    <span class="merk">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 21c0-7 3-11 8-12-1 7-4 10-8 12z" fill="#41654A"/>
+        <path d="M12 21C12 14 9 10 4 9c1 7 4 10 8 12z" fill="#2E4A35"/>
+        <path d="M12 21v-6" stroke="#2E4A35" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>PlantenTrainer</span>
+    <span class="tel vlam" id="telStreak" title="Dagen op rij geoefend">🔥 <span>0</span></span>
+    <span class="tel xp" id="telXp" title="Ervaringspunten">✦ <span>0</span></span>
+    <button class="mute" id="btnGeluid" title="Geluid aan of uit">🔊</button>
+  </div>
+  <nav>
+    <button data-scherm="home" aria-current="true">Spelen</button>
+    <button data-scherm="fiches">Plantenfiches</button>
+    <button data-scherm="stats">Vooruitgang</button>
+    <button data-scherm="meer">Meer</button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+<!-- ============ HOME ============ -->
+<section id="s-home">
+  <div class="hero">
+    <div>
+      <h1 id="rang">Leerling</h1>
+      <p class="klein" id="rangUitleg" style="margin:0 0 10px">Nog even en je bent Tuinhulp.</p>
+      <div class="balk"><i id="rangBalk" style="width:0%"></i></div>
+    </div>
+    <svg class="ring" viewBox="0 0 36 36" aria-hidden="true">
+      <circle cx="18" cy="18" r="15.9" fill="none" stroke="#E9F0E7" stroke-width="3.2"/>
+      <circle id="ringPad" cx="18" cy="18" r="15.9" fill="none" stroke="#41654A"
+        stroke-width="3.2" stroke-linecap="round" stroke-dasharray="0 100"
+        transform="rotate(-90 18 18)"/>
+      <text x="18" y="19.6" text-anchor="middle" font-size="8.5" font-weight="700"
+        fill="#2E4A35" id="ringTekst">0%</text>
+    </svg>
+  </div>
+
+  <div class="stats3">
+    <div class="stat"><b id="stBeheerst">0</b><span>beheerst</span></div>
+    <div class="stat"><b id="stLeren">0</b><span>bezig</span></div>
+    <div class="stat"><b id="stNieuw">0</b><span>nieuw</span></div>
+  </div>
+
+  <div class="titelrij"><h2>Kies een spel</h2></div>
+  <div class="modi" id="modi"></div>
+
+  <div class="titelrij"><h2>Moeilijkheidsgraad</h2>
+    <span class="klein">voor Herkennen</span></div>
+  <div class="niveaus" id="niveaus"></div>
+
+  <div class="kaart pad" style="margin-top:18px;display:flex;gap:12px;align-items:center">
+    <div style="flex:1">
+      <b style="font-size:14.5px">Slim herhalen</b>
+      <div class="klein">Planten die je fout had komen sneller terug, gekende planten pas
+        na dagen of weken.</div>
+    </div>
+    <button class="knop licht" id="srsKnop" style="min-height:42px;padding:9px 16px">Aan</button>
+  </div>
+</section>
+
+<!-- ============ SPEL ============ -->
+<section id="s-spel" class="verborgen">
+  <div class="spelkop">
+    <button class="sluit" id="spelStop" title="Stoppen">✕</button>
+    <div class="balk" style="flex:1"><i id="spelBalk" style="width:0%"></i></div>
+    <span class="combo" id="spelCombo"></span>
+    <span class="klok" id="spelKlok"></span>
+  </div>
+  <div id="spelInhoud"></div>
+</section>
+
+<!-- ============ UITSLAG ============ -->
+<section id="s-uitslag" class="verborgen">
+  <div class="kaart uitslag">
+    <p class="klein" style="margin:0">Ronde afgerond</p>
+    <div class="score" id="uScore">0/10</div>
+    <div class="sterren" id="uSterren"></div>
+    <div class="xpwin" id="uXp">+0 XP</div>
+    <p id="uTekst" style="margin:16px auto 0;max-width:380px;font-size:14.5px"></p>
+    <div id="uFouten"></div>
+    <div class="rij" style="margin-top:22px;justify-content:center">
+      <button class="knop" id="uNog">Nog een ronde</button>
+      <button class="knop licht" id="uTerug">Naar het menu</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FICHES ============ -->
+<section id="s-fiches" class="verborgen">
+  <div class="titelrij"><h2>Plantenfiches</h2><span class="klein" id="ficheTel"></span></div>
+  <input class="zoek" id="zoek" placeholder="Zoek op naam, familie, standplaats…"
+    autocomplete="off">
+  <div class="rij" style="margin-bottom:14px" id="filters"></div>
+  <div class="fiches" id="fichesLijst"></div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section id="s-stats" class="verborgen">
+  <div class="titelrij"><h2>Vooruitgang</h2></div>
+  <div class="kaart pad">
+    <b style="font-size:14.5px">Juiste antwoorden per dag</b>
+    <svg class="grafiek" id="grafiek" viewBox="0 0 320 130" preserveAspectRatio="none"></svg>
+    <div class="klein" id="grafiekInfo"></div>
+  </div>
+
+  <div class="titelrij"><h2>Records</h2></div>
+  <div class="stats3" style="grid-template-columns:repeat(2,1fr)">
+    <div class="stat"><b id="recRace">0</b><span>beste tijdrace</span></div>
+    <div class="stat"><b id="recCombo">0</b><span>langste reeks</span></div>
+  </div>
+
+  <div class="titelrij"><h2>Zwakste families</h2></div>
+  <div class="lijst" id="zwakFam"></div>
+
+  <div class="titelrij"><h2>Badges</h2><span class="klein">één per volledig beheerste familie</span></div>
+  <div class="badges" id="badges"></div>
+
+  <div class="titelrij"><h2>Alle planten</h2></div>
+  <div class="lijst" id="beheersing"></div>
+</section>
+
+<!-- ============ MEER ============ -->
+<section id="s-meer" class="verborgen">
+  <div class="titelrij"><h2>Back-up</h2></div>
+  <div class="kaart pad">
+    <p class="klein" style="margin-top:0">Je voortgang staat in de browser van dit toestel.
+      Maak af en toe een back-up — kopieer de tekst naar een notitie of mail ze naar jezelf.
+      Zo verlies je niets bij het opruimen van je browser of bij het wisselen van toestel,
+      en zet je je voortgang over van je pc naar je gsm.</p>
+    <div class="rij">
+      <button class="knop licht" id="btnExport">Back-up opslaan</button>
+      <button class="knop licht" id="btnImport">Back-up inlezen</button>
+      <input type="file" id="fileImport" accept="application/json" class="verborgen">
+    </div>
+  </div>
+
+  <div class="titelrij"><h2>Foto's keuren</h2></div>
+  <div class="kaart pad">
+    <p class="klein" style="margin-top:0">Klopt een foto niet of is hij onduidelijk? Klik hem
+      weg — dan gebruikt de tool hem niet meer in het spel. <span id="afgekeurdTel"></span></p>
+    <button class="knop licht" id="btnKeuren">Foto's nakijken</button>
+  </div>
+
+  <div class="titelrij"><h2>Opnieuw beginnen</h2></div>
+  <div class="kaart pad">
+    <p class="klein" style="margin-top:0">Wist alle voortgang, XP, badges en records.
+      Dit kan niet ongedaan gemaakt worden.</p>
+    <button class="knop licht" id="btnWis" style="color:var(--fout);border-color:#EBC9C3">
+      Alles wissen</button>
+  </div>
+
+  <div class="titelrij"><h2>Over de data</h2></div>
+  <div class="kaart pad klein">
+    <p style="margin-top:0">Wetenschappelijke namen zijn geverifieerd tegen de
+      GBIF-backbone. Foto's komen van Wikimedia Commons en staan onder een vrije licentie;
+      fotograaf en licentie staan bij elke foto op de fiche.</p>
+    <p style="margin-bottom:0">Pilotversie met <b id="aantalPlanten">26</b> planten.</p>
+  </div>
+</section>
+</main>
+
+<dialog id="dlg">
+  <div class="dlgkop"><h3 id="dlgTitel"></h3>
+    <button class="sluit" onclick="dlg.close()">✕</button></div>
+  <div class="dlgbody" id="dlgBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="fotos.js"></script>
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const DAG = 864e5;
+const vandaag = () => new Date().toISOString().slice(0, 10);
+
+/* ═══════════ opslag ═══════════ */
+const SLEUTEL = "plantentrainer.v1";
+const leegState = () => ({
+  planten: {}, xp: 0, streak: 0, laatsteDag: null,
+  records: { race: 0, combo: 0 }, historiek: {}, afgekeurd: [], srs: true, geluid: true
+});
+let S = leegState();
+try {
+  const r = localStorage.getItem(SLEUTEL);
+  if (r) S = Object.assign(leegState(), JSON.parse(r));
+} catch (e) { console.warn("opslag onleesbaar", e); }
+const bewaar = () => { try { localStorage.setItem(SLEUTEL, JSON.stringify(S)); } catch (e) {} };
+
+function pst(id) {
+  if (!S.planten[id]) S.planten[id] = { ease: 2.5, interval: 0, due: 0, goed: 0, fout: 0, reeks: 0 };
+  return S.planten[id];
+}
+/* 0 nieuw · 1 aan het leren · 2 gekend · 3 beheerst */
+function niveauVan(id) {
+  const p = S.planten[id];
+  if (!p || (!p.goed && !p.fout)) return 0;
+  if (p.reeks >= 5 && p.interval >= 21) return 3;
+  if (p.reeks >= 3) return 2;
+  return 1;
+}
+const KLEUR = ["#D6D2C7", "#D8A94B", "#7FA97E", "#41654A"];
+const NIVNAAM = ["Nog nieuw", "Aan het leren", "Gekend", "Beheerst"];
+
+/* ═══════════ rangen ═══════════ */
+const RANGEN = [
+  [0, "Leerling"], [400, "Tuinhulp"], [1200, "Tuinman"], [2600, "Hovenier"],
+  [5000, "Plantenkenner"], [9000, "Meester-plantenkenner"]
+];
+const rangVan = xp => { let r = RANGEN[0], i = 0; RANGEN.forEach((x, k) => { if (xp >= x[0]) { r = x; i = k; } }); return { naam: r[1], index: i, vanaf: r[0], tot: (RANGEN[i + 1] || [r[0]])[0] }; };
+
+/* ═══════════ foto's ═══════════ */
+const FOTOVAK = { habitus: "Habitus", blad: "Blad", bloem: "Bloem / vrucht",
+  winter: "Schors / knop", extra1: "Detail", extra2: "Detail", extra3: "Detail" };
+function fotosVan(id) {
+  return (window.FOTOS && FOTOS[id] || []).filter(f => !S.afgekeurd.includes(f.bestand));
+}
+function foto(id, vakken) {
+  const alle = fotosVan(id);
+  if (!alle.length) return null;
+  const pas = vakken ? alle.filter(f => vakken.includes(f.soort_foto)) : alle;
+  const kies = pas.length ? pas : alle;
+  return kies[Math.floor(Math.random() * kies.length)];
+}
+
+/* ═══════════ tekst ═══════════ */
+const volnaam = p => p.geslacht + " " + p.soort;
+const norm = s => (s || "").toLowerCase().normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .replace(/[^a-z ]/g, " ").replace(/\s+/g, " ").trim();
+function afstand(a, b) {
+  const m = a.length, n = b.length;
+  if (!m || !n) return Math.max(m, n);
+  let v = Array.from({ length: n + 1 }, (_, i) => i);
+  for (let i = 1; i <= m; i++) {
+    let vorig = v[0]; v[0] = i;
+    for (let j = 1; j <= n; j++) {
+      const t = v[j];
+      v[j] = Math.min(v[j] + 1, v[j - 1] + 1, vorig + (a[i - 1] === b[j - 1] ? 0 : 1));
+      vorig = t;
+    }
+  }
+  return v[n];
+}
+/* 2 = juist · 1 = bijna (spelling) · 0 = fout */
+function beoordeelTyp(invoer, plant) {
+  const g = norm(invoer), doel = norm(volnaam(plant));
+  if (!g) return 0;
+  if (g === doel) return 2;
+  const d = afstand(g, doel);
+  if (d <= 2) return 1;
+  // alleen de soortnaam getypt telt niet; geslacht juist + soort bijna wel
+  const gw = g.split(" "), dw = doel.split(" ");
+  if (gw.length === dw.length && gw[0] === dw[0] && afstand(gw[1] || "", dw[1] || "") <= 2) return 1;
+  return 0;
+}
+
+/* ═══════════ selectie van planten ═══════════ */
+function schud(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+const heeftFoto = id => fotosVan(id).length > 0;
+
+/* `eis` filtert vooraf: fotomodi mogen geen plant zonder beeldmateriaal trekken */
+function kiesPlant(uitsluiten = [], eis = null) {
+  const toegestaan = eis ? PLANTEN.filter(p => eis(p.id)) : PLANTEN;
+  const basis = toegestaan.length ? toegestaan : PLANTEN;
+  const vrij = basis.filter(p => !uitsluiten.includes(p.id));
+  const pool = vrij.length ? vrij : basis;
+  if (!S.srs) return pool[Math.floor(Math.random() * pool.length)];
+  const nu = Date.now();
+  const verschuldigd = pool.filter(p => S.planten[p.id] && S.planten[p.id].due <= nu && S.planten[p.id].interval > 0);
+  const nieuw = pool.filter(p => !S.planten[p.id]);
+  const fout = pool.filter(p => S.planten[p.id] && S.planten[p.id].reeks === 0 && S.planten[p.id].fout);
+  const bak = fout.length && Math.random() < .45 ? fout
+    : verschuldigd.length ? verschuldigd
+      : nieuw.length ? nieuw : pool;
+  return bak[Math.floor(Math.random() * bak.length)];
+}
+
+function afleiders(doel, n, zelfdeFamilie) {
+  let bron = PLANTEN.filter(p => p.id !== doel.id);
+  if (zelfdeFamilie) {
+    const fam = bron.filter(p => p.familie === doel.familie);
+    const gro = bron.filter(p => p.groep === doel.groep && p.familie !== doel.familie);
+    bron = schud(fam).concat(schud(gro), schud(bron));
+  } else {
+    bron = schud(bron.filter(p => p.familie !== doel.familie)).concat(schud(bron));
+  }
+  const uit = [];
+  for (const p of bron) { if (!uit.find(x => x.id === p.id)) uit.push(p); if (uit.length === n) break; }
+  return uit;
+}
+
+/* ═══════════ antwoord verwerken ═══════════ */
+function verwerk(id, juist) {
+  const p = pst(id);
+  if (juist) {
+    p.goed++; p.reeks++;
+    p.interval = p.interval === 0 ? 1 : p.interval === 1 ? 3 : Math.round(p.interval * p.ease);
+    p.ease = Math.min(3, p.ease + .1);
+    p.due = Date.now() + p.interval * DAG;
+  } else {
+    p.fout++; p.reeks = 0; p.interval = 0;
+    p.ease = Math.max(1.3, p.ease - .25);
+    p.due = Date.now();
+  }
+  const d = vandaag();
+  S.historiek[d] = S.historiek[d] || { goed: 0, totaal: 0 };
+  S.historiek[d].goed += juist ? 1 : 0;
+  S.historiek[d].totaal++;
+}
+
+function tikStreak() {
+  const d = vandaag();
+  if (S.laatsteDag === d) return;
+  const gisteren = new Date(Date.now() - DAG).toISOString().slice(0, 10);
+  S.streak = S.laatsteDag === gisteren ? S.streak + 1 : 1;
+  S.laatsteDag = d;
+}
+
+/* ═══════════ schermen ═══════════ */
+const SCHERMEN = ["home", "spel", "uitslag", "fiches", "stats", "meer"];
+function toon(naam) {
+  stopAuto();
+  SCHERMEN.forEach(s => $("#s-" + s).classList.toggle("verborgen", s !== naam));
+  $$("nav button").forEach(b => b.setAttribute("aria-current",
+    String(b.dataset.scherm === naam)));
+  window.scrollTo(0, 0);
+  if (naam === "home") tekenHome();
+  if (naam === "fiches") tekenFiches();
+  if (naam === "stats") tekenStats();
+}
+$$("nav button").forEach(b => b.onclick = () => { stopKlok(); toon(b.dataset.scherm); });
+
+/* ═══════════ home ═══════════ */
+const MODI = [
+  { id: "leren", ic: "🌱", t: "Leren", k: "#6EE7A0", d: "Flashcards: bekijk de foto, draai om voor de naam." },
+  { id: "herkennen", ic: "🔍", t: "Herkennen", k: "#7DD8E8", d: "Foto → juiste wetenschappelijke naam. Vier niveaus." },
+  { id: "familie", ic: "🧬", t: "Familie sorteren", k: "#B98CFF", d: "Sleep planten naar de juiste familie." },
+  { id: "standplaats", ic: "☀️", t: "Standplaats-puzzel", k: "#FFC53D", d: "Welke plant past op deze plek?" },
+  { id: "kenmerken", ic: "📋", t: "Kenmerken-quiz", k: "#22C46E", d: "Je krijgt de naam, jij geeft de kenmerken." },
+  { id: "race", ic: "⏱️", t: "Tijdrace", k: "#FF8A3D", d: "Zoveel mogelijk juist in 60 seconden." }
+];
+const NIVEAUS = [
+  { n: 1, t: "Kennismaking", d: "Meerkeuze, afleiders uit andere families" },
+  { n: 2, t: "Botanisch", d: "Meerkeuze, afleiders uit dezelfde familie" },
+  { n: 3, t: "Kenmerken", d: "Naam typen met hulpletters + kenmerkvraag" },
+  { n: 4, t: "Vakman", d: "Alleen blad of schors, alles blind typen" }
+];
+let niveau = +(localStorage.getItem("pt.niveau") || 1);
+
+function tekenHome() {
+  const r = rangVan(S.xp);
+  $("#rang").textContent = r.naam;
+  const volgende = RANGEN[r.index + 1];
+  $("#rangUitleg").textContent = volgende
+    ? `Nog ${volgende[0] - S.xp} XP tot ${volgende[1]}.`
+    : "Hoogste rang bereikt. Chapeau.";
+  $("#rangBalk").style.width = (volgende
+    ? Math.min(100, (S.xp - r.vanaf) / (volgende[0] - r.vanaf) * 100) : 100) + "%";
+  $("#telXp").lastElementChild.textContent = S.xp;
+  $("#telStreak").lastElementChild.textContent = S.streak;
+
+  const tel = [0, 0, 0, 0];
+  PLANTEN.forEach(p => tel[niveauVan(p.id)]++);
+  $("#stBeheerst").textContent = tel[3];
+  $("#stLeren").textContent = tel[1] + tel[2];
+  $("#stNieuw").textContent = tel[0];
+  const pct = Math.round((tel[2] * .5 + tel[3]) / PLANTEN.length * 100);
+  $("#ringPad").setAttribute("stroke-dasharray", pct + " 100");
+  $("#ringTekst").textContent = pct + "%";
+
+  $("#modi").innerHTML = MODI.map(m => `<button class="modus" data-modus="${m.id}"
+    style="--kleur:${m.k}"><span class="ic">${m.ic}</span>
+    <span><b>${m.t}</b><span>${m.d}</span></span></button>`).join("");
+  $$("[data-modus]").forEach(b => b.onclick = () => start(b.dataset.modus));
+
+  $("#niveaus").innerHTML = NIVEAUS.map(n => `<button class="niv" data-niv="${n.n}"
+    aria-pressed="${n.n === niveau}"><span class="nr">${n.n}</span>
+    <span><b>${n.t}</b><span>${n.d}</span></span></button>`).join("");
+  $$("[data-niv]").forEach(b => b.onclick = () => {
+    niveau = +b.dataset.niv; localStorage.setItem("pt.niveau", niveau); tekenHome();
+  });
+  $("#srsKnop").textContent = S.srs ? "Aan" : "Uit";
+  $("#srsKnop").style.color = S.srs ? "" : "var(--zacht)";
+  $("#aantalPlanten").textContent = PLANTEN.length;
+}
+$("#srsKnop").onclick = () => { S.srs = !S.srs; bewaar(); tekenHome(); };
+$("#btnGeluid").onclick = () => {
+  S.geluid = (S.geluid === false);
+  bewaar(); geluidKnopBij();
+  if (S.geluid) FX.klik();
+};
+function geluidKnopBij() {
+  const b = $("#btnGeluid");
+  b.textContent = S.geluid === false ? "🔇" : "🔊";
+  b.style.color = S.geluid === false ? "var(--zacht)" : "var(--limoen)";
+}
+
+/* ═══════════ spelmotor ═══════════ */
+const RONDE = 10;
+let spel = null, klokId = null, autoId = null;
+function stopAuto() { if (autoId) { clearTimeout(autoId); autoId = null; } }
+
+function start(modus) {
+  spel = {
+    modus, nr: 0, goed: 0, combo: 0, maxCombo: 0, xp: 0, fouten: [],
+    gedaan: [], klaar: false, eind: modus === "race" ? Date.now() + 60000 : 0
+  };
+  toon("spel");
+  if (modus === "race") startKlok();
+  volgende();
+}
+function stopKlok() { if (klokId) { clearInterval(klokId); klokId = null; } $("#spelKlok").textContent = ""; }
+function startKlok() {
+  stopKlok();
+  klokId = setInterval(() => {
+    const over = Math.max(0, spel.eind - Date.now());
+    const k = $("#spelKlok");
+    k.textContent = (over / 1000).toFixed(1) + "s";
+    k.classList.toggle("rood", over < 10000);
+    if (over <= 0) { stopKlok(); klaar(); }
+  }, 100);
+}
+$("#spelStop").onclick = () => { stopKlok(); toon("home"); };
+
+function kopBij(stoot) {
+  const x = $("#telXp");
+  x.lastElementChild.textContent = S.xp;
+  $("#telStreak").lastElementChild.textContent = S.streak;
+  if (stoot) { x.classList.add("stoot"); setTimeout(() => x.classList.remove("stoot"), 190); }
+}
+function spelkopBij() {
+  $("#spelBalk").style.width = spel.modus === "race"
+    ? Math.min(100, spel.nr / 20 * 100) + "%" : spel.nr / RONDE * 100 + "%";
+  const c = $("#spelCombo");
+  const nieuw = spel.combo >= 3 ? "🔥 " + spel.combo : "";
+  if (nieuw && nieuw !== c.textContent) {
+    c.classList.remove("knal"); void c.offsetWidth; c.classList.add("knal");
+  }
+  c.textContent = nieuw;
+  kopBij();
+}
+
+function volgende() {
+  stopAuto();
+  if (spel.modus !== "race" && spel.nr >= RONDE) return klaar();
+  spel.nr++;
+  spelkopBij();
+  const f = {
+    leren: vraagLeren, herkennen: vraagHerkennen, familie: vraagFamilie,
+    standplaats: vraagStandplaats, kenmerken: vraagKenmerken, race: vraagRace
+  }[spel.modus];
+  f();
+}
+
+function punten(juist, basis) {
+  if (!juist) { spel.combo = 0; return 0; }
+  spel.combo++; spel.maxCombo = Math.max(spel.maxCombo, spel.combo);
+  const bonus = spel.combo >= 3 ? Math.min(10, (spel.combo - 2) * 2) : 0;
+  return basis + bonus;
+}
+
+/* `juist` mag true, false of "bijna" zijn — bijna telt als goed, maar levert minder punten */
+function antwoord(plant, juist, basis, extra, bron) {
+  const goed = juist === true || juist === "bijna";
+  const rangVoor = rangVan(S.xp).index;
+  verwerk(plant.id, goed);
+  const p = punten(goed, basis);
+  spel.xp += p; S.xp += p;
+  if (goed) spel.goed++; else spel.fouten.push(plant);
+  tikStreak(); bewaar(); spelkopBij(); kopBij(goed);
+
+  const pt = midden(bron || $("#spelInhoud .optie.goed") || $("#spelInhoud"));
+  if (juist === true) {
+    FX.goed(spel.combo); FX.flits("j"); FX.xppop(p, pt.x, pt.y);
+    if (spel.combo >= 3) FX.knal(pt.x, pt.y, 12 + spel.combo * 3, 130);
+  } else if (juist === "bijna") {
+    FX.bijna(); FX.xppop(p, pt.x, pt.y);
+  } else {
+    FX.fout(); FX.flits("n");
+  }
+  const rangNa = rangVan(S.xp).index;
+  if (rangNa > rangVoor) setTimeout(() => FX.vierRang(rangVan(S.xp).naam, rangNa), 420);
+
+  toonTerug(plant, juist, extra);
+}
+
+function toonTerug(plant, juist, extra) {
+  const el = document.createElement("div");
+  el.className = "terug " + (juist === "bijna" ? "b" : juist ? "j" : "n");
+  el.innerHTML = `<div style="font-size:15px;margin-bottom:5px">
+      ${juist === "bijna" ? "Bijna juist — let op de spelling"
+      : juist ? "Juist" : "Niet juist"}</div>
+    <b>${volnaam(plant)}</b> <span class="nlnaam">· ${plant.nl} · ${plant.familie}</span>
+    ${extra ? `<div style="margin-top:7px">${extra}</div>` : ""}
+    <div style="margin-top:9px"><button class="knop" style="min-height:44px;padding:10px 18px"
+      id="btnVolgende">Volgende →</button>
+      <button class="knop licht" style="min-height:44px;padding:10px 16px"
+      id="btnFiche">Bekijk fiche</button></div>`;
+  $("#spelInhoud").appendChild(el);
+  el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  const knop = $("#btnVolgende");
+  knop.onclick = volgende;
+  $("#btnFiche").onclick = () => { stopAuto(); opentFiche(plant.id); };
+  knop.focus({ preventScroll: true });
+  // juist? dan rolt hij vanzelf door, met een zichtbaar balkje in de knop.
+  // Fout of bijna juist: dan wachten we, want dan valt er iets te lezen.
+  if (juist === true && spel.modus !== "race") {
+    const loop = document.createElement("span");
+    loop.className = "loop";
+    knop.appendChild(loop);
+    loop.animate([{ width: "0%" }, { width: "100%" }], { duration: 1700, fill: "forwards" });
+    autoId = setTimeout(() => { autoId = null; volgende(); }, 1700);
+  }
+}
+
+/* ---- 1. leren (flashcards) ---- */
+function vraagLeren() {
+  const p = kiesPlant(spel.gedaan, heeftFoto); spel.gedaan.push(p.id);
+  const f = foto(p.id);
+  $("#spelInhoud").innerHTML = `
+    <div class="fotowrap">${f ? `<img class="foto" src="${f.bestand}" alt="">
+      <span class="fotolabel">${FOTOVAK[f.soort_foto] || ""}</span>` :
+      `<div class="foto"></div>`}</div>
+    <p class="vraag">Welke plant is dit?</p>
+    <button class="knop vol" id="draai">Toon het antwoord</button>`;
+  $("#draai").onclick = () => {
+    $("#spelInhoud").insertAdjacentHTML("beforeend", `
+      <div class="kaart pad" style="margin-top:12px">
+        <div class="wetens" style="font-size:19px;font-family:Georgia,serif">${volnaam(p)}</div>
+        <div class="klein">${p.nl} · ${p.familie}</div>
+        <p style="font-size:14.5px;margin:10px 0 0">${p.kenmerk5}</p></div>
+      <p class="vraag" style="font-size:16px">Wist je het?</p>
+      <div class="rij"><button class="knop licht" id="nee" style="flex:1">Nee, nog niet</button>
+      <button class="knop" id="ja" style="flex:1">Ja, die kende ik</button></div>`);
+    $("#draai").remove();
+    const kies = j => {
+      verwerk(p.id, j);
+      if (j) { spel.goed++; spel.xp += 5; S.xp += 5; } else spel.fouten.push(p);
+      tikStreak(); bewaar(); kopBij(j);
+      const m = midden($("#ja"));
+      if (j) { FX.goed(0); FX.xppop(5, m.x, m.y); } else FX.toon([300, 240], .14, "sine", .09);
+      volgende();
+    };
+    $("#ja").onclick = () => kies(true);
+    $("#nee").onclick = () => kies(false);
+  };
+}
+
+/* ---- 2. herkennen (4 niveaus) ---- */
+function vraagHerkennen() { herkenVraag(niveau); }
+
+function herkenVraag(niv) {
+  const p = kiesPlant(spel.gedaan, heeftFoto); spel.gedaan.push(p.id);
+  const vakken = niv === 1 ? ["habitus"] : niv === 2 ? ["habitus", "bloem"]
+    : niv === 3 ? null : ["blad", "winter"];
+  const f = foto(p.id, vakken);
+  const fotoHtml = `<div class="fotowrap">${f ? `<img class="foto" src="${f.bestand}" alt="">
+    <span class="fotolabel">${FOTOVAK[f.soort_foto] || ""}</span>` : `<div class="foto"></div>`}</div>`;
+
+  if (niv <= 2) {
+    const opties = schud([p, ...afleiders(p, 3, niv === 2)]);
+    $("#spelInhoud").innerHTML = fotoHtml +
+      `<p class="vraag">Welke plant zie je hier?</p><div class="opties">` +
+      opties.map(o => `<button class="optie wetens" data-id="${o.id}">${volnaam(o)}</button>`)
+        .join("") + `</div>`;
+    $$(".optie").forEach(b => b.onclick = () => {
+      const juist = b.dataset.id === p.id;
+      $$(".optie").forEach(x => {
+        x.disabled = true;
+        if (x.dataset.id === p.id) { x.classList.add("goed"); x.innerHTML += '<span class="merkje">✓</span>'; }
+        else if (x === b) { x.classList.add("fout"); x.innerHTML += '<span class="merkje">✕</span>'; }
+      });
+      antwoord(p, juist, niv === 1 ? 10 : 15,
+        juist ? "" : `<span class="klein">Jij koos ${volnaam(PLANTEN.find(x => x.id === b.dataset.id))}.</span>`, b);
+    });
+  } else {
+    const hulp = niv === 3
+      ? `<div class="hint">${p.geslacht.slice(0, 3)}${"·".repeat(Math.max(0, p.geslacht.length - 3))}
+         ${p.soort.slice(0, 2)}${"·".repeat(Math.max(0, p.soort.length - 2))}</div>` : "";
+    $("#spelInhoud").innerHTML = fotoHtml +
+      `<p class="vraag">Typ de wetenschappelijke naam (geslacht + soort).</p>
+       <input class="typveld" id="typ" placeholder="Geslacht soort" autocomplete="off"
+         autocapitalize="off" spellcheck="false">${hulp}
+       <button class="knop vol" id="check" style="margin-top:10px">Controleren</button>`;
+    const tv = $("#typ");
+    tv.focus({ preventScroll: true });
+    const controleer = () => {
+      const uitslag = beoordeelTyp(tv.value, p);
+      tv.disabled = true; $("#check").remove();
+      const juist = uitslag === 2 ? true : uitslag === 1 ? "bijna" : false;
+      antwoord(p, juist, uitslag === 2 ? (niv === 3 ? 20 : 30) : 8,
+        uitslag === 0 ? `<span class="klein">Jij typte: ${tv.value || "—"}</span>` : "", tv);
+    };
+    $("#check").onclick = controleer;
+    tv.onkeydown = e => { if (e.key === "Enter") controleer(); };
+  }
+}
+
+/* ---- 3. familie sorteren ---- */
+function vraagFamilie() {
+  // families met minstens twee soorten, anders krijg je een ronde van drie losse tegels
+  const telling = {};
+  PLANTEN.forEach(p => telling[p.familie] = (telling[p.familie] || 0) + 1);
+  const alle = [...new Set(PLANTEN.map(p => p.familie))];
+  const groot = alle.filter(f => telling[f] >= 2);
+  const fams = schud(groot.length >= 3 ? groot : alle).slice(0, 3);
+  const keuze = [];
+  fams.forEach(f => schud(PLANTEN.filter(p => p.familie === f)).slice(0, 2).forEach(p => keuze.push(p)));
+  const kaarten = schud(keuze);
+  let gekozen = null, juistTeller = 0, fouten = 0;
+
+  $("#spelInhoud").innerHTML = `<p class="vraag">Tik een plant aan en daarna de familie
+    waar hij bij hoort.</p>
+    <div class="sorteer" id="sorteer">${kaarten.map(p => {
+    const f = foto(p.id, ["habitus", "blad"]);
+    return `<button class="tegel" data-id="${p.id}">
+        ${f ? `<img src="${f.bestand}" alt="">` : `<div style="aspect-ratio:1;background:rgba(255,255,255,.05)"></div>`}
+        <em class="wetens">${volnaam(p)}</em></button>`;
+  }).join("")}</div>
+    <div class="bakken">${schud(fams).map(f => `<button class="bak" data-fam="${f}">
+      <b>${f}</b><i id="bak-${f}"></i></button>`).join("")}</div>`;
+
+  $$(".tegel").forEach(t => t.onclick = () => {
+    $$(".tegel").forEach(x => x.setAttribute("aria-pressed", "false"));
+    t.setAttribute("aria-pressed", "true"); gekozen = t;
+  });
+  $$(".bak").forEach(b => b.onclick = () => {
+    if (!gekozen) return;
+    const p = PLANTEN.find(x => x.id === gekozen.dataset.id);
+    const juist = p.familie === b.dataset.fam;
+    verwerk(p.id, juist);
+    if (juist) {
+      juistTeller++; const pt = punten(true, 12); spel.xp += pt; S.xp += pt;
+      const m = midden(b);
+      FX.goed(spel.combo); FX.xppop(pt, m.x, m.y); FX.knal(m.x, m.y, 14, 120);
+      kopBij(true);
+      gekozen.classList.add("weg");
+      const i = $("#bak-" + p.familie);
+      i.textContent = (i.textContent ? i.textContent + " · " : "") + volnaam(p);
+    } else {
+      fouten++; spel.combo = 0; spel.fouten.push(p);
+      FX.fout();
+      b.animate([{ transform: "translateX(-6px)" }, { transform: "translateX(6px)" },
+      { transform: "translateX(0)" }], { duration: 220 });
+    }
+    gekozen.setAttribute("aria-pressed", "false"); gekozen = null;
+    spelkopBij(); bewaar();
+    if (juistTeller === kaarten.length) {
+      spel.goed += juistTeller; tikStreak(); bewaar();
+      $("#spelInhoud").insertAdjacentHTML("beforeend",
+        `<div class="terug j"><div style="font-size:15px">Alle ${kaarten.length} juist gesorteerd
+         ${fouten ? `(met ${fouten} misser${fouten > 1 ? "s" : ""})` : ""}.</div>
+         <div style="margin-top:9px"><button class="knop" id="btnVolgende"
+         style="min-height:44px;padding:10px 18px">Volgende →</button></div></div>`);
+      spel.nr = RONDE - 1;
+      $("#btnVolgende").onclick = volgende;
+    }
+  });
+}
+
+/* ---- 4. standplaats-puzzel ---- */
+function vraagStandplaats() {
+  const p = kiesPlant(spel.gedaan); spel.gedaan.push(p.id);
+  const anders = PLANTEN.filter(x => x.standplaats !== p.standplaats && x.water !== p.water);
+  const opties = schud([p, ...schud(anders).slice(0, 3)]);
+  $("#spelInhoud").innerHTML = `
+    <div class="kaart pad" style="background:linear-gradient(135deg,rgba(255,197,61,.16),rgba(255,138,61,.06));border-color:rgba(255,197,61,.4)">
+      <div class="klein" style="text-transform:uppercase;letter-spacing:.05em;font-weight:700">
+        De plek</div>
+      <div style="font-family:Georgia,serif;font-size:19px;margin-top:4px">
+        ${p.standplaats} · ${p.water.toLowerCase()}e grond</div>
+      <div class="klein" style="margin-top:4px">Gevraagd: een ${p.groeivorm.toLowerCase()}
+        van ${p.hoogte}.</div>
+    </div>
+    <p class="vraag">Welke plant kies je hier?</p>
+    <div class="opties">${opties.map(o => `<button class="optie wetens" data-id="${o.id}">
+      ${volnaam(o)}</button>`).join("")}</div>`;
+  $$(".optie").forEach(b => b.onclick = () => {
+    const juist = b.dataset.id === p.id;
+    const fout = PLANTEN.find(x => x.id === b.dataset.id);
+    $$(".optie").forEach(x => {
+      x.disabled = true;
+      if (x.dataset.id === p.id) x.classList.add("goed");
+      else if (x === b) x.classList.add("fout");
+    });
+    antwoord(p, juist, 15, juist ? `<span class="klein">${p.kenmerk5}</span>`
+      : `<span class="klein">${volnaam(fout)} wil ${fout.standplaats.toLowerCase()}
+         en ${fout.water.toLowerCase()}e grond — daar gaat hij hier onderdoor.</span>`, b);
+  });
+}
+
+/* ---- 5. kenmerken-quiz ---- */
+const KENVRAGEN = [
+  { veld: "standplaats", vraag: "Welke standplaats wil deze plant?", lijst: () => WOORDEN.standplaats },
+  { veld: "water", vraag: "Welke bodemvochtigheid hoort hierbij?", lijst: () => WOORDEN.water },
+  { veld: "blad", vraag: "Is deze plant bladhoudend of bladverliezend?", lijst: () => WOORDEN.blad },
+  { veld: "groeivorm", vraag: "Tot welke groeivorm behoort deze plant?", lijst: () => WOORDEN.groeivorm },
+  { veld: "hoogte", vraag: "Hoe hoog wordt deze plant?", lijst: () => [...new Set(PLANTEN.map(p => p.hoogte))] },
+  { veld: "familie", vraag: "Tot welke familie behoort deze plant?", lijst: () => [...new Set(PLANTEN.map(p => p.familie))] }
+];
+function vraagKenmerken() {
+  const eis = spel.beperkFamilie
+    ? (id => PLANTEN.find(x => x.id === id).familie === spel.beperkFamilie) : null;
+  const p = kiesPlant(spel.gedaan, eis); spel.gedaan.push(p.id);
+  const k = KENVRAGEN[Math.floor(Math.random() * KENVRAGEN.length)];
+  const juisteWaarde = p[k.veld];
+  const andere = schud(k.lijst().filter(v => v !== juisteWaarde)).slice(0, 3);
+  const opties = schud([juisteWaarde, ...andere]);
+  $("#spelInhoud").innerHTML = `
+    <div class="kaart pad">
+      <div class="wetens" style="font-family:Georgia,serif;font-size:21px">${volnaam(p)}</div>
+      <div class="klein">${p.nl}</div></div>
+    <p class="vraag">${k.vraag}</p>
+    <div class="opties">${opties.map(o => `<button class="optie" data-v="${o}">${o}</button>`).join("")}</div>`;
+  $$(".optie").forEach(b => b.onclick = () => {
+    const juist = b.dataset.v === String(juisteWaarde);
+    $$(".optie").forEach(x => {
+      x.disabled = true;
+      if (x.dataset.v === String(juisteWaarde)) x.classList.add("goed");
+      else if (x === b) x.classList.add("fout");
+    });
+    antwoord(p, juist, 12, `<span class="klein">${p.kenmerk5}</span>`, b);
+  });
+}
+
+/* ---- 6. tijdrace ---- */
+function vraagRace() {
+  const p = kiesPlant(spel.gedaan.slice(-6), heeftFoto);
+  spel.gedaan.push(p.id);
+  const f = foto(p.id, ["habitus", "bloem", "blad"]);
+  const opties = schud([p, ...afleiders(p, 3, true)]);
+  $("#spelInhoud").innerHTML = `<div class="fotowrap">${f ?
+    `<img class="foto" src="${f.bestand}" alt="" style="aspect-ratio:16/9">` :
+    `<div class="foto" style="aspect-ratio:16/9"></div>`}</div>
+    <div class="opties" style="margin-top:12px">${opties.map(o =>
+      `<button class="optie wetens" data-id="${o.id}">${volnaam(o)}</button>`).join("")}</div>`;
+  $$(".optie").forEach(b => b.onclick = () => {
+    const juist = b.dataset.id === p.id;
+    verwerk(p.id, juist);
+    const pt = punten(juist, 10); spel.xp += pt; S.xp += pt;
+    if (juist) spel.goed++; else spel.fouten.push(p);
+    bewaar(); kopBij(juist); spelkopBij();
+    const m = midden(b);
+    if (juist) { FX.goed(spel.combo); FX.xppop(pt, m.x, m.y); }
+    else { FX.fout(); FX.flits("n"); }
+    if (!juist) {
+      $$(".optie").forEach(x => {
+        x.disabled = true;
+        if (x.dataset.id === p.id) x.classList.add("goed"); else if (x === b) x.classList.add("fout");
+      });
+      setTimeout(() => { if (spel && !spel.klaar) volgende(); }, 900);
+    } else volgende();
+  });
+}
+
+/* ═══════════ uitslag ═══════════ */
+function klaar() {
+  if (!spel || spel.klaar) return;
+  spel.klaar = true; stopKlok();
+  if (spel.modus === "race") {
+    S.records.race = Math.max(S.records.race || 0, spel.goed);
+  }
+  S.records.combo = Math.max(S.records.combo || 0, spel.maxCombo);
+  tikStreak(); bewaar();
+
+  const totaal = spel.modus === "race" ? spel.goed + spel.fouten.length
+    : spel.modus === "familie" ? spel.goed + spel.fouten.length : RONDE;
+  $("#uScore").textContent = spel.modus === "race"
+    ? spel.goed + " juist" : spel.goed + "/" + totaal;
+  $("#uXp").textContent = "+" + spel.xp + " XP";
+  const pct = totaal ? spel.goed / totaal : 0;
+  $("#uTekst").textContent =
+    spel.modus === "race" ? (spel.goed >= (S.records.race || 0) ? "Nieuw record. " : "") +
+      `Je beste tijdrace staat op ${S.records.race}.`
+      : pct === 1 ? "Foutloos. Dat mag gezien worden."
+        : pct >= .7 ? "Goed bezig — de fouten hieronder komen straks vanzelf terug."
+          : "Deze planten zitten er nog niet in. Ze komen snel opnieuw aan bod.";
+  const sterren = pct >= .95 ? 3 : pct >= .7 ? 2 : pct >= .4 ? 1 : 0;
+  $("#uSterren").innerHTML = [0, 1, 2].map(i =>
+    `<span style="${i < sterren ? "" : "opacity:.18;filter:grayscale(1)"}">⭐</span>`).join("");
+  FX.klaar(pct);
+  if (pct >= .95) FX.regen();
+  else if (pct >= .7) FX.knal(innerWidth / 2, innerHeight / 3, 30, 200);
+
+  const unieke = [...new Map(spel.fouten.map(p => [p.id, p])).values()];
+  $("#uFouten").innerHTML = unieke.length
+    ? `<div class="foutlijst"><div class="klein" style="font-style:normal;margin-bottom:6px">
+       Nog even naar kijken:</div><ul style="margin:0;padding-left:18px">` +
+    unieke.map(p => `<li>${volnaam(p)} <span class="klein" style="font-style:normal">
+      · ${p.nl}</span></li>`).join("") + `</ul></div>` : "";
+  const modus = spel.modus;
+  $("#uNog").onclick = () => start(modus);
+  toon("uitslag");
+}
+$("#uTerug").onclick = () => toon("home");
+
+/* ═══════════ fiches ═══════════ */
+let ficheFilter = "alle";
+function tekenFiches() {
+  const groepen = ["alle", ...new Set(PLANTEN.map(p => p.groep))];
+  $("#filters").innerHTML = groepen.map(g => `<button class="knop licht" data-g="${g}"
+    style="min-height:38px;padding:7px 14px;font-size:13.5px;${g === ficheFilter
+      ? "background:linear-gradient(135deg,var(--limoen),var(--smaragd));color:#06120C;border-color:transparent;box-shadow:0 4px 14px rgba(34,196,110,.3)" : ""}">
+    ${g === "alle" ? "Alle" : g}</button>`).join("");
+  $$("[data-g]").forEach(b => b.onclick = () => { ficheFilter = b.dataset.g; tekenFiches(); });
+
+  const q = norm($("#zoek").value);
+  const lijst = PLANTEN.filter(p => {
+    if (ficheFilter !== "alle" && p.groep !== ficheFilter) return false;
+    if (!q) return true;
+    return norm([volnaam(p), p.nl, p.familie, p.standplaats, p.water, p.groeivorm,
+      p.gebruik.join(" ")].join(" ")).includes(q);
+  });
+  $("#ficheTel").textContent = lijst.length + " van " + PLANTEN.length;
+  $("#fichesLijst").innerHTML = lijst.map(p => {
+    const f = foto(p.id, ["habitus"]);
+    return `<button class="fiche" data-fiche="${p.id}">
+      ${f ? `<img src="${f.bestand}" alt="" loading="lazy">` : `<div style="aspect-ratio:4/3;background:rgba(255,255,255,.05)"></div>`}
+      <span class="tx"><b>${volnaam(p)}</b>
+      <span><i class="mrk" style="background:${KLEUR[niveauVan(p.id)]}"></i>${p.nl}</span></span>
+    </button>`;
+  }).join("") || `<p class="klein">Niets gevonden.</p>`;
+  $$("[data-fiche]").forEach(b => b.onclick = () => opentFiche(b.dataset.fiche));
+}
+$("#zoek").oninput = tekenFiches;
+
+function opentFiche(id) {
+  const p = PLANTEN.find(x => x.id === id);
+  const fs = fotosVan(id);
+  const st = S.planten[id];
+  $("#dlgTitel").innerHTML = `${volnaam(p)}<div class="klein"
+    style="font-style:normal">${p.nl} · ${p.familie}</div>`;
+  $("#dlgBody").innerHTML = `
+    ${fs.length ? `<div class="galerij">${fs.map(f =>
+    `<img src="${f.bestand}" alt="${FOTOVAK[f.soort_foto]}" title="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})">`).join("")}</div>
+      <div class="klein" style="margin:-8px 0 12px">${fs.map(f => FOTOVAK[f.soort_foto] || "Detail").join(" · ")}</div>` : ""}
+    <dl class="kv">
+      <dt>Standplaats</dt><dd>${p.standplaats}</dd>
+      <dt>Water &amp; bodem</dt><dd>${p.water}</dd>
+      <dt>Formaat</dt><dd>${p.hoogte} hoog · ${p.breedte} breed</dd>
+      <dt>Blad &amp; bloei</dt><dd>${p.blad} · bloeit ${p.bloeitijd.toLowerCase()}, ${p.bloeikleur.toLowerCase()}</dd>
+      <dt>Groeiwijze</dt><dd>${p.groeivorm} · ${p.groei.toLowerCase()}e groeier · ${p.gebruik.join(", ").toLowerCase()}</dd>
+    </dl>
+    <div class="blok weet"><h4>Weetje van de vakman</h4>${p.weetje}</div>
+    <div class="blok eco"><h4>Ecologische waarde</h4>${p.ecologie}</div>
+    ${p.giftig ? `<div class="blok gif"><h4>Let op</h4>Deze plant is giftig — belangrijk om te
+      weten bij tuinen met kinderen of huisdieren.</div>` : ""}
+    <div style="margin-top:16px"><h4 style="font-size:12px;text-transform:uppercase;
+      letter-spacing:.05em;color:var(--zacht);font-family:system-ui;margin:0 0 6px">
+      Bekende cultivars <span style="text-transform:none;font-weight:400">(niet te kennen)</span></h4>
+      <div class="cv">${p.cultivars.map(c => `<em>${c}</em>`).join("")}</div></div>
+    <div class="klein" style="margin-top:16px;border-top:1px solid var(--lijn);padding-top:10px">
+      ${st ? `${NIVNAAM[niveauVan(id)]} · ${st.goed} juist, ${st.fout} fout` : "Nog niet geoefend"}
+      ${fs.length ? ` · foto's: ${[...new Set(fs.map(f => f.auteur))].join(", ")} —
+        Wikimedia Commons` : ""}
+    </div>`;
+  dlg.showModal();
+}
+
+/* ═══════════ stats ═══════════ */
+function tekenStats() {
+  $("#recRace").textContent = S.records.race || 0;
+  $("#recCombo").textContent = S.records.combo || 0;
+
+  // grafiek: aantal juiste antwoorden per dag, laatste 14 dagen
+  const dagen = [...Array(14)].map((_, i) =>
+    new Date(Date.now() - (13 - i) * DAG).toISOString().slice(0, 10));
+  const waarden = dagen.map(d => (S.historiek[d] || {}).goed || 0);
+  const max = Math.max(4, ...waarden);
+  const bw = 320 / 14;
+  $("#grafiek").innerHTML = waarden.map((v, i) => {
+    const h = v / max * 104;
+    return `<rect x="${i * bw + 3}" y="${118 - h}" width="${bw - 6}" height="${Math.max(1.5, h)}"
+      rx="2.5" fill="${i === 13 ? "#41654A" : "#CBD9C6"}"></rect>`;
+  }).join("") + `<line x1="0" y1="119" x2="320" y2="119" stroke="#E2DED4" stroke-width="1"/>`;
+  const totaal = waarden.reduce((a, b) => a + b, 0);
+  $("#grafiekInfo").textContent = totaal
+    ? `${totaal} juiste antwoorden in de laatste 14 dagen — vandaag ${waarden[13]}.`
+    : "Nog geen oefensessies. Speel een ronde en je ziet hier je lijn groeien.";
+
+  // zwakste families
+  const fam = {};
+  PLANTEN.forEach(p => {
+    const s = S.planten[p.id]; if (!s || !(s.goed + s.fout)) return;
+    fam[p.familie] = fam[p.familie] || { goed: 0, totaal: 0 };
+    fam[p.familie].goed += s.goed; fam[p.familie].totaal += s.goed + s.fout;
+  });
+  const rijen = Object.entries(fam).map(([f, v]) => ({ f, pct: v.goed / v.totaal, n: v.totaal }))
+    .sort((a, b) => a.pct - b.pct).slice(0, 5);
+  $("#zwakFam").innerHTML = rijen.length ? rijen.map(r => `
+    <div class="lr"><span class="nm" style="font-style:normal">${r.f}</span>
+      <div class="bl balk"><i style="width:${Math.round(r.pct * 100)}%;
+        background:${r.pct < .6 ? "#B0453A" : r.pct < .85 ? "#D8A94B" : "#41654A"}"></i></div>
+      <span class="klein">${Math.round(r.pct * 100)}%</span>
+      <button class="knop licht" style="min-height:34px;padding:5px 11px;font-size:12.5px"
+        data-oefen="${r.f}">Oefen</button></div>`).join("")
+    : `<p class="klein">Zodra je een paar rondes gespeeld hebt zie je hier waar je zwak staat.</p>`;
+  $$("[data-oefen]").forEach(b => b.onclick = () => oefenFamilie(b.dataset.oefen));
+
+  // badges
+  const families = [...new Set(PLANTEN.map(p => p.familie))].sort();
+  $("#badges").innerHTML = families.map(f => {
+    const leden = PLANTEN.filter(p => p.familie === f);
+    const aan = leden.every(p => niveauVan(p.id) >= 2);
+    return `<div class="badge ${aan ? "aan" : ""}"><span class="em">🏅</span>
+      <b>${f}</b><div class="klein">${leden.filter(p => niveauVan(p.id) >= 2).length}/${leden.length}</div></div>`;
+  }).join("");
+
+  // alle planten
+  $("#beheersing").innerHTML = PLANTEN.slice()
+    .sort((a, b) => niveauVan(a.id) - niveauVan(b.id) || a.geslacht.localeCompare(b.geslacht))
+    .map(p => {
+      const n = niveauVan(p.id), s = S.planten[p.id];
+      return `<div class="lr"><i class="mrk" style="background:${KLEUR[n]}"></i>
+        <span class="nm">${volnaam(p)}</span>
+        <span class="klein">${NIVNAAM[n]}${s ? ` · ${s.goed}/${s.goed + s.fout}` : ""}</span>
+        <button class="knop licht" style="min-height:32px;padding:4px 10px;font-size:12px"
+          data-fiche2="${p.id}">Fiche</button></div>`;
+    }).join("");
+  $$("[data-fiche2]").forEach(b => b.onclick = () => opentFiche(b.dataset.fiche2));
+}
+
+function oefenFamilie(fam) {
+  spel = {
+    modus: "kenmerken", nr: 0, goed: 0, combo: 0, maxCombo: 0, xp: 0, fouten: [],
+    gedaan: [], klaar: false, eind: 0, beperkFamilie: fam
+  };
+  toon("spel"); volgende();
+}
+
+/* ═══════════ meer ═══════════ */
+const ontsnap = t => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+/* een echte download werkt alleen als je het bestand rechtstreeks opent, niet online */
+const LOKAAL = location.protocol === "file:";
+
+/* Kopiëren en plakken werkt overal — ook in Safari op een gsm, waar een
+   downloadlink niets doet. Opslaan als bestand blijft erbij voor op de pc. */
+$("#btnExport").onclick = () => {
+  const tekst = JSON.stringify(S);
+  $("#dlgTitel").innerHTML = `Back-up van je voortgang<div class="klein"
+    style="font-style:normal">Kopieer deze tekst en bewaar ze ergens terug te vinden:
+    een notitie, of een mail naar jezelf.</div>`;
+  $("#dlgBody").innerHTML = `<textarea class="typveld" id="bkTekst" readonly
+      style="font-style:normal;font-family:ui-monospace,Menlo,Consolas,monospace;
+      font-size:11.5px;height:180px;resize:vertical">${ontsnap(tekst)}</textarea>
+    <div class="rij" style="margin-top:12px">
+      <button class="knop" id="bkKopieer">Kopieer</button>
+      ${LOKAAL ? `<button class="knop licht" id="bkBestand">Opslaan als bestand</button>` : ""}
+    </div>
+    <div class="klein" id="bkMelding" style="margin-top:11px"></div>`;
+  dlg.showModal();
+  $("#bkKopieer").onclick = async () => {
+    const v = $("#bkTekst");
+    try {
+      await navigator.clipboard.writeText(tekst);
+    } catch (e) {
+      v.focus(); v.select();                        /* terugval voor oudere browsers */
+      try { document.execCommand("copy"); } catch (e2) {}
+    }
+    $("#bkMelding").textContent = "Gekopieerd. Plak het ergens waar je het terugvindt.";
+    FX.klik();
+  };
+  if ($("#bkBestand")) $("#bkBestand").onclick = () => {
+    try {
+      const blob = new Blob([tekst], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "plantentrainer-backup-" + vandaag() + ".json";
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+      $("#bkMelding").textContent = "Bestand aangeboden. Lukt dat niet, gebruik dan Kopieer.";
+    } catch (e) {
+      $("#bkMelding").textContent = "Opslaan lukt hier niet — gebruik Kopieer.";
+    }
+  };
+};
+
+function leesBackup(tekst) {
+  try {
+    const d = JSON.parse(tekst);
+    if (!d || typeof d !== "object" || !("planten" in d)) throw new Error("geen back-up");
+    S = Object.assign(leegState(), d);
+    bewaar(); geluidKnopBij(); telAfgekeurd(); tekenHome();
+    dlg.close(); toon("home");
+    FX.knal(innerWidth / 2, innerHeight / 3, 22, 150);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+$("#btnImport").onclick = () => {
+  $("#dlgTitel").innerHTML = `Back-up inlezen<div class="klein" style="font-style:normal">
+    Plak hier de tekst van je back-up. Let op: dit vervangt je huidige voortgang.</div>`;
+  $("#dlgBody").innerHTML = `<textarea class="typveld" id="imTekst"
+      placeholder="Plak hier je back-up" style="font-style:normal;
+      font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;height:180px;
+      resize:vertical"></textarea>
+    <div class="rij" style="margin-top:12px">
+      <button class="knop" id="imDoe">Inlezen</button>
+      <button class="knop licht" id="imBestand">Bestand kiezen</button></div>
+    <div class="klein" id="imMelding" style="margin-top:11px"></div>`;
+  dlg.showModal();
+  $("#imDoe").onclick = () => {
+    if (!leesBackup($("#imTekst").value.trim()))
+      $("#imMelding").textContent = "Dat kon ik niet lezen als back-up. Kopieerde je de hele tekst?";
+  };
+  $("#imBestand").onclick = () => $("#fileImport").click();
+};
+
+$("#fileImport").onchange = e => {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = () => {
+    if (!leesBackup(r.result)) {
+      const m = $("#imMelding");
+      if (m) m.textContent = "Dat bestand kon ik niet lezen als back-up.";
+    }
+  };
+  r.readAsText(f);
+  e.target.value = "";
+};
+$("#btnWis").onclick = () => {
+  if (!confirm("Alle voortgang, XP, badges en records wissen?")) return;
+  S = leegState(); bewaar(); tekenHome(); toon("home");
+};
+$("#btnKeuren").onclick = () => {
+  $("#dlgTitel").innerHTML = `Foto's keuren<div class="klein" style="font-style:normal">
+    Klik een foto weg die niet klopt of onduidelijk is.</div>`;
+  $("#dlgBody").innerHTML = PLANTEN.map(p => {
+    const fs = (window.FOTOS && FOTOS[p.id]) || [];
+    if (!fs.length) return "";
+    return `<div style="margin-bottom:16px"><div class="wetens"
+      style="font-size:14.5px;margin-bottom:6px">${volnaam(p)}</div>
+      <div class="galerij">${fs.map(f => {
+      const uit = S.afgekeurd.includes(f.bestand);
+      return `<img src="${f.bestand}" alt="" data-keur="${f.bestand}"
+          title="${FOTOVAK[f.soort_foto]} — ${f.auteur}"
+          style="${uit ? "opacity:.25;outline:2px solid var(--fout)" : ""}">`;
+    }).join("")}</div></div>`;
+  }).join("");
+  $$("[data-keur]").forEach(im => im.onclick = () => {
+    const b = im.dataset.keur, i = S.afgekeurd.indexOf(b);
+    if (i >= 0) { S.afgekeurd.splice(i, 1); im.style.cssText = ""; }
+    else { S.afgekeurd.push(b); im.style.cssText = "opacity:.25;outline:2px solid var(--fout)"; }
+    bewaar(); telAfgekeurd();
+  });
+  dlg.showModal();
+};
+function telAfgekeurd() {
+  $("#afgekeurdTel").textContent = S.afgekeurd.length
+    ? `Je hebt er ${S.afgekeurd.length} afgekeurd.` : "";
+}
+
+/* ═══════════ effecten: geluid, confetti, flits, trilling ═══════════
+   Alles wordt ter plekke gegenereerd — geen geluidsbestanden, dus offline bruikbaar. */
+const FX = (() => {
+  let ac = null;
+  const aan = () => S.geluid !== false;
+
+  function ctx() {
+    if (!ac) {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return null;
+      ac = new AC();
+    }
+    if (ac.state === "suspended") ac.resume();
+    return ac;
+  }
+
+  function toon(freqs, dur = .13, vorm = "triangle", vol = .13) {
+    if (!aan()) return;
+    const c = ctx(); if (!c) return;
+    try {
+      const t0 = c.currentTime;
+      freqs.forEach((f, i) => {
+        const o = c.createOscillator(), g = c.createGain();
+        o.type = vorm; o.frequency.value = f;
+        const s = t0 + i * dur * .68;
+        g.gain.setValueAtTime(0, s);
+        g.gain.linearRampToValueAtTime(vol, s + .012);
+        g.gain.exponentialRampToValueAtTime(.0001, s + dur);
+        o.connect(g); g.connect(c.destination);
+        o.start(s); o.stop(s + dur + .03);
+      });
+    } catch (e) { /* geluid mag nooit het spel breken */ }
+  }
+
+  const tril = ms => { try { navigator.vibrate && navigator.vibrate(ms); } catch (e) {} };
+
+  /* elke juiste beurt klinkt een halve toon hoger — de reeks wordt hoorbaar */
+  function goed(combo = 0) {
+    const f = 523.25 * Math.pow(2, Math.min(combo, 10) / 12);
+    toon([f, f * 1.26], .12, "triangle", .13);
+    tril(14);
+  }
+  const fout = () => { toon([190, 128], .17, "sawtooth", .10); tril([28, 45, 28]); };
+  const bijna = () => { toon([440, 466], .14, "sine", .12); tril(18); };
+  const rangop = () => { toon([523, 659, 784, 1046.5], .17, "triangle", .15); tril([20, 50, 20, 80]); };
+  const klaar = pct => pct >= .8 ? toon([659, 784, 988, 1318], .19, "triangle", .14)
+    : toon([523, 659], .18, "triangle", .12);
+
+  function laag() {
+    let l = document.getElementById("fxlaag");
+    if (!l) { l = document.createElement("div"); l.id = "fxlaag"; document.body.appendChild(l); }
+    return l;
+  }
+
+  const KLEUREN = ["#6EE7A0", "#FFC53D", "#7DD8E8", "#FF8A3D", "#B98CFF", "#22C46E"];
+
+  /* confetti-uitbarsting rond een punt (of het scherm bij een volle ronde) */
+  function knal(x, y, aantal = 26, spreiding = 170) {
+    const l = laag();
+    for (let i = 0; i < aantal; i++) {
+      const d = document.createElement("i");
+      d.className = "snipper";
+      d.style.background = KLEUREN[i % KLEUREN.length];
+      d.style.left = x + "px"; d.style.top = y + "px";
+      l.appendChild(d);
+      const hoek = (Math.PI * 2 * i) / aantal + Math.random() * .6;
+      const kracht = spreiding * (.45 + Math.random() * .75);
+      const dx = Math.cos(hoek) * kracht;
+      const dy = Math.sin(hoek) * kracht - 90;
+      d.animate([
+        { transform: "translate(0,0) rotate(0deg)", opacity: 1 },
+        { transform: `translate(${dx}px,${dy + 150}px) rotate(${Math.random() * 720 - 360}deg)`,
+          opacity: 0 }
+      ], { duration: 900 + Math.random() * 500, easing: "cubic-bezier(.2,.7,.4,1)" })
+        .onfinish = () => d.remove();
+    }
+  }
+
+  function regen() {              /* volle ronde: confetti van bovenaf */
+    const l = laag(), b = innerWidth;
+    for (let i = 0; i < 60; i++) {
+      const d = document.createElement("i");
+      d.className = "snipper";
+      d.style.background = KLEUREN[i % KLEUREN.length];
+      d.style.left = Math.random() * b + "px"; d.style.top = "-20px";
+      l.appendChild(d);
+      d.animate([
+        { transform: "translateY(0) rotate(0deg)", opacity: 1 },
+        { transform: `translateY(${innerHeight + 60}px) rotate(${Math.random() * 900}deg)`,
+          opacity: .85 }
+      ], { duration: 1600 + Math.random() * 1400, delay: Math.random() * 600,
+           easing: "cubic-bezier(.3,.5,.6,1)" }).onfinish = () => d.remove();
+    }
+  }
+
+  function xppop(punten, x, y) {
+    if (!punten) return;
+    const d = document.createElement("div");
+    d.className = "xppop"; d.textContent = "+" + punten + " XP";
+    d.style.left = x + "px"; d.style.top = y + "px";
+    document.body.appendChild(d);
+    d.animate([{ transform: "translate(-50%,0) scale(.6)", opacity: 0 },
+               { transform: "translate(-50%,-26px) scale(1.15)", opacity: 1, offset: .28 },
+               { transform: "translate(-50%,-86px) scale(1)", opacity: 0 }],
+      { duration: 1050, easing: "cubic-bezier(.2,.8,.3,1)" }).onfinish = () => d.remove();
+  }
+
+  function flits(soort) {
+    let f = document.getElementById("flits");
+    if (!f) { f = document.createElement("div"); f.id = "flits"; document.body.appendChild(f); }
+    f.className = ""; void f.offsetWidth; f.className = soort;
+  }
+
+  const RANGEMOJI = ["🌱", "🧤", "🪴", "🌳", "🏆", "👑"];
+  function vierRang(naam, index) {
+    rangop();
+    const o = document.createElement("div");
+    o.id = "rangop";
+    o.innerHTML = `<div class="doos"><span class="em">${RANGEMOJI[index] || "🏆"}</span>
+      <div class="klein" style="letter-spacing:.14em;text-transform:uppercase;font-weight:800">
+        Nieuwe rang</div><h2>${naam}</h2>
+      <button class="knop" style="margin-top:14px">Verder spelen</button></div>`;
+    document.body.appendChild(o);
+    regen();
+    const weg = () => o.remove();
+    o.querySelector("button").onclick = weg;
+    o.onclick = e => { if (e.target === o) weg(); };
+    setTimeout(weg, 4200);
+  }
+
+  return { goed, fout, bijna, klaar, knal, regen, xppop, flits, vierRang, toon,
+           klik: () => toon([740], .05, "square", .05) };
+})();
+
+/* middelpunt van een element, voor confetti en zwevende punten */
+function midden(el) {
+  if (!el) return { x: innerWidth / 2, y: innerHeight / 2 };
+  const r = el.getBoundingClientRect();
+  return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+}
+
+/* ═══════════ beplanting in de achtergrond ═══════════
+   Silhouetten van varens, grassen, bladeren en schermbloemen in de lege ruimtes.
+   Alles als SVG ter plekke getekend — geen afbeeldingen, dus geen laadtijd. */
+function tekenTuin() {
+  const varen = () => {
+    let d = '<path class="stam" d="M60 316 C57 224 57 118 60 10"/>';
+    for (let i = 0; i < 14; i++) {
+      const t = i / 13, y = 302 - t * 284;
+      const len = 10 + Math.sin(t * Math.PI) * 38;      /* breedst in het midden */
+      const dik = 5 + Math.sin(t * Math.PI) * 8;
+      const x = len / 1.7;
+      d += `<ellipse cx="${(60 - x).toFixed(1)}" cy="${y.toFixed(1)}" rx="${(len / 2).toFixed(1)}"
+            ry="${(dik / 2).toFixed(1)}" transform="rotate(-30 ${(60 - x).toFixed(1)} ${y.toFixed(1)})"/>`;
+      d += `<ellipse cx="${(60 + x).toFixed(1)}" cy="${y.toFixed(1)}" rx="${(len / 2).toFixed(1)}"
+            ry="${(dik / 2).toFixed(1)}" transform="rotate(30 ${(60 + x).toFixed(1)} ${y.toFixed(1)})"/>`;
+    }
+    return `<svg class="pl varen" viewBox="0 0 120 320">${d}</svg>`;
+  };
+
+  const gras = `<svg class="pl gras" viewBox="0 0 170 230">
+    <path d="M85 226 C74 158 56 100 22 44"/><path d="M85 226 C82 156 76 92 62 22"/>
+    <path d="M85 226 C92 156 103 98 130 42"/><path d="M85 226 C94 160 113 116 156 76"/>
+    <path d="M85 226 C78 164 64 124 38 92"/><path d="M85 226 C90 168 100 140 122 118"/></svg>`;
+
+  const blad = `<svg class="pl blad" viewBox="0 0 120 212">
+    <path d="M60 4 C99 47 109 131 60 207 C11 131 21 47 60 4Z"/>
+    <path class="nerf" d="M60 20 L60 194 M60 62 L89 44 M60 62 L31 44 M60 102 L95 86
+      M60 102 L25 86 M60 142 L87 130 M60 142 L33 130"/></svg>`;
+
+  const scherm = () => {                                 /* schermbloem, type Allium */
+    let d = '<path class="stam" d="M85 228 L85 128"/>';
+    for (let i = 0; i < 16; i++) {
+      const h = Math.PI * (i / 15) - Math.PI / 2;
+      const x = 85 + Math.sin(h) * 62, y = 128 - Math.cos(h) * 58;
+      d += `<path class="straal" d="M85 128 L${x.toFixed(1)} ${y.toFixed(1)}"/>`;
+      d += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="7"/>`;
+    }
+    return `<svg class="pl scherm" viewBox="0 0 170 240">${d}</svg>`;
+  };
+
+  const l = document.createElement("div");
+  l.id = "tuin";
+  l.setAttribute("aria-hidden", "true");
+  l.innerHTML =
+    `<div class="p p1">${varen()}</div>` +
+    `<div class="p p2">${gras}</div>` +
+    `<div class="p p3">${blad}</div>` +
+    `<div class="p p4">${varen()}</div>` +
+    `<div class="p p5">${scherm()}</div>` +
+    `<div class="p p6">${gras}</div>`;
+  document.body.appendChild(l);
+}
+tekenTuin();
+
+/* ═══════════ start ═══════════ */
+if (!window.FOTOS) window.FOTOS = {};
+telAfgekeurd();
+geluidKnopBij();
+tekenHome();
+toon("home");
+</script>
