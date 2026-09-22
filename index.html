@@ -340,6 +340,27 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
   .uitslag .score{font-size:52px}
 }
 
+/* ───────── plusknop voor de bladfoto ───────── */
+.bladknop{position:absolute;right:11px;bottom:11px;width:44px;height:44px;border-radius:50%;
+  border:1px solid rgba(110,231,160,.45);background:rgba(6,18,12,.72);color:var(--limoen);
+  font-size:26px;font-weight:300;line-height:1;cursor:pointer;display:grid;place-items:center;
+  backdrop-filter:blur(6px);transition:transform .15s,background .15s;z-index:3}
+.bladknop:hover{transform:scale(1.12);background:rgba(34,196,110,.3)}
+.bladknop:active{transform:scale(.95)}
+.bladknop::after{content:"";position:absolute;inset:-6px;border-radius:50%;
+  border:1px solid rgba(110,231,160,.25);animation:bladpols 2.6s ease-out infinite}
+@keyframes bladpols{0%{transform:scale(.85);opacity:.9}70%,100%{transform:scale(1.3);opacity:0}}
+
+#bladvenster{position:fixed;inset:0;z-index:97;display:grid;place-items:center;padding:18px;
+  background:rgba(4,9,7,.88);backdrop-filter:blur(8px)}
+#bladvenster .doos{max-width:640px;width:100%;animation:inzoom .3s cubic-bezier(.2,.9,.3,1.1)}
+#bladvenster img{width:100%;max-height:72vh;object-fit:contain;border-radius:14px;
+  background:rgba(255,255,255,.05);border:1px solid var(--lijn)}
+#bladvenster .kop{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+#bladvenster .kop b{font-size:15px;color:var(--limoen);letter-spacing:.04em;
+  text-transform:uppercase}
+#bladvenster .kop .sluit{margin-left:auto}
+
 /* ───────── geslachten kiezen ───────── */
 .groepen{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:9px}
 .grp{border:1px solid var(--lijn);border-radius:13px;padding:11px 9px;background:var(--paneel);
@@ -589,6 +610,7 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
 <script src="geslachtdata2.js"></script>
 <script src="soortdata2.js"></script>
 <script src="fotos2.js"></script>
+<script src="bladfotos.js"></script>
 <script>
 "use strict";
 const $ = s => document.querySelector(s);
@@ -678,6 +700,55 @@ const FOTOVAK = { habitus: "Habitus", blad: "Blad", bloem: "Bloem / vrucht",
 function fotosVan(id) {
   return (ALLEFOTOS[id] || []).filter(f => !S.afgekeurd.includes(f.bestand));
 }
+/* Bladfoto's staan apart: één duidelijk bladbeeld van de soort zelf,
+   op te roepen met de plusknop rechtsonder in de foto. */
+const BLAD = typeof BLADFOTOS !== "undefined" ? BLADFOTOS : {};
+const heeftBlad = id => !!BLAD[id];
+
+function fotoBlok(plantId, f, stijl) {
+  const ex = stijl ? ` style="${stijl}"` : "";
+  if (!f) return `<div class="fotowrap"><div class="foto"${ex}></div></div>`;
+  return `<div class="fotowrap">
+    <img class="foto" src="${f.bestand}" alt=""${ex}>
+    <span class="fotolabel">${FOTOVAK[f.soort_foto] || ""}</span>
+    ${heeftBlad(plantId) ? `<button class="bladknop" data-blad="${plantId}"
+      title="Bekijk het blad van deze plant" aria-label="Bekijk het blad">+</button>` : ""}
+  </div>`;
+}
+
+/* Toont alleen het blad, zonder naam: het is een hulpmiddel om te kijken,
+   geen antwoord. */
+function toonBlad(plantId) {
+  const b = BLAD[plantId];
+  if (!b) return;
+  const o = document.createElement("div");
+  o.id = "bladvenster";
+  o.innerHTML = `<div class="doos">
+      <div class="kop"><b>Het blad</b>
+        <button class="sluit" aria-label="Sluiten">&times;</button></div>
+      <img src="${b.bestand}" alt="Blad van deze plant">
+      <div class="klein" style="margin-top:9px">Kijk naar de vorm, de rand, de nervatuur
+        en de stand. Foto: ${b.auteur} (${b.licentie})</div>
+    </div>`;
+  document.body.appendChild(o);
+  const weg = () => o.remove();
+  o.querySelector(".sluit").onclick = weg;
+  o.onclick = e => { if (e.target === o) weg(); };
+  document.addEventListener("keydown", function esc(e) {
+    if (e.key === "Escape") { weg(); document.removeEventListener("keydown", esc); }
+  });
+}
+
+/* één afhandeling voor alle plusknoppen, ook die later worden bijgetekend */
+document.addEventListener("click", e => {
+  const k = e.target.closest("[data-blad]");
+  if (!k) return;
+  e.preventDefault();
+  stopAuto();
+  FX.klik();
+  toonBlad(k.dataset.blad);
+});
+
 const vorigeFoto = {};        /* per plant het laatst getoonde beeld */
 function foto(id, vakken) {
   const alle = fotosVan(id);
@@ -1081,11 +1152,8 @@ function toonTerug(plant, juist, extra) {
 function vraagLeren() {
   const p = kiesPlant(spel.gedaan, heeftFoto); spel.gedaan.push(p.id);
   const f = foto(p.id);
-  $("#spelInhoud").innerHTML = `
-    <div class="fotowrap">${f ? `<img class="foto" src="${f.bestand}" alt="">
-      <span class="fotolabel">${FOTOVAK[f.soort_foto] || ""}</span>` :
-      `<div class="foto"></div>`}</div>
-    <p class="vraag">Welke plant is dit?</p>
+  $("#spelInhoud").innerHTML = fotoBlok(p.id, f) +
+    `<p class="vraag">Welke plant is dit?</p>
     <button class="knop vol" id="draai">Toon het antwoord</button>`;
   $("#draai").onclick = () => {
     $("#spelInhoud").insertAdjacentHTML("beforeend", `
@@ -1121,8 +1189,7 @@ function herkenVraag(niv) {
       : niv === 3 ? null
         : ["blad", "winter", "detail", "extra1", "extra2", "extra3"];  /* alleen details */
   const f = foto(p.id, vakken);
-  const fotoHtml = `<div class="fotowrap">${f ? `<img class="foto" src="${f.bestand}" alt="">
-    <span class="fotolabel">${FOTOVAK[f.soort_foto] || ""}</span>` : `<div class="foto"></div>`}</div>`;
+  const fotoHtml = fotoBlok(p.id, f);
 
   if (niv <= 2) {
     const opties = schud([p, ...afleiders(p, 3, niv === 2)]);
@@ -1296,10 +1363,8 @@ function vraagRace() {
   spel.gedaan.push(p.id);
   const f = foto(p.id, ["habitus", "bloem", "blad"]);
   const opties = schud([p, ...afleiders(p, 3, true)]);
-  $("#spelInhoud").innerHTML = `<div class="fotowrap">${f ?
-    `<img class="foto" src="${f.bestand}" alt="" style="aspect-ratio:16/9">` :
-    `<div class="foto" style="aspect-ratio:16/9"></div>`}</div>
-    <div class="opties" style="margin-top:12px">${opties.map(o =>
+  $("#spelInhoud").innerHTML = fotoBlok(p.id, f, "aspect-ratio:16/9") +
+    `<div class="opties" style="margin-top:12px">${opties.map(o =>
       `<button class="optie wetens" data-id="${o.id}">${volnaam(o)}</button>`).join("")}</div>`;
   $$(".optie").forEach(b => b.onclick = () => {
     const juist = b.dataset.id === p.id;
@@ -1399,7 +1464,9 @@ function opentFiche(id) {
     style="font-style:normal">${p.nl} · ${p.familie}</div>`;
   $("#dlgBody").innerHTML = `
     ${fs.length ? `<div class="galerij">${fs.map(f =>
-    `<img src="${f.bestand}" alt="${FOTOVAK[f.soort_foto]}" title="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})">`).join("")}</div>
+    `<img src="${f.bestand}" alt="${FOTOVAK[f.soort_foto]}" title="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})">`).join("")
+    + (heeftBlad(p.id) ? `<img src="${BLAD[p.id].bestand}" alt="Blad"
+        title="Blad — foto: ${BLAD[p.id].auteur} (${BLAD[p.id].licentie})">` : "")}</div>
       <div class="klein" style="margin:-8px 0 12px">${fs.map(f => FOTOVAK[f.soort_foto] || "Detail").join(" · ")}</div>` : ""}
     <dl class="kv">
       <dt>Standplaats</dt><dd>${p.standplaats}</dd>
