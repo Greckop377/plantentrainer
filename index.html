@@ -340,6 +340,31 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
   .uitslag .score{font-size:52px}
 }
 
+/* ───────── geslachten kiezen ───────── */
+.groepen{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:9px}
+.grp{border:1px solid var(--lijn);border-radius:13px;padding:11px 9px;background:var(--paneel);
+  cursor:pointer;font:inherit;color:inherit;text-align:center;transition:.15s}
+.grp:hover{border-color:var(--lijn2);transform:translateY(-2px)}
+.grp b{display:block;font-style:italic;font-size:14px;font-weight:700}
+.grp span{font-size:11px;color:var(--zacht)}
+.grp[aria-pressed="true"]{border-color:var(--limoen);color:var(--limoen);
+  background:linear-gradient(140deg,rgba(34,196,110,.22),rgba(34,196,110,.05));
+  box-shadow:0 0 0 1px var(--limoen),0 8px 22px rgba(34,196,110,.2)}
+.grp[aria-pressed="true"] span{color:var(--limoen);opacity:.8}
+.grp.alles{grid-column:1/-1;font-style:normal}
+
+/* ───────── infovak van het geslacht ───────── */
+.gesl{margin-top:14px;padding:16px 17px;border-radius:15px;
+  background:linear-gradient(140deg,rgba(125,216,232,.13),rgba(125,216,232,.04));
+  border:1px solid rgba(125,216,232,.32)}
+.gesl h4{margin:0 0 3px;font-size:12px;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--ijs);font-family:system-ui,sans-serif;font-weight:800}
+.gesl .naam{font-family:Georgia,serif;font-style:italic;font-size:19px;margin-bottom:2px}
+.gesl .brug{font-size:13.5px;color:var(--ijs);margin:8px 0 12px;font-style:italic}
+.gesl ul{margin:6px 0 0;padding-left:18px}
+.gesl li{font-size:14px;line-height:1.55;margin-bottom:6px}
+.gesl .kop2{margin-top:13px}
+
 /* ───────── beplanting in de achtergrond ───────── */
 #tuin{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
 #tuin::after{content:"";position:absolute;left:0;right:0;bottom:0;height:36vh;
@@ -427,6 +452,11 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
     <div class="stat"><b id="stLeren">0</b><span>bezig</span></div>
     <div class="stat"><b id="stNieuw">0</b><span>nieuw</span></div>
   </div>
+
+  <div class="titelrij"><h2>Waarop oefen je?</h2>
+    <span class="klein" id="groepTel"></span></div>
+  <div class="groepen" id="groepen"></div>
+  <p class="klein" id="groepUitleg" style="margin:10px 2px 0"></p>
 
   <div class="titelrij"><h2>Kies een spel</h2></div>
   <div class="modi" id="modi"></div>
@@ -554,9 +584,43 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
 
 <script src="data.js"></script>
 <script src="fotos.js"></script>
+<script src="geslachtdata.js"></script>
+<script src="soortdata.js"></script>
+<script src="fotos2.js"></script>
 <script>
 "use strict";
 const $ = s => document.querySelector(s);
+
+/* De geslachtsoorten hebben een compactere vorm dan de pilotplanten.
+   Hier maken we er één lijst van, zodat de spelmotor niets hoeft te weten
+   van het verschil. Familie volgt uit het geslacht. */
+const erSoortdata = typeof SOORTDATA !== "undefined";
+const erGeslachtdata = typeof GESLACHTDATA !== "undefined";
+if (erSoortdata && erGeslachtdata) {
+  const bestaand = new Map(PLANTEN.map(p => [p.id, p]));
+  SOORTDATA.forEach(p => {
+    const gd = GESLACHTDATA[p.g] || {};
+    const al = bestaand.get(p.id);
+    if (al) {
+      // vijf planten zaten al in de pilot. Die houden hun rijkere gegevens
+      // (ecologie, cultivars) en krijgen er alleen het onderscheid bij.
+      al.onderscheid = p.onderscheid;
+      return;
+    }
+    PLANTEN.push({
+      id: p.id, familie: gd.familie || "?", geslacht: p.g, soort: p.s, nl: p.nl,
+      groep: p.groeivorm, standplaats: p.standplaats, water: p.water,
+      hoogte: p.hoogte, breedte: p.breedte, blad: p.blad, bloeitijd: p.bloeitijd,
+      bloeikleur: p.bloeikleur, groeivorm: p.groeivorm, groei: p.groei,
+      gebruik: p.gebruik, kenmerk5: p.onderscheid, onderscheid: p.onderscheid,
+      weetje: p.weetje, cultivars: [], ecologie: "", giftig: false
+    });
+  });
+}
+/* Twee fotobestanden: de pilot en de geslachten. Samenvoegen tot één opzoeklijst. */
+const ALLEFOTOS = Object.assign({},
+  typeof FOTOS !== "undefined" ? FOTOS : {},
+  typeof FOTOS2 !== "undefined" ? FOTOS2 : {});
 const $$ = s => [...document.querySelectorAll(s)];
 const DAG = 864e5;
 const vandaag = () => new Date().toISOString().slice(0, 10);
@@ -565,7 +629,8 @@ const vandaag = () => new Date().toISOString().slice(0, 10);
 const SLEUTEL = "plantentrainer.v1";
 const leegState = () => ({
   planten: {}, xp: 0, streak: 0, laatsteDag: null,
-  records: { race: 0, combo: 0 }, historiek: {}, afgekeurd: [], srs: true, geluid: true
+  records: { race: 0, combo: 0 }, historiek: {}, afgekeurd: [], recent: [],
+  groepen: [], srs: true, geluid: true
 });
 let S = leegState();
 try {
@@ -598,16 +663,24 @@ const rangVan = xp => { let r = RANGEN[0], i = 0; RANGEN.forEach((x, k) => { if 
 
 /* ═══════════ foto's ═══════════ */
 const FOTOVAK = { habitus: "Habitus", blad: "Blad", bloem: "Bloem / vrucht",
-  winter: "Schors / knop", extra1: "Detail", extra2: "Detail", extra3: "Detail" };
+  winter: "Schors / knop", extra1: "Detail", extra2: "Detail", extra3: "Detail",
+  plant: "De hele plant", detail: "Detail" };
 function fotosVan(id) {
-  return (window.FOTOS && FOTOS[id] || []).filter(f => !S.afgekeurd.includes(f.bestand));
+  return (ALLEFOTOS[id] || []).filter(f => !S.afgekeurd.includes(f.bestand));
 }
+const vorigeFoto = {};        /* per plant het laatst getoonde beeld */
 function foto(id, vakken) {
   const alle = fotosVan(id);
   if (!alle.length) return null;
   const pas = vakken ? alle.filter(f => vakken.includes(f.soort_foto)) : alle;
-  const kies = pas.length ? pas : alle;
-  return kies[Math.floor(Math.random() * kies.length)];
+  let kies = pas.length ? pas : alle;
+  if (kies.length > 1) {                       // zelfde plant, ander beeld
+    const anders = kies.filter(f => f.bestand !== vorigeFoto[id]);
+    if (anders.length) kies = anders;
+  }
+  const f = kies[Math.floor(Math.random() * kies.length)];
+  vorigeFoto[id] = f.bestand;
+  return f;
 }
 
 /* ═══════════ tekst ═══════════ */
@@ -648,24 +721,60 @@ function schud(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { cons
 const heeftFoto = id => fotosVan(id).length > 0;
 
 /* `eis` filtert vooraf: fotomodi mogen geen plant zonder beeldmateriaal trekken */
+/* Hoe vaak een plant aan de beurt hoort te komen. Hoger = vaker.
+   Geen vaste bakjes meer: elke plant maakt kans, alleen niet even veel. */
+function gewicht(p) {
+  const st = S.planten[p.id];
+  if (!st || (!st.goed && !st.fout)) return 10;          // nog nooit gezien
+  if (st.reeks === 0 && st.fout) return 11;              // laatste keer fout
+  if (st.due <= Date.now()) return 7;                    // toe aan herhaling
+  const n = niveauVan(p.id);
+  return n >= 3 ? 1 : n === 2 ? 2.5 : 4;                 // gekend = minder vaak
+}
+
+/* De laatst getoonde planten worden sterk gedempt, ook over rondes heen.
+   Zonder dit blijf je dezelfde handvol planten zien. */
+function onthoudRecent(id) {
+  S.recent = [id, ...(S.recent || []).filter(x => x !== id)].slice(0, 12);
+}
+
+/* Geen geslachten aangeduid? Dan oefen je op alles. */
+function actievePlanten() {
+  const g = S.groepen || [];
+  if (!g.length) return PLANTEN;
+  const uit = PLANTEN.filter(p => g.includes(p.geslacht));
+  return uit.length ? uit : PLANTEN;
+}
+
 function kiesPlant(uitsluiten = [], eis = null) {
-  const toegestaan = eis ? PLANTEN.filter(p => eis(p.id)) : PLANTEN;
-  const basis = toegestaan.length ? toegestaan : PLANTEN;
+  const bron = actievePlanten();
+  const toegestaan = eis ? bron.filter(p => eis(p.id)) : bron;
+  const basis = toegestaan.length ? toegestaan : bron;
   const vrij = basis.filter(p => !uitsluiten.includes(p.id));
   const pool = vrij.length ? vrij : basis;
-  if (!S.srs) return pool[Math.floor(Math.random() * pool.length)];
-  const nu = Date.now();
-  const verschuldigd = pool.filter(p => S.planten[p.id] && S.planten[p.id].due <= nu && S.planten[p.id].interval > 0);
-  const nieuw = pool.filter(p => !S.planten[p.id]);
-  const fout = pool.filter(p => S.planten[p.id] && S.planten[p.id].reeks === 0 && S.planten[p.id].fout);
-  const bak = fout.length && Math.random() < .45 ? fout
-    : verschuldigd.length ? verschuldigd
-      : nieuw.length ? nieuw : pool;
-  return bak[Math.floor(Math.random() * bak.length)];
+
+  const recent = S.recent || [];
+  const wegingen = pool.map(p => {
+    let g = S.srs ? gewicht(p) : 4;
+    const i = recent.indexOf(p.id);
+    if (i >= 0) g *= 0.06 + 0.08 * i;    // net gehad = bijna uitgesloten,
+    return Math.max(g, 0.02);            // langer geleden = weer normaal
+  });
+
+  const som = wegingen.reduce((a, b) => a + b, 0);
+  let r = Math.random() * som, k = 0;
+  while (k < wegingen.length - 1 && r > wegingen[k]) { r -= wegingen[k]; k++; }
+  const gekozen = pool[k];
+  onthoudRecent(gekozen.id);
+  return gekozen;
 }
 
 function afleiders(doel, n, zelfdeFamilie) {
-  let bron = PLANTEN.filter(p => p.id !== doel.id);
+  const pool = actievePlanten();
+  // binnen één geslacht zijn de soortgenoten juist de leerzame afleiders
+  const zelfdeGeslacht = pool.filter(p => p.geslacht === doel.geslacht && p.id !== doel.id);
+  let bron = (zelfdeGeslacht.length >= n ? zelfdeGeslacht : pool)
+    .filter(p => p.id !== doel.id);
   if (zelfdeFamilie) {
     const fam = bron.filter(p => p.familie === doel.familie);
     const gro = bron.filter(p => p.groep === doel.groep && p.familie !== doel.familie);
@@ -736,7 +845,40 @@ const NIVEAUS = [
 ];
 let niveau = +(localStorage.getItem("pt.niveau") || 1);
 
+function tekenGroepen() {
+  const alle = erGeslachtdata ? Object.keys(GESLACHTDATA) : [];
+  if (!alle.length) { $("#groepen").innerHTML = ""; return; }
+  const gekozen = S.groepen || [];
+  $("#groepen").innerHTML =
+    `<button class="grp alles" data-groep="" aria-pressed="${!gekozen.length}">
+       <b>Alle planten</b><span>${PLANTEN.length} soorten</span></button>` +
+    alle.map(g => {
+      const n = PLANTEN.filter(p => p.geslacht === g).length;
+      return `<button class="grp" data-groep="${g}"
+        aria-pressed="${gekozen.includes(g)}"><b>${g}</b><span>${n} soorten</span></button>`;
+    }).join("");
+  $("#groepTel").textContent = gekozen.length
+    ? gekozen.length + (gekozen.length === 1 ? " geslacht" : " geslachten")
+    : "alles";
+  $("#groepUitleg").innerHTML = gekozen.length
+    ? `Je oefent op <b>${actievePlanten().length}</b> soorten uit
+       ${gekozen.map(g => "<i>" + g + "</i>").join(", ")}.
+       Op niveau 1 krijg je er de herkenningspunten van het geslacht bij.`
+    : "Duid een of meer geslachten aan om er gericht op te oefenen. Duid je niets aan, "
+      + "dan komen alle planten aan bod.";
+  $$("[data-groep]").forEach(b => b.onclick = () => {
+    const g = b.dataset.groep;
+    if (!g) S.groepen = [];
+    else {
+      const i = S.groepen.indexOf(g);
+      if (i >= 0) S.groepen.splice(i, 1); else S.groepen.push(g);
+    }
+    bewaar(); FX.klik(); tekenHome();
+  });
+}
+
 function tekenHome() {
+  tekenGroepen();
   const r = rangVan(S.xp);
   $("#rang").textContent = r.naam;
   const volgende = RANGEN[r.index + 1];
@@ -873,6 +1015,23 @@ function antwoord(plant, juist, basis, extra, bron) {
   toonTerug(plant, juist, extra);
 }
 
+/* Herkenningspunten van het geslacht — dit is wat je op niveau 1 te zien
+   krijgt zodra je een of meer geslachten hebt aangeduid. */
+function geslachtBlok(geslachtNaam) {
+  const g = erGeslachtdata ? GESLACHTDATA[geslachtNaam] : null;
+  if (!g) return "";
+  return `<div class="gesl">
+    <h4>Zo herken je het geslacht</h4>
+    <div class="naam">${geslachtNaam}</div>
+    <div class="klein" style="font-style:normal">${g.nl} &middot; ${g.familie}
+      &middot; ${g.omvang}</div>
+    ${g.ezelsbrug ? `<div class="brug">${g.ezelsbrug}</div>` : ""}
+    <ul>${g.herkenning.map(r => `<li>${r}</li>`).join("")}</ul>
+    <h4 class="kop2">Kenmerken van de groep</h4>
+    <ul>${g.kenmerken.map(r => `<li>${r}</li>`).join("")}</ul>
+  </div>`;
+}
+
 function toonTerug(plant, juist, extra) {
   const el = document.createElement("div");
   el.className = "terug " + (juist === "bijna" ? "b" : juist ? "j" : "n");
@@ -881,6 +1040,12 @@ function toonTerug(plant, juist, extra) {
       : juist ? "Juist" : "Niet juist"}</div>
     <b>${volnaam(plant)}</b> <span class="nlnaam">· ${plant.nl} · ${plant.familie}</span>
     ${extra ? `<div style="margin-top:7px">${extra}</div>` : ""}
+    ${plant.onderscheid ? `<div style="margin-top:9px;font-size:14px">
+       <b style="font-style:normal;font-size:12px;text-transform:uppercase;
+       letter-spacing:.06em;color:var(--zacht)">Waaraan je deze soort herkent</b><br>
+       ${plant.onderscheid}</div>` : ""}
+    ${(niveau === 1 && (S.groepen || []).length && spel.modus === "herkennen")
+      ? geslachtBlok(plant.geslacht) : ""}
     <div style="margin-top:9px"><button class="knop" style="min-height:44px;padding:10px 18px"
       id="btnVolgende">Volgende →</button>
       <button class="knop licht" style="min-height:44px;padding:10px 16px"
@@ -940,8 +1105,11 @@ function vraagHerkennen() { herkenVraag(niveau); }
 
 function herkenVraag(niv) {
   const p = kiesPlant(spel.gedaan, heeftFoto); spel.gedaan.push(p.id);
-  const vakken = niv === 1 ? ["habitus"] : niv === 2 ? ["habitus", "bloem"]
-    : niv === 3 ? null : ["blad", "winter"];
+  // "plant" en "detail" horen bij de geslachtsoorten, de rest bij de pilotplanten
+  const vakken = niv === 1 ? ["habitus", "plant"]              /* hele plant */
+    : niv === 2 ? ["habitus", "plant", "bloem", "blad", "detail"]
+      : niv === 3 ? null
+        : ["blad", "winter", "detail", "extra1", "extra2", "extra3"];  /* alleen details */
   const f = foto(p.id, vakken);
   const fotoHtml = `<div class="fotowrap">${f ? `<img class="foto" src="${f.bestand}" alt="">
     <span class="fotolabel">${FOTOVAK[f.soort_foto] || ""}</span>` : `<div class="foto"></div>`}</div>`;
@@ -1417,7 +1585,7 @@ $("#btnKeuren").onclick = () => {
   $("#dlgTitel").innerHTML = `Foto's keuren<div class="klein" style="font-style:normal">
     Klik een foto weg die niet klopt of onduidelijk is.</div>`;
   $("#dlgBody").innerHTML = PLANTEN.map(p => {
-    const fs = (window.FOTOS && FOTOS[p.id]) || [];
+    const fs = ALLEFOTOS[p.id] || [];
     if (!fs.length) return "";
     return `<div style="margin-bottom:16px"><div class="wetens"
       style="font-size:14.5px;margin-bottom:6px">${volnaam(p)}</div>
@@ -1637,7 +1805,6 @@ function tekenTuin() {
 tekenTuin();
 
 /* ═══════════ start ═══════════ */
-if (!window.FOTOS) window.FOTOS = {};
 telAfgekeurd();
 geluidKnopBij();
 tekenHome();
