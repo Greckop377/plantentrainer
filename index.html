@@ -586,6 +586,8 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
 <script src="fotos.js"></script>
 <script src="geslachtdata.js"></script>
 <script src="soortdata.js"></script>
+<script src="geslachtdata2.js"></script>
+<script src="soortdata2.js"></script>
 <script src="fotos2.js"></script>
 <script>
 "use strict";
@@ -594,12 +596,20 @@ const $ = s => document.querySelector(s);
 /* De geslachtsoorten hebben een compactere vorm dan de pilotplanten.
    Hier maken we er één lijst van, zodat de spelmotor niets hoeft te weten
    van het verschil. Familie volgt uit het geslacht. */
-const erSoortdata = typeof SOORTDATA !== "undefined";
-const erGeslachtdata = typeof GESLACHTDATA !== "undefined";
-if (erSoortdata && erGeslachtdata) {
+/* Alle geslachtprofielen in één lijst; elke nieuwe reeks komt er gewoon bij. */
+const GESL = Object.assign({},
+  typeof GESLACHTDATA !== "undefined" ? GESLACHTDATA : {},
+  typeof GESLACHTDATA2 !== "undefined" ? GESLACHTDATA2 : {});
+const erGeslachtdata = Object.keys(GESL).length > 0;
+
+const REEKSEN = [
+  typeof SOORTDATA !== "undefined" ? SOORTDATA : [],
+  typeof SOORTDATA2 !== "undefined" ? SOORTDATA2 : []
+];
+REEKSEN.forEach(reeks => {
   const bestaand = new Map(PLANTEN.map(p => [p.id, p]));
-  SOORTDATA.forEach(p => {
-    const gd = GESLACHTDATA[p.g] || {};
+  reeks.forEach(p => {
+    const gd = GESL[p.g] || {};
     const al = bestaand.get(p.id);
     if (al) {
       // vijf planten zaten al in de pilot. Die houden hun rijkere gegevens
@@ -616,7 +626,7 @@ if (erSoortdata && erGeslachtdata) {
       weetje: p.weetje, cultivars: [], ecologie: "", giftig: false
     });
   });
-}
+});
 /* Twee fotobestanden: de pilot en de geslachten. Samenvoegen tot één opzoeklijst. */
 const ALLEFOTOS = Object.assign({},
   typeof FOTOS !== "undefined" ? FOTOS : {},
@@ -846,7 +856,7 @@ const NIVEAUS = [
 let niveau = +(localStorage.getItem("pt.niveau") || 1);
 
 function tekenGroepen() {
-  const alle = erGeslachtdata ? Object.keys(GESLACHTDATA) : [];
+  const alle = erGeslachtdata ? Object.keys(GESL) : [];
   if (!alle.length) { $("#groepen").innerHTML = ""; return; }
   const gekozen = S.groepen || [];
   $("#groepen").innerHTML =
@@ -1018,7 +1028,7 @@ function antwoord(plant, juist, basis, extra, bron) {
 /* Herkenningspunten van het geslacht — dit is wat je op niveau 1 te zien
    krijgt zodra je een of meer geslachten hebt aangeduid. */
 function geslachtBlok(geslachtNaam) {
-  const g = erGeslachtdata ? GESLACHTDATA[geslachtNaam] : null;
+  const g = erGeslachtdata ? GESL[geslachtNaam] : null;
   if (!g) return "";
   return `<div class="gesl">
     <h4>Zo herken je het geslacht</h4>
