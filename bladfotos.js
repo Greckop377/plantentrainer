@@ -270,6 +270,12 @@ const BLADFOTOS = {
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3ARuhland%2C_Grenzstr._3%2C_Runzelbl%C3%A4ttriger_Schneeball_am_hinteren_Gartenzaun%2C_Bl%C3%A4tter_am_Zweig%2C_Oberseite%2C_Fr%C3%BChling%2C_01.jpg"
  },
+ "viburnum-carlesii": {
+  "bestand": "fotos/viburnum-carlesii-bladfoto.jpg",
+  "auteur": "Cossey25",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AKoreanspice_Viburnum_Viburnum_carlesii_leaf_fall_03.jpg"
+ },
  "viburnum-lantana": {
   "bestand": "fotos/viburnum-lantana-bladfoto.jpg",
   "auteur": "AnRo0002",
@@ -696,11 +702,23 @@ const BLADFOTOS = {
   "licentie": "CC BY 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3AIlex_crenata_var._convexa-IMG_20161222_075850.jpg"
  },
+ "ilex-x-meserveae": {
+  "bestand": "fotos/ilex-x-meserveae-bladfoto.jpg",
+  "auteur": "Famartin",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3A2014-12-26_11_34_28_Blue_Holly_leaves_and_fruit_on_Olden_Avenue_in_Ewing%2C_New_Jersey.JPG"
+ },
  "ilex-verticillata": {
   "bestand": "fotos/ilex-verticillata-bladfoto.jpg",
   "auteur": "Ayotte, Gilles, 1948-",
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3AIlex_verticillata_15-p.bot-ilex.verti-03.jpg"
+ },
+ "ilex-x-altaclerensis": {
+  "bestand": "fotos/ilex-x-altaclerensis-bladfoto.jpg",
+  "auteur": "AnRo0002",
+  "licentie": "CC0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3A20190307Ilex_aquifolium2.jpg"
  },
  "ilex-cornuta": {
   "bestand": "fotos/ilex-cornuta-bladfoto.jpg",
@@ -708,11 +726,29 @@ const BLADFOTOS = {
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3AIlex_cornuta_Needlepoint_1zz.jpg"
  },
+ "ilex-glabra": {
+  "bestand": "fotos/ilex-glabra-bladfoto.jpg",
+  "auteur": "Famartin",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3A2025-12-27_12_29_58_Inkberry_holly_leaves_coated_in_glaze_ice_along_Lochatong_Road_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg"
+ },
+ "ilex-pernyi": {
+  "bestand": "fotos/ilex-pernyi-bladfoto.jpg",
+  "auteur": "Sten Porse",
+  "licentie": "CC BY-SA 3.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AIlex-pernyi-leaves.JPG"
+ },
  "ilex-opaca": {
   "bestand": "fotos/ilex-opaca-bladfoto.jpg",
   "auteur": "Famartin",
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3A2019-04-25_10_28_45_New_leaves_in_spring_on_an_American_Holly_along_Tranquility_Court_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg"
+ },
+ "magnolia-x-soulangeana": {
+  "bestand": "fotos/magnolia-x-soulangeana-bladfoto.jpg",
+  "auteur": "Famartin",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3A2023-05-14_13_30_13_A_Saucer_Magnolia_leafing_out_in_spring_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg"
  },
  "magnolia-grandiflora": {
   "bestand": "fotos/magnolia-grandiflora-bladfoto.jpg",
@@ -725,6 +761,12 @@ const BLADFOTOS = {
   "auteur": "GioRan",
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3AMagnolia_kobus_2023-05-19T10_29_36%2B02_00.jpg"
+ },
+ "magnolia-liliiflora": {
+  "bestand": "fotos/magnolia-liliiflora-bladfoto.jpg",
+  "auteur": "Fanghong",
+  "licentie": "CC BY-SA 3.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AMagnolia_liliiflora_leaves_2.jpg"
  },
  "magnolia-sieboldii": {
   "bestand": "fotos/magnolia-sieboldii-bladfoto.jpg",
@@ -774,6 +816,12 @@ const BLADFOTOS = {
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3A2018-02-04_13_46_52_A_thin_glaze_of_ice_from_freezing_rain_on_White_Pine_needles_along_a_walking_path_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg"
  },
+ "pinus-pinea": {
+  "bestand": "fotos/pinus-pinea-bladfoto.jpg",
+  "auteur": "Dubas from Oviedo, España",
+  "licentie": "CC BY-SA 2.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3APinus_pinea_foliage_Do%C3%B1ana.jpg"
+ },
  "pinus-cembra": {
   "bestand": "fotos/pinus-cembra-bladfoto.jpg",
   "auteur": "Meneerke bloem",
@@ -785,6 +833,18 @@ const BLADFOTOS = {
   "auteur": "Tilo Podner",
   "licentie": "CC BY-SA 3.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3APinusParviflora_Cones.jpg"
+ },
+ "pinus-wallichiana": {
+  "bestand": "fotos/pinus-wallichiana-bladfoto.jpg",
+  "auteur": "Sanu N",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3APinus_wallichiana_Leaves.jpg"
+ },
+ "pinus-heldreichii": {
+  "bestand": "fotos/pinus-heldreichii-bladfoto.jpg",
+  "auteur": "S. Rae from Scotland, UK",
+  "licentie": "CC BY 2.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3APinus_heldriechii_%28Bosnian_Pine%29_-_foliage_-_Flickr_-_S._Rae.jpg"
  },
  "pinus-contorta": {
   "bestand": "fotos/pinus-contorta-bladfoto.jpg",
@@ -822,11 +882,29 @@ const BLADFOTOS = {
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3ALeaf_and_cone_of_Juniperus_chinensis_02.jpg"
  },
+ "juniperus-x-pfitzeriana": {
+  "bestand": "fotos/juniperus-x-pfitzeriana-bladfoto.jpg",
+  "auteur": "cultivar413 from Fallbrook, California",
+  "licentie": "CC BY 2.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3A190909_066_Chicago_Botanic_Gdn_-_Bulb_Gdn%2C_Andropogon_gerardii_%27Blackhawks%27_Purple-leaf_Big_Bluestem_Grass%2C_Juniperus_x_pfitzeriana_%27Pfitzeriana_Ozark%27_Juniper_%2848861103283%29.jpg"
+ },
+ "juniperus-virginiana": {
+  "bestand": "fotos/juniperus-virginiana-bladfoto.jpg",
+  "auteur": "Famartin",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3A2024-10-30_14_15_06_Eastern_Red_Cedar_foliage_near_Wells_Mills_Lake_within_Wells_Mills_Park_in_Ocean_Township%2C_Ocean_County%2C_New_Jersey.jpg"
+ },
  "juniperus-scopulorum": {
   "bestand": "fotos/juniperus-scopulorum-bladfoto.jpg",
   "auteur": "Howard F. Schwartz, Colorado State University, USA",
   "licentie": "CC BY 3.0 us",
   "bron": "https://commons.wikimedia.org/wiki/File%3AJuniperus_scopulorum_adult_foliage.jpg"
+ },
+ "geranium-sanguineum": {
+  "bestand": "fotos/geranium-sanguineum-bladfoto.jpg",
+  "auteur": "Didier Descouens",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3A%28MHNT%29_Geranium_sanguineum_-_Flower_and_leaf_-_Les_Martels%2C_Giroussens_Tarn.jpg"
  },
  "geranium-pratense": {
   "bestand": "fotos/geranium-pratense-bladfoto.jpg",
@@ -840,11 +918,23 @@ const BLADFOTOS = {
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3AGeranium_phaeum_2017-03-16_5857.jpg"
  },
+ "geranium-endressii": {
+  "bestand": "fotos/geranium-endressii-bladfoto.jpg",
+  "auteur": "Magnus Manske",
+  "licentie": "CC BY-SA 3.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AGeranium_endressii_%27Wargrave_Pink%27_%28Garaniaceae%29_leaves.JPG"
+ },
  "geranium-renardii": {
   "bestand": "fotos/geranium-renardii-bladfoto.jpg",
   "auteur": "Rictor Norton  &amp; David Allen from London, United Kingdom",
   "licentie": "CC BY 2.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3AGeranium_renardii.jpg"
+ },
+ "geranium-nodosum": {
+  "bestand": "fotos/geranium-nodosum-bladfoto.jpg",
+  "auteur": "Andrea Moro",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AGeranium_nodosum_leaf_%2801%29.jpg"
  },
  "geranium-sylvaticum": {
   "bestand": "fotos/geranium-sylvaticum-bladfoto.jpg",
@@ -858,11 +948,23 @@ const BLADFOTOS = {
   "licentie": "CC BY-SA 2.0 fr",
   "bron": "https://commons.wikimedia.org/wiki/File%3AClematis_viticella_leaf_%283%29.jpg"
  },
+ "clematis-alpina": {
+  "bestand": "fotos/clematis-alpina-bladfoto.jpg",
+  "auteur": "Alpsdake",
+  "licentie": "CC BY-SA 4.0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AClematis_alpina_ssp._ochotensis_var._fujijamana_%28leaf_s2%29.jpg"
+ },
  "clematis-tangutica": {
   "bestand": "fotos/clematis-tangutica-bladfoto.jpg",
   "auteur": "Rasbak",
   "licentie": "CC BY-SA 3.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3AClematisblad_%28Clematis_tangutica%29.jpg"
+ },
+ "clematis-flammula": {
+  "bestand": "fotos/clematis-flammula-bladfoto.jpg",
+  "auteur": "AnRo0002",
+  "licentie": "CC0",
+  "bron": "https://commons.wikimedia.org/wiki/File%3A20130615Clematis_vitalba1.jpg"
  },
  "clematis-recta": {
   "bestand": "fotos/clematis-recta-bladfoto.jpg",
@@ -876,16 +978,34 @@ const BLADFOTOS = {
   "licentie": "CC BY-SA 4.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3AClematis_integrifolia_sl8.jpg"
  },
+ "carex-oshimensis": {
+  "bestand": "fotos/carex-oshimensis-bladfoto.jpg",
+  "auteur": "Photo (c)2006 Derek Ramsey (Ram-Man)",
+  "licentie": "CC BY-SA 2.5",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AEvergold_Sedge_Carex_oshimensis_%27Evergold%27_Leaves_3008px.JPG"
+ },
  "carex-pendula": {
   "bestand": "fotos/carex-pendula-bladfoto.jpg",
   "auteur": "Thierry PERNOT",
   "licentie": "CC BY-SA 2.0 fr",
   "bron": "https://commons.wikimedia.org/wiki/File%3ACarex_pendula_leaf_%282%29.jpg"
  },
+ "carex-testacea": {
+  "bestand": "fotos/carex-testacea-bladfoto.jpg",
+  "auteur": "Photo (c)2006 Derek Ramsey (Ram-Man)",
+  "licentie": "CC BY-SA 2.5",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AOrange_New_Zealand_Sedge_Carex_testacea_Leaves_2000px.JPG"
+ },
  "carex-elata": {
   "bestand": "fotos/carex-elata-bladfoto.jpg",
   "auteur": "Julia Kruse",
   "licentie": "CC BY-SA 3.0",
   "bron": "https://commons.wikimedia.org/wiki/File%3ACarex_elata_leaf_%2805%29.jpg"
+ },
+ "carex-comans": {
+  "bestand": "fotos/carex-comans-bladfoto.jpg",
+  "auteur": "Forest and Kim Starr",
+  "licentie": "CC BY 3.0 us",
+  "bron": "https://commons.wikimedia.org/wiki/File%3AStarr-120613-9619-Carex_comans-cv_Amazon_Mist_leaves-Home_Depot_Nursery_Kahului-Maui_%2825119135616%29.jpg"
  }
 };
