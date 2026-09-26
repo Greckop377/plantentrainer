@@ -336,7 +336,7 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media(max-width:560px){
   .hero{grid-template-columns:1fr}.ring{display:none}
-  .galerij{grid-template-columns:repeat(2,1fr)}
+  .galerij{grid-template-columns:repeat(4,1fr);gap:5px}
   .uitslag .score{font-size:52px}
 }
 
@@ -590,8 +590,10 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
   <div class="titelrij"><h2>Over de data</h2></div>
   <div class="kaart pad klein">
     <p style="margin-top:0">Wetenschappelijke namen zijn geverifieerd tegen de
-      GBIF-backbone. Foto's komen van Wikimedia Commons en staan onder een vrije licentie;
-      fotograaf en licentie staan bij elke foto op de fiche.</p>
+      GBIF-backbone. Foto's komen van iNaturalist: per plant 8 foto's van verschillende
+      exemplaren, elk door minstens twee mensen exact op deze soort bevestigd, zonder
+      cultivars of variëteiten. Ze staan onder een Creative Commons-licentie; fotograaf en
+      licentie staan bij elke foto op de fiche.</p>
     <p style="margin-bottom:0">Pilotversie met <b id="aantalPlanten">26</b> planten.</p>
   </div>
 </section>
@@ -604,13 +606,11 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
 </dialog>
 
 <script src="data.js"></script>
-<script src="fotos.js"></script>
+<script src="fotos_inat.js"></script>
 <script src="geslachtdata.js"></script>
 <script src="soortdata.js"></script>
 <script src="geslachtdata2.js"></script>
 <script src="soortdata2.js"></script>
-<script src="fotos2.js"></script>
-<script src="bladfotos.js"></script>
 <script>
 "use strict";
 const $ = s => document.querySelector(s);
@@ -649,10 +649,9 @@ REEKSEN.forEach(reeks => {
     });
   });
 });
-/* Twee fotobestanden: de pilot en de geslachten. Samenvoegen tot één opzoeklijst. */
-const ALLEFOTOS = Object.assign({},
-  typeof FOTOS !== "undefined" ? FOTOS : {},
-  typeof FOTOS2 !== "undefined" ? FOTOS2 : {});
+/* Eén fotobestand (iNaturalist): per plant 4x de hele plant, 2x blad, 2x vrucht,
+   elk van een ander exemplaar. */
+const ALLEFOTOS = typeof FOTOS !== "undefined" ? FOTOS : {};
 const $$ = s => [...document.querySelectorAll(s)];
 const DAG = 864e5;
 const vandaag = () => new Date().toISOString().slice(0, 10);
@@ -694,16 +693,16 @@ const RANGEN = [
 const rangVan = xp => { let r = RANGEN[0], i = 0; RANGEN.forEach((x, k) => { if (xp >= x[0]) { r = x; i = k; } }); return { naam: r[1], index: i, vanaf: r[0], tot: (RANGEN[i + 1] || [r[0]])[0] }; };
 
 /* ═══════════ foto's ═══════════ */
-const FOTOVAK = { habitus: "Habitus", blad: "Blad", bloem: "Bloem / vrucht",
-  winter: "Schors / knop", extra1: "Detail", extra2: "Detail", extra3: "Detail",
-  plant: "De hele plant", detail: "Detail" };
+const FOTOVAK = { habitus: "De hele plant", blad: "Blad", vrucht: "Vrucht",
+  bloem: "Bloem" };
 function fotosVan(id) {
   return (ALLEFOTOS[id] || []).filter(f => !S.afgekeurd.includes(f.bestand));
 }
-/* Bladfoto's staan apart: één duidelijk bladbeeld van de soort zelf,
-   op te roepen met de plusknop rechtsonder in de foto. */
-const BLAD = typeof BLADFOTOS !== "undefined" ? BLADFOTOS : {};
-const heeftBlad = id => !!BLAD[id];
+/* De plusknop rechtsonder in de foto toont een bladfoto van dezelfde soort,
+   telkens een ander exemplaar dan de vorige keer. */
+const bladVan = id => fotosVan(id).filter(f => f.soort_foto === "blad");
+const heeftBlad = id => bladVan(id).length > 0;
+const vorigBlad = {};
 
 function fotoBlok(plantId, f, stijl) {
   const ex = stijl ? ` style="${stijl}"` : "";
@@ -719,8 +718,11 @@ function fotoBlok(plantId, f, stijl) {
 /* Toont alleen het blad, zonder naam: het is een hulpmiddel om te kijken,
    geen antwoord. */
 function toonBlad(plantId) {
-  const b = BLAD[plantId];
-  if (!b) return;
+  const alle = bladVan(plantId);
+  if (!alle.length) return;
+  const keuze = alle.length > 1 ? alle.filter(f => f.bestand !== vorigBlad[plantId]) : alle;
+  const b = keuze[Math.floor(Math.random() * keuze.length)];
+  vorigBlad[plantId] = b.bestand;
   const o = document.createElement("div");
   o.id = "bladvenster";
   o.innerHTML = `<div class="doos">
@@ -1183,11 +1185,10 @@ function vraagHerkennen() { herkenVraag(niveau); }
 
 function herkenVraag(niv) {
   const p = kiesPlant(spel.gedaan, heeftFoto); spel.gedaan.push(p.id);
-  // "plant" en "detail" horen bij de geslachtsoorten, de rest bij de pilotplanten
-  const vakken = niv === 1 ? ["habitus", "plant"]              /* hele plant */
-    : niv === 2 ? ["habitus", "plant", "bloem", "blad", "detail"]
+  const vakken = niv === 1 ? ["habitus"]                       /* hele plant */
+    : niv === 2 ? ["habitus", "blad", "vrucht"]
       : niv === 3 ? null
-        : ["blad", "winter", "detail", "extra1", "extra2", "extra3"];  /* alleen details */
+        : ["blad", "vrucht", "bloem"];                           /* alleen details */
   const f = foto(p.id, vakken);
   const fotoHtml = fotoBlok(p.id, f);
 
@@ -1361,7 +1362,7 @@ function vraagKenmerken() {
 function vraagRace() {
   const p = kiesPlant(spel.gedaan.slice(-6), heeftFoto);
   spel.gedaan.push(p.id);
-  const f = foto(p.id, ["habitus", "bloem", "blad"]);
+  const f = foto(p.id, ["habitus", "vrucht", "blad"]);
   const opties = schud([p, ...afleiders(p, 3, true)]);
   $("#spelInhoud").innerHTML = fotoBlok(p.id, f, "aspect-ratio:16/9") +
     `<div class="opties" style="margin-top:12px">${opties.map(o =>
@@ -1464,9 +1465,7 @@ function opentFiche(id) {
     style="font-style:normal">${p.nl} · ${p.familie}</div>`;
   $("#dlgBody").innerHTML = `
     ${fs.length ? `<div class="galerij">${fs.map(f =>
-    `<img src="${f.bestand}" alt="${FOTOVAK[f.soort_foto]}" title="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})">`).join("")
-    + (heeftBlad(p.id) ? `<img src="${BLAD[p.id].bestand}" alt="Blad"
-        title="Blad — foto: ${BLAD[p.id].auteur} (${BLAD[p.id].licentie})">` : "")}</div>
+    `<img src="${f.bestand}" alt="${FOTOVAK[f.soort_foto]}" title="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})">`).join("")}</div>
       <div class="klein" style="margin:-8px 0 12px">${fs.map(f => FOTOVAK[f.soort_foto] || "Detail").join(" · ")}</div>` : ""}
     <dl class="kv">
       <dt>Standplaats</dt><dd>${p.standplaats}</dd>
@@ -1486,7 +1485,7 @@ function opentFiche(id) {
     <div class="klein" style="margin-top:16px;border-top:1px solid var(--lijn);padding-top:10px">
       ${st ? `${NIVNAAM[niveauVan(id)]} · ${st.goed} juist, ${st.fout} fout` : "Nog niet geoefend"}
       ${fs.length ? ` · foto's: ${[...new Set(fs.map(f => f.auteur))].join(", ")} —
-        Wikimedia Commons` : ""}
+        via iNaturalist` : ""}
     </div>`;
   dlg.showModal();
 }
