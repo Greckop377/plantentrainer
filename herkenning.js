@@ -1980,6 +1980,167 @@ const SOORTINFO = {
     "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
    }
   ]
+ },
+ "magnolia-stellata": {
+  "herken": "Meestal een <b>dichte, twijgerige struik</b> (0,3–3 m, in tuinen soms tot 6 m) met zilvergrijze schors en dicht zilverig behaarde knoppen. <b>Vóór het blad</b> (maart–april) bloemen van 5–8 cm met <b>veel (12–18, tot 33) smalle, lintvormige tepalen</b>, wit en buiten vaak roze aangelopen, die slap naar buiten vallen en zo <b>een losse ster</b> vormen. Blad 5–13 cm, elliptisch tot smal omgekeerd eirond.",
+  "verwar": "<i>Magnolia kobus</i>: een boom, met bloemen van <b>6 brede tepalen</b> (plus 3 kleine buitenste). <i>Magnolia × loebneri</i> (kruising van beide): groter, vaak boomvormig, met grotere bloemen (11–15 cm) van 8–30 tepalen.",
+  "weetje": "Groeit in het wild alleen in een klein gebied in centraal Honshu (Japan), rond Nagoya, op vochtige plekken. Bloeit al op jonge leeftijd rijk.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia stellata",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-stellata/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia kobus",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-kobus/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia × loebneri",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-x-loebneri/"
+   }
+  ]
+ },
+ "magnolia-x-soulangeana": {
+  "herken": "Kruisingen van <i>M. denudata</i> × <i>M. liliiflora</i>. Forse struik of kleine, brede boom. <b>Vóór het blad</b> (eind maart–half april) <b>rechtopstaande bloemen met 9 dikke tepalen</b>, tulp-, beker- of 'kop-en-schotel'-vormig, <b>buiten roze tot roodpaars en binnen wit</b> (er zijn ook witte en donkere vormen).",
+  "verwar": "<i>Magnolia denudata</i>: zuiver witte (hooguit aan de voet roze) geurende bloemen op een grote boom. <i>Magnolia liliiflora</i>: kleinere struik met smalle, vaasvormige, purperen bloemen die <b>samen met het blad</b> verschijnen. <i>Magnolia stellata</i>: veel smalle tepalen die een ster vormen.",
+  "weetje": "Voor het eerst herkend uit kruisingen die de Franse officier en tuinier Étienne Soulange-Bodin vanaf 1820 maakte. Eén kloon, 'Étienne Soulange-Bodin', domineert nog altijd de aanplant en wordt meestal gewoon als <i>M. × soulangeana</i> verkocht.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia × soulangeana",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-x-soulangeana/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia denudata",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-denudata/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia liliiflora",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-liliiflora/"
+   }
+  ]
+ },
+ "magnolia-grandiflora": {
+  "herken": "De enige <b>wintergroene</b> magnolia hier: een boom met <b>groot, dik, leerachtig blad</b> (13–20 cm), boven <b>glanzend helder groen</b>, onder kaal tot <b>dicht roestbruin vilt</b>. Het blad staat duidelijk verspreid, niet in kransen aan de takpunt. Twijgen en knoppen dicht rood- of witbehaard. <b>Enorme roomwitte bloemen</b> (15–30 cm) met een sterke <b>citroengeur</b>, die in onze streken in een lange reeks na elkaar opengaan.",
+  "verwar": "Laurierkers (<i>Prunus laurocerasus</i>) heeft ook groot, glanzend wintergroen blad, maar dat is <b>onduidelijk getand</b>, zonder bruin vilt en met twee of meer kliertjes onderaan bij de voet, en hij bloeit met trossen kleine witte bloempjes.",
+  "weetje": "In koudere streken of koele zomers vaak als leiboom tegen een muur geplant; hij verdraagt zware snoei goed. Voor Amerikanen uit het zuiden is hij het symbool van 'the South'.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia grandiflora",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-grandiflora/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus laurocerasus",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-laurocerasus/"
+   }
+  ]
+ },
+ "magnolia-kobus": {
+  "herken": "<b>Boom</b> (tot 20 m), vaak meerstammig en breed vertakt, met zilvergrijze, wrattige schors. Twijgen ruiken <b>naar terpentijn</b> als je ze kneust; knoppen met lange, dichte, zilverige haren. <b>Vóór het blad</b> geurende, horizontaal gehouden witte bloemen met <b>6 grote tepalen</b> en <b>3 kleine, groen- of bruinwitte buitenste</b>. Blad omgekeerd eirond, plots kort toegespitst, met een <b>golvende rand</b>. Rode vruchten met rode zaden.",
+  "verwar": "<i>Magnolia stellata</i>: struik met 12–18 smalle lintvormige tepalen. <i>M. salicifolia</i>: bijna dezelfde bloemen, maar smaller, wilgachtig blad dat onderaan meestal blauwig is. <i>Magnolia × loebneri</i>: meer en smallere tepalen.",
+  "weetje": "Bloeit vaak laat genoeg om aan de nachtvorst te ontsnappen. In Japan wordt hij veel langs wegen geplant, omdat hij uitlaatgassen goed verdraagt.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia kobus",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-kobus/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia stellata",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-stellata/"
+   }
+  ]
+ },
+ "magnolia-liliiflora": {
+  "herken": "Grote, <b>meerstammige struik</b> tot 3,5 m met paarsachtige twijgen. De bloemen verschijnen <b>samen met het jonge blad</b> (dus later dan bij de meeste magnolia's), zijn <b>smal vaasvormig en rechtopstaand</b> en licht geurend. De tepalen zijn <b>buiten purper tot purperrood, binnen witachtig</b>; de 3 buitenste zijn klein, groenpaars en vallen snel af. Blad 8–18 cm, elliptisch tot omgekeerd eirond.",
+  "verwar": "<i>Magnolia × soulangeana</i>: groter, bloeit vóór het blad met bredere, tulp- of komvormige bloemen. <i>Magnolia denudata</i>: witte bloemen op een boom.",
+  "weetje": "Bereikte Europa in 1790 vanuit Japan, via de Britse politicus William Cavendish-Bentinck, hertog van Portland. Samen met <i>M. denudata</i> is hij een ouder van <i>M. × soulangeana</i>.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia liliiflora",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-liliiflora/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia × soulangeana",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-x-soulangeana/"
+   }
+  ]
+ },
+ "magnolia-sieboldii": {
+  "herken": "Struik of kleine boom tot 10 m. Bloeit <b>samen met het blad</b>: <b>witte, geurende, eerst kom- en later schotelvormige bloemen</b> (7–10 cm), <b>rechtop tot licht knikkend</b>, met 9 tepalen en in het midden een opvallende krans <b>purperrode meeldraden</b>. Blad omgekeerd eirond, 9–15 cm, onderaan blauwig. Het litteken van de steunblaadjes loopt tot ongeveer <b>halverwege</b> de bladsteel. Rode vruchten.",
+  "verwar": "<i>Magnolia wilsonii</i>: <b>echt hangende</b> bloemen, smaller, langwerpig blad met zilvergrijze haren onderaan, en een steunbladlitteken over bijna de hele lengte (4/5) van de bladsteel.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia sieboldii",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-sieboldii/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia wilsonii",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-wilsonii/"
+   }
+  ]
+ },
+ "magnolia-wilsonii": {
+  "herken": "Struik of kleine boom (tot 8 m) met purperrode, jong bruinbehaarde twijgen. Blad <b>elliptisch-eirond tot langwerpig</b>, 6,5–12 cm, onderaan met <b>aangedrukte zilvergrijze haren</b>. Het steunbladlitteken loopt over <b>4/5 tot 5/6 van de bladsteel</b>. In mei–juni, samen met het blad, geurende <b>witte bloemen</b> (10–12 cm) die <b>naar beneden gaan hangen</b>, met rode tot paarse meeldraden. Hangende, eerst rode en later paarse vruchten.",
+  "verwar": "<i>Magnolia sieboldii</i>: bloemen rechtop tot licht knikkend, breder omgekeerd eirond blad, en een steunbladlitteken tot ongeveer halverwege de bladsteel.",
+  "weetje": "Groeit het best met veel licht maar wat schaduw op het heetste moment van de dag, in grond die in het groeiseizoen vochtig blijft. In het wild (West-China) staat hij als 'bijna bedreigd' te boek.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia wilsonii",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-wilsonii/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia sieboldii",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-sieboldii/"
+   }
+  ]
+ },
+ "magnolia-denudata": {
+  "herken": "<b>Boom</b> tot 25 m met een brede kroon. Knoppen en bloemstelen met <b>lange, dichte, geelachtige zijdeharen</b>. <b>Vóór het blad</b> rechtopstaande, <b>geurende, witte bekerbloemen</b> (10–16 cm) met <b>9 bijna gelijke tepalen</b>, aan de voet vaak roze of paars getint. Blad omgekeerd eirond, 10–15 cm, met een brede ronde of afgeknotte top.",
+  "verwar": "<i>Magnolia × soulangeana</i>: tepalen buiten roze tot roodpaars, meestal een struik of kleine boom. <i>Magnolia kobus</i>: kleinere bloemen met 6 smallere tepalen en 3 kleine buitenste.",
+  "weetje": "Wordt al sinds de Tang-dynastie (618–907) in Chinese tempeltuinen geplant. Zijn grote nadeel: de bloemen worden al bij lichte vorst bruin.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia denudata",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-denudata/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia × soulangeana",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-x-soulangeana/"
+   }
+  ]
+ },
+ "magnolia-x-loebneri": {
+  "herken": "Kruisingen van <i>M. kobus</i> × <i>M. stellata</i>: grote meerstammige struiken tot kleine bomen met een brede kroon. Het blad is ongeveer zo groot als bij <i>M. stellata</i>. Bloeit <b>vóór het blad</b> (half maart–eind april) en al op jonge leeftijd rijk, met geurende bloemen van 11–15 cm met <b>8–30 lintvormige tepalen</b>, wit tot roze of lila.",
+  "verwar": "<i>Magnolia stellata</i>: kleiner en struikvormig, met kleinere bloemen (5–8 cm). <i>Magnolia kobus</i>: een grote boom met slechts 6 brede tepalen.",
+  "weetje": "Combineert de rijke bloei van <i>M. stellata</i>, al op jonge planten, met de groeikracht van <i>M. kobus</i>. Daardoor is hij een populaire keuze voor kleinere tuinen.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia × loebneri",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-x-loebneri/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia stellata",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-stellata/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia kobus",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-kobus/"
+   }
+  ]
+ },
+ "magnolia-tripetala": {
+  "herken": "Bladverliezende boom of struik tot 15 m, vaak meerstammig, met gladde grijze schors en kale twijgen. Onmiskenbaar door het <b>reusachtige blad (26–57 cm)</b>, dat <b>in schijnkransen aan het uiteinde van de takken</b> staat, als een parasol. In mei–juni roomwitte bloemen (5,5–11 cm) die <b>onaangenaam ruiken</b>, met teruggeslagen, groenige buitenste tepalen. Kegelvormige vruchten met rode zaden.",
+  "verwar": "<i>Magnolia grandiflora</i> heeft ook groot blad, maar dat is wintergroen, leerachtig en staat verspreid, niet in kransen.",
+  "weetje": "De bladkransen gaven hem de Engelse naam 'Umbrella Tree'. Hij komt uit het Appalachengebergte (VS), uit rijke bossen en ravijnen.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia tripetala",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-tripetala/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Magnolia grandiflora",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-grandiflora/"
+   }
+  ]
  }
 };
 const FAMILIES = {
