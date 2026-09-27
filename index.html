@@ -153,7 +153,16 @@ nav button[aria-current="true"]{color:#06120C;
   background:linear-gradient(135deg,var(--limoen),var(--smaragd))}
 
 /* ───────── spel ───────── */
-.spelkop{display:flex;align-items:center;gap:12px;margin:14px 0 12px}
+.spelkop{display:flex;align-items:center;gap:12px;position:sticky;top:var(--kop,100px);z-index:30;
+  margin:0 -16px 12px;padding:10px 16px;border-bottom:1px solid var(--lijn);
+  background:linear-gradient(180deg,rgba(11,18,15,.95),rgba(11,18,15,.84));backdrop-filter:blur(12px)}
+.volgknop{flex:none;font:inherit;font-weight:900;font-size:14.5px;border-radius:999px;
+  padding:8px 16px;min-height:40px;border:1px solid var(--lijn2);background:var(--paneel2);
+  color:var(--zacht);cursor:not-allowed;opacity:.5;transition:background .18s,opacity .18s}
+.volgknop.aan{cursor:pointer;opacity:1;color:#06120C;border-color:transparent;
+  background:linear-gradient(135deg,var(--limoen),var(--smaragd));
+  box-shadow:0 4px 18px rgba(34,196,110,.45);animation:volgpols 1.8s ease-in-out infinite}
+@keyframes volgpols{50%{box-shadow:0 4px 28px rgba(110,231,160,.8)}}
 .spelkop .balk{flex:1}
 .combo{font-size:14px;font-weight:900;color:var(--vuur);white-space:nowrap;
   text-shadow:0 0 14px rgba(255,138,61,.55)}
@@ -205,6 +214,7 @@ nav button[aria-current="true"]{color:#06120C;
 .hint{font-size:14px;color:var(--ijs);margin-top:9px;letter-spacing:.14em;
   font-family:ui-monospace,Menlo,Consolas,monospace}
 .terug{margin-top:15px;padding:16px;border-radius:15px;font-size:14.5px;line-height:1.55;
+  scroll-margin-top:calc(var(--kop,100px) + 70px);
   animation:omhoog .3s;border:1px solid var(--lijn)}
 .terug.j{background:linear-gradient(135deg,rgba(34,196,110,.20),rgba(34,196,110,.05));
   border-color:rgba(110,231,160,.45)}
@@ -213,6 +223,40 @@ nav button[aria-current="true"]{color:#06120C;
 .terug.b{background:linear-gradient(135deg,rgba(255,197,61,.18),rgba(255,197,61,.05));
   border-color:rgba(255,197,61,.42)}
 .terug b{font-style:italic;font-size:16px}
+.terug .blok b,.fam b,.blok.herk b{font-style:normal;font-size:inherit}
+.terug .kv{font-size:14px;margin:12px 0 4px}
+.terug .blok{font-size:14px}
+.minigal{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:12px 0 4px}
+.minigal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;cursor:zoom-in;
+  border:1px solid var(--lijn);display:block}
+.famchip{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:5px 12px;
+  border-radius:999px;border:1px solid rgba(185,140,255,.45);background:rgba(185,140,255,.12);
+  color:#D7C2FF;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.famchip:hover{background:rgba(185,140,255,.22)}
+.blok.herk{background:rgba(125,216,232,.10);border-color:rgba(125,216,232,.34)}
+.blok.verw{background:rgba(255,138,61,.09);border-color:rgba(255,138,61,.30)}
+.blok.fam{background:rgba(185,140,255,.10);border-color:rgba(185,140,255,.32)}
+.blok ul{margin:4px 0 0;padding-left:19px}
+.blok li{margin:3px 0}
+.bronnen{font-size:12px;color:var(--zacht);margin-top:12px;line-height:1.5}
+.bronnen a{color:var(--ijs)}
+.tabs{display:flex;gap:6px;margin:0 0 14px}
+.tabs button{flex:1;font:inherit;font-weight:800;font-size:14px;padding:10px;border-radius:12px;
+  border:1px solid var(--lijn);background:var(--paneel);color:var(--zacht);cursor:pointer}
+.tabs button[aria-pressed="true"]{color:#06120C;border-color:transparent;
+  background:linear-gradient(135deg,var(--limoen),var(--smaragd))}
+.famkaart{text-align:left;border:1px solid var(--lijn);border-radius:15px;overflow:hidden;
+  cursor:pointer;background:var(--paneel);color:inherit;font:inherit;padding:0;transition:.15s}
+.famkaart:hover{transform:translateY(-4px);border-color:rgba(185,140,255,.5)}
+.famkaart img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.famkaart .tx{padding:11px 12px}
+.famkaart b{display:block;font-size:15px}
+.famkaart span{font-size:12px;color:var(--zacht)}
+.famlid{display:inline-block;margin:3px 4px 3px 0;padding:4px 10px;border-radius:9px;
+  border:1px solid var(--lijn);background:var(--paneel2);font:inherit;font-size:13px;
+  font-style:italic;color:inherit;cursor:pointer}
+.famlid:hover{border-color:var(--limoen)}
+@media (prefers-reduced-motion:reduce){.volgknop.aan{animation:none}}
 .terug .nlnaam{font-style:normal;color:var(--zacht);font-size:13.5px}
 
 /* familie sorteren */
@@ -503,6 +547,8 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
     <div class="balk" style="flex:1"><i id="spelBalk" style="width:0%"></i></div>
     <span class="combo" id="spelCombo"></span>
     <span class="klok" id="spelKlok"></span>
+    <button class="volgknop" id="spelVolgende" disabled aria-disabled="true"
+      title="Naar de volgende vraag (Enter)">Volgende →</button>
   </div>
   <div id="spelInhoud"></div>
 </section>
@@ -526,6 +572,10 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
 <!-- ============ FICHES ============ -->
 <section id="s-fiches" class="verborgen">
   <div class="titelrij"><h2>Plantenfiches</h2><span class="klein" id="ficheTel"></span></div>
+  <div class="tabs" id="ficheTabs">
+    <button data-tab="planten" aria-pressed="true">Planten</button>
+    <button data-tab="families" aria-pressed="false">Families</button>
+  </div>
   <input class="zoek" id="zoek" placeholder="Zoek op naam, familie, standplaats…"
     autocomplete="off">
   <div class="rij" style="margin-bottom:14px" id="filters"></div>
@@ -611,6 +661,7 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
 <script src="soortdata.js"></script>
 <script src="geslachtdata2.js"></script>
 <script src="soortdata2.js"></script>
+<script src="herkenning.js"></script>
 <script>
 "use strict";
 const $ = s => document.querySelector(s);
@@ -652,6 +703,10 @@ REEKSEN.forEach(reeks => {
 /* Eén fotobestand (iNaturalist): per plant 4x de hele plant, 2x blad, 2x vrucht,
    elk van een ander exemplaar. */
 const ALLEFOTOS = typeof FOTOS !== "undefined" ? FOTOS : {};
+/* Herkenning per soort en fiches per familie, nagetrokken in wetenschappelijke bronnen
+   (zie herkenning.js). */
+const INFO = typeof SOORTINFO !== "undefined" ? SOORTINFO : {};
+const FAM = typeof FAMILIES !== "undefined" ? FAMILIES : {};
 const $$ = s => [...document.querySelectorAll(s)];
 const DAG = 864e5;
 const vandaag = () => new Date().toISOString().slice(0, 10);
@@ -1020,6 +1075,7 @@ function start(modus) {
     gedaan: [], klaar: false, eind: modus === "race" ? Date.now() + 60000 : 0
   };
   toon("spel");
+  volgKnop.hidden = modus === "race";
   if (modus === "race") startKlok();
   volgende();
 }
@@ -1054,8 +1110,32 @@ function spelkopBij() {
   kopBij();
 }
 
+/* De volgende-knop zit vast rechtsboven in de spelkop en blijft zichtbaar als je scrolt.
+   Hij gaat pas aan na een antwoord: er wordt nooit meer automatisch doorgeklikt. */
+const volgKnop = $("#spelVolgende");
+function zetVolgende(aan) {
+  volgKnop.classList.toggle("aan", aan);
+  volgKnop.disabled = !aan;
+  volgKnop.setAttribute("aria-disabled", String(!aan));
+  if (aan) volgKnop.focus({ preventScroll: true });
+}
+volgKnop.onclick = () => { if (volgKnop.classList.contains("aan")) volgende(); };
+document.addEventListener("keydown", e => {
+  if ((e.key !== "Enter" && e.key !== "ArrowRight") || !volgKnop.classList.contains("aan")) return;
+  if ($("#s-spel").classList.contains("verborgen") || dlg.open || e.target.tagName === "INPUT") return;
+  e.preventDefault();
+  volgende();
+});
+/* de spelkop plakt net onder de paginakop; die hoogte verschilt per scherm */
+const zetKopHoogte = () => document.documentElement.style
+  .setProperty("--kop", document.querySelector("header").offsetHeight + "px");
+addEventListener("resize", zetKopHoogte);
+zetKopHoogte();
+
 function volgende() {
   stopAuto();
+  zetVolgende(false);
+  window.scrollTo(0, 0);             // foto bovenaan, meteen goed in beeld
   if (spel.modus !== "race" && spel.nr >= RONDE) return klaar();
   spel.nr++;
   spelkopBij();
@@ -1115,39 +1195,119 @@ function geslachtBlok(geslachtNaam) {
   </div>`;
 }
 
+/* ═══════════ plantinfo en familiefiches ═══════════ */
+function famChip(familie) {
+  const f = FAM[familie];
+  return `<button class="famchip" data-familie="${familie}">🧬 ${familie}${f ? " · " + f.nl : ""}
+    <span style="opacity:.7">→</span></button>`;
+}
+function kenmerkLijst(p) {
+  return `<dl class="kv">
+      <dt>Standplaats</dt><dd>${p.standplaats}</dd>
+      <dt>Water &amp; bodem</dt><dd>${p.water}</dd>
+      <dt>Formaat</dt><dd>${p.hoogte} hoog · ${p.breedte} breed</dd>
+      <dt>Blad &amp; bloei</dt><dd>${p.blad} · bloeit ${p.bloeitijd.toLowerCase()}, ${p.bloeikleur.toLowerCase()}</dd>
+      <dt>Groeiwijze</dt><dd>${p.groeivorm} · ${p.groei.toLowerCase()}e groeier · ${p.gebruik.join(", ").toLowerCase()}</dd>
+    </dl>`;
+}
+function bronLijst(bronnen) {
+  if (!bronnen || !bronnen.length) return "";
+  return `<div class="bronnen">Bronnen: ${bronnen.map(b => b.url
+    ? `<a href="${b.url}" target="_blank" rel="noopener">${b.naam}</a>` : b.naam).join(" · ")}</div>`;
+}
+/* Een nagetrokken weetje uit herkenning.js vervangt het oude; een lege tekst daar
+   schrapt een weetje dat niet klopte. */
+const weetjeVan = p => (INFO[p.id] && "weetje" in INFO[p.id]) ? INFO[p.id].weetje : p.weetje;
+/* Wat je na elk antwoord te zien krijgt: waaraan je de soort herkent, waarmee je hem
+   niet mag verwarren, wat je er absoluut over moet weten, de foto's en de kenmerken. */
+function plantInfo(p) {
+  const i = INFO[p.id] || {};
+  const herken = i.herken || p.onderscheid;
+  const fs = fotosVan(p.id);
+  return `
+    ${herken ? `<div class="blok herk"><h4>Zo herken je deze soort</h4>${herken}</div>` : ""}
+    ${i.verwar ? `<div class="blok verw"><h4>Niet verwarren met</h4>${i.verwar}</div>` : ""}
+    ${i.letop ? `<div class="blok gif"><h4>Belangrijk om te weten</h4>${i.letop}</div>`
+      : p.giftig ? `<div class="blok gif"><h4>Let op</h4>Deze plant is giftig.</div>` : ""}
+    ${fs.length ? `<div class="minigal">${fs.map(f => `<img src="${f.bestand}" alt="${FOTOVAK[f.soort_foto]}"
+      data-zoom="${f.bestand}" data-bijschrift="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})"
+      loading="lazy">`).join("")}</div>` : ""}
+    ${kenmerkLijst(p)}
+    ${weetjeVan(p) ? `<div class="blok weet"><h4>Weetje van de vakman</h4>${weetjeVan(p)}</div>` : ""}
+    ${bronLijst(i.bronnen)}`;
+}
+
+function opentFamilie(naam) {
+  const f = FAM[naam];
+  const leden = PLANTEN.filter(p => p.familie === naam);
+  const geslachten = [...new Set(leden.map(p => p.geslacht))].sort();
+  $("#dlgTitel").innerHTML = `${naam}<div class="klein" style="font-style:normal">
+    ${f ? f.nl + " · " : ""}${leden.length} ${leden.length === 1 ? "soort" : "soorten"} in de tool</div>`;
+  $("#dlgBody").innerHTML = f ? `
+    <div class="blok fam"><h4>Wat is er speciaal aan deze familie</h4>${f.speciaal}</div>
+    <div class="blok herk"><h4>Zo herken je de familie</h4>
+      <ul>${f.herken.map(r => `<li>${r}</li>`).join("")}</ul></div>
+    ${f.tuin ? `<div class="blok weet"><h4>In de tuin</h4>${f.tuin}</div>` : ""}
+    ${f.wild ? `<div class="blok eco"><h4>In het wild</h4>${f.wild}</div>` : ""}
+    ${f.verwar ? `<div class="blok verw"><h4>Niet verwarren met</h4>${f.verwar}</div>` : ""}
+    <div style="margin-top:16px"><h4 style="font-size:12px;text-transform:uppercase;letter-spacing:.05em;
+      color:var(--zacht);margin:0 0 6px">Soorten uit deze familie in de tool</h4>
+      ${geslachten.map(g => `<div style="margin:6px 0"><b style="font-size:13px">${g}</b>
+        ${GESL[g] ? `<span class="klein"> · ${GESL[g].nl}</span>` : ""}<br>
+        ${leden.filter(p => p.geslacht === g).map(p =>
+          `<button class="famlid" data-fiche-open="${p.id}">${volnaam(p)}</button>`).join("")}</div>`).join("")}
+    </div>
+    ${bronLijst(f.bronnen)}`
+    : `<p class="klein">Voor deze familie is nog geen fiche.</p>`;
+  if (!dlg.open) dlg.showModal();
+  $("#dlgBody").scrollTop = 0;
+}
+
+/* één afhandeling voor familie-knoppen, soortknoppen en fotozoom, ook in later getekende inhoud */
+document.addEventListener("click", e => {
+  const fam = e.target.closest("[data-familie]");
+  if (fam) { e.preventDefault(); FX.klik(); opentFamilie(fam.dataset.familie); return; }
+  const lid = e.target.closest("[data-fiche-open]");
+  if (lid) { e.preventDefault(); opentFiche(lid.dataset.ficheOpen); return; }
+  const z = e.target.closest("[data-zoom]");
+  if (z) { e.preventDefault(); toonFoto(z.dataset.zoom, z.dataset.bijschrift); }
+});
+function toonFoto(src, bijschrift) {
+  const o = document.createElement("div");
+  o.id = "bladvenster";
+  o.innerHTML = `<div class="doos"><div class="kop"><b>Foto</b>
+      <button class="sluit" aria-label="Sluiten">&times;</button></div>
+      <img src="${src}" alt=""><div class="klein" style="margin-top:9px">${bijschrift || ""}</div></div>`;
+  document.body.appendChild(o);
+  const weg = () => o.remove();
+  o.querySelector(".sluit").onclick = weg;
+  o.onclick = ev => { if (ev.target === o || ev.target.tagName === "IMG") weg(); };
+}
+
 function toonTerug(plant, juist, extra) {
   const el = document.createElement("div");
   el.className = "terug " + (juist === "bijna" ? "b" : juist ? "j" : "n");
   el.innerHTML = `<div style="font-size:15px;margin-bottom:5px">
       ${juist === "bijna" ? "Bijna juist — let op de spelling"
       : juist ? "Juist" : "Niet juist"}</div>
-    <b>${volnaam(plant)}</b> <span class="nlnaam">· ${plant.nl} · ${plant.familie}</span>
+    <b>${volnaam(plant)}</b> <span class="nlnaam">· ${plant.nl}</span>
     ${extra ? `<div style="margin-top:7px">${extra}</div>` : ""}
-    ${plant.onderscheid ? `<div style="margin-top:9px;font-size:14px">
-       <b style="font-style:normal;font-size:12px;text-transform:uppercase;
-       letter-spacing:.06em;color:var(--zacht)">Waaraan je deze soort herkent</b><br>
-       ${plant.onderscheid}</div>` : ""}
+    <div>${famChip(plant.familie)}</div>
+    ${plantInfo(plant)}
     ${(niveau === 1 && (S.groepen || []).length && spel.modus === "herkennen")
       ? geslachtBlok(plant.geslacht) : ""}
-    <div style="margin-top:9px"><button class="knop" style="min-height:44px;padding:10px 18px"
-      id="btnVolgende">Volgende →</button>
+    <div class="rij" style="margin-top:14px">
       <button class="knop licht" style="min-height:44px;padding:10px 16px"
-      id="btnFiche">Bekijk fiche</button></div>`;
+        id="btnFiche">Volledige fiche</button>
+      <button class="knop" style="min-height:44px;padding:10px 18px"
+        id="btnVolgende">Volgende →</button></div>`;
   $("#spelInhoud").appendChild(el);
-  el.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  const knop = $("#btnVolgende");
-  knop.onclick = volgende;
-  $("#btnFiche").onclick = () => { stopAuto(); opentFiche(plant.id); };
-  knop.focus({ preventScroll: true });
-  // juist? dan rolt hij vanzelf door, met een zichtbaar balkje in de knop.
-  // Fout of bijna juist: dan wachten we, want dan valt er iets te lezen.
-  if (juist === true && spel.modus !== "race") {
-    const loop = document.createElement("span");
-    loop.className = "loop";
-    knop.appendChild(loop);
-    loop.animate([{ width: "0%" }, { width: "100%" }], { duration: 1700, fill: "forwards" });
-    autoId = setTimeout(() => { autoId = null; volgende(); }, 1700);
-  }
+  // alleen scrollen als het antwoordvak onder de rand valt; de foto blijft zo lang mogelijk zichtbaar
+  if (el.getBoundingClientRect().top > innerHeight * .62)
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  $("#btnVolgende").onclick = volgende;
+  $("#btnFiche").onclick = () => opentFiche(plant.id);
+  zetVolgende(true);
 }
 
 /* ---- 1. leren (flashcards) ---- */
@@ -1161,8 +1321,9 @@ function vraagLeren() {
     $("#spelInhoud").insertAdjacentHTML("beforeend", `
       <div class="kaart pad" style="margin-top:12px">
         <div class="wetens" style="font-size:19px;font-family:Georgia,serif">${volnaam(p)}</div>
-        <div class="klein">${p.nl} · ${p.familie}</div>
-        <p style="font-size:14.5px;margin:10px 0 0">${p.kenmerk5}</p></div>
+        <div class="klein">${p.nl}</div>
+        <div>${famChip(p.familie)}</div>
+        ${plantInfo(p)}</div>
       <p class="vraag" style="font-size:16px">Wist je het?</p>
       <div class="rij"><button class="knop licht" id="nee" style="flex:1">Nee, nog niet</button>
       <button class="knop" id="ja" style="flex:1">Ja, die kende ik</button></div>`);
@@ -1173,7 +1334,9 @@ function vraagLeren() {
       tikStreak(); bewaar(); kopBij(j);
       const m = midden($("#ja"));
       if (j) { FX.goed(0); FX.xppop(5, m.x, m.y); } else FX.toon([300, 240], .14, "sine", .09);
-      volgende();
+      $("#ja").disabled = $("#nee").disabled = true;
+      $(j ? "#ja" : "#nee").style.outline = "2px solid var(--limoen)";
+      zetVolgende(true);
     };
     $("#ja").onclick = () => kies(true);
     $("#nee").onclick = () => kies(false);
@@ -1289,6 +1452,7 @@ function vraagFamilie() {
          style="min-height:44px;padding:10px 18px">Volgende →</button></div></div>`);
       spel.nr = RONDE - 1;
       $("#btnVolgende").onclick = volgende;
+      zetVolgende(true);
     }
   });
 }
@@ -1428,8 +1592,31 @@ function klaar() {
 $("#uTerug").onclick = () => toon("home");
 
 /* ═══════════ fiches ═══════════ */
-let ficheFilter = "alle";
+let ficheFilter = "alle", ficheTab = "planten";
+$$("[data-tab]").forEach(b => b.onclick = () => {
+  ficheTab = b.dataset.tab;
+  $$("[data-tab]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  tekenFiches();
+});
+function tekenFamilies() {
+  const q = norm($("#zoek").value);
+  const fams = [...new Set(PLANTEN.map(p => p.familie))].sort()
+    .filter(f => !q || norm(f + " " + (FAM[f] ? FAM[f].nl : "") + " " +
+      PLANTEN.filter(p => p.familie === f).map(p => p.geslacht + " " + p.nl).join(" ")).includes(q));
+  $("#filters").innerHTML = "";
+  $("#ficheTel").textContent = fams.length + " families";
+  $("#fichesLijst").innerHTML = fams.map(f => {
+    const leden = PLANTEN.filter(p => p.familie === f);
+    const met = leden.find(p => heeftFoto(p.id));
+    const ft = met ? foto(met.id, ["habitus"]) : null;
+    return `<button class="famkaart" data-familie="${f}">
+      ${ft ? `<img src="${ft.bestand}" alt="" loading="lazy">` : `<div style="aspect-ratio:16/9;background:rgba(255,255,255,.05)"></div>`}
+      <span class="tx"><b>${f}</b><span>${FAM[f] ? FAM[f].nl + " · " : ""}${leden.length}
+        ${leden.length === 1 ? "soort" : "soorten"}</span></span></button>`;
+  }).join("") || `<p class="klein">Niets gevonden.</p>`;
+}
 function tekenFiches() {
+  if (ficheTab === "families") return tekenFamilies();
   const groepen = ["alle", ...new Set(PLANTEN.map(p => p.groep))];
   $("#filters").innerHTML = groepen.map(g => `<button class="knop licht" data-g="${g}"
     style="min-height:38px;padding:7px 14px;font-size:13.5px;${g === ficheFilter
@@ -1461,33 +1648,37 @@ function opentFiche(id) {
   const p = PLANTEN.find(x => x.id === id);
   const fs = fotosVan(id);
   const st = S.planten[id];
+  const info = INFO[id] || {};
+  const herken = info.herken || p.onderscheid;
   $("#dlgTitel").innerHTML = `${volnaam(p)}<div class="klein"
-    style="font-style:normal">${p.nl} · ${p.familie}</div>`;
+    style="font-style:normal">${p.nl}</div>`;
   $("#dlgBody").innerHTML = `
     ${fs.length ? `<div class="galerij">${fs.map(f =>
-    `<img src="${f.bestand}" alt="${FOTOVAK[f.soort_foto]}" title="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})">`).join("")}</div>
-      <div class="klein" style="margin:-8px 0 12px">${fs.map(f => FOTOVAK[f.soort_foto] || "Detail").join(" · ")}</div>` : ""}
-    <dl class="kv">
-      <dt>Standplaats</dt><dd>${p.standplaats}</dd>
-      <dt>Water &amp; bodem</dt><dd>${p.water}</dd>
-      <dt>Formaat</dt><dd>${p.hoogte} hoog · ${p.breedte} breed</dd>
-      <dt>Blad &amp; bloei</dt><dd>${p.blad} · bloeit ${p.bloeitijd.toLowerCase()}, ${p.bloeikleur.toLowerCase()}</dd>
-      <dt>Groeiwijze</dt><dd>${p.groeivorm} · ${p.groei.toLowerCase()}e groeier · ${p.gebruik.join(", ").toLowerCase()}</dd>
-    </dl>
-    <div class="blok weet"><h4>Weetje van de vakman</h4>${p.weetje}</div>
-    <div class="blok eco"><h4>Ecologische waarde</h4>${p.ecologie}</div>
-    ${p.giftig ? `<div class="blok gif"><h4>Let op</h4>Deze plant is giftig — belangrijk om te
+    `<img src="${f.bestand}" alt="${FOTOVAK[f.soort_foto]}" data-zoom="${f.bestand}"
+      data-bijschrift="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})"
+      title="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})">`).join("")}</div>
+      <div class="klein" style="margin:-8px 0 4px">${fs.map(f => FOTOVAK[f.soort_foto] || "Detail").join(" · ")}</div>` : ""}
+    <div style="margin-bottom:6px">${famChip(p.familie)}</div>
+    ${herken ? `<div class="blok herk"><h4>Zo herken je deze soort</h4>${herken}</div>` : ""}
+    ${info.verwar ? `<div class="blok verw"><h4>Niet verwarren met</h4>${info.verwar}</div>` : ""}
+    ${info.letop ? `<div class="blok gif"><h4>Belangrijk om te weten</h4>${info.letop}</div>`
+      : p.giftig ? `<div class="blok gif"><h4>Let op</h4>Deze plant is giftig — belangrijk om te
       weten bij tuinen met kinderen of huisdieren.</div>` : ""}
+    ${kenmerkLijst(p)}
+    ${weetjeVan(p) ? `<div class="blok weet"><h4>Weetje van de vakman</h4>${weetjeVan(p)}</div>` : ""}
+    ${p.ecologie ? `<div class="blok eco"><h4>Ecologische waarde</h4>${p.ecologie}</div>` : ""}
     <div style="margin-top:16px"><h4 style="font-size:12px;text-transform:uppercase;
       letter-spacing:.05em;color:var(--zacht);font-family:system-ui;margin:0 0 6px">
       Bekende cultivars <span style="text-transform:none;font-weight:400">(niet te kennen)</span></h4>
       <div class="cv">${p.cultivars.map(c => `<em>${c}</em>`).join("")}</div></div>
+    ${bronLijst(info.bronnen)}
     <div class="klein" style="margin-top:16px;border-top:1px solid var(--lijn);padding-top:10px">
       ${st ? `${NIVNAAM[niveauVan(id)]} · ${st.goed} juist, ${st.fout} fout` : "Nog niet geoefend"}
       ${fs.length ? ` · foto's: ${[...new Set(fs.map(f => f.auteur))].join(", ")} —
         via iNaturalist` : ""}
     </div>`;
-  dlg.showModal();
+  if (!dlg.open) dlg.showModal();
+  $("#dlgBody").scrollTop = 0;
 }
 
 /* ═══════════ stats ═══════════ */
