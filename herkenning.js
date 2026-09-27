@@ -2141,6 +2141,162 @@ const SOORTINFO = {
     "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-grandiflora/"
    }
   ]
+ },
+ "pinus-sylvestris": {
+  "herken": "<b>Twee naalden per bundel</b>, kort (3–7 cm), <b>grijsgroen</b> (boven donkerder). Het beste kenmerk: de schors is in de kroon <b>dun, oranje tot roodbruin en schilferig</b>, onderaan de stam grof en gebarsten. Knoppen <b>zonder hars</b>, met teruggebogen schubben aan de top. Kegels 3–6 cm, <b>dof</b>, hangend en duidelijk gesteeld.",
+  "verwar": "<i>Pinus nigra</i>: veel langere (8–16 cm), donkergroene naalden, harsige knoppen, grijszwarte schors en glanzend geelbruine kegels. <i>Pinus mugo</i>: struikvormig, grijszwarte schors en glanzende, bijna zittende kegels. <i>Pinus contorta</i>: donkergroene naalden en scheve kegels met een stekeltje op de schubben.",
+  "weetje": "Was vroeger inheems, maar verdween in de late middeleeuwen uit Nederland; sinds de 16e eeuw is hij opnieuw massaal aangeplant en nu ingeburgerd op heide, stuifzand en hoogveen. Hij levert grenenhout.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Pinus sylvestris",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2025"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus sylvestris",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-sylvestris/"
+   }
+  ]
+ },
+ "pinus-nigra": {
+  "herken": "<b>Twee naalden per bundel</b>, <b>lang (8–16 cm), donkergroen en vrij stijf</b>. Knoppen bruin en <b>harsig</b>, met aanliggende schubben, breed eivormig en plots versmald tot een slanke punt. Schors <b>grijszwart</b> en in platen gebarsten. Kegels 3–8 cm, <b>glanzend geelbruin</b>, met een dwarse kiel op de schubben.",
+  "verwar": "<i>Pinus sylvestris</i>: korte grijsgroene naalden en oranje schors in de kroon. De Corsicaanse den (<i>P. nigra</i> var. <i>maritima</i>) heeft slankere, minder stijve en langere naalden dan de Oostenrijkse vorm. <i>Pinus heldreichii</i>: kortere (5–7,5 cm), kaarsrecht opstaande naalden en eerst blauwe kegels.",
+  "weetje": "Komt uit Midden- en Zuidoost-Europa. Hier veel aangeplant in bossen en in de duinen, en plaatselijk ingeburgerd.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Pinus nigra",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2024"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus nigra",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-nigra/"
+   }
+  ]
+ },
+ "pinus-mugo": {
+  "herken": "Meestal een <b>lage, breed uitgroeiende struik</b> met kronkelige, verstrengelde stammen ('Krummholz'), tot ca. 3,5 m. <b>Twee naalden per bundel</b>, 3–8 cm, <b>aan beide kanten felgroen</b>, stijf en stomp, en ze blijven 5–10 jaar aan de tak (dichte bebladering). Knoppen <b>harsig</b>. Schors grijszwart en fijn. Kegels 2,5–5 cm, <b>glanzend bruin, bijna zittend en symmetrisch</b>.",
+  "verwar": "<i>Pinus sylvestris</i>: een boom met oranje schors en grijsgroene naalden. <i>P. uncinata</i> (de boomvorm uit de Pyreneeën en Westalpen): een rechte boom met scheve kegels met haakvormige schubben.",
+  "weetje": "Uit de bergen van Midden- en Zuid-Europa. Zeer geschikt als wintergroene bedekking van droge hellingen.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Pinus mugo",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2026"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus mugo",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-mugo/"
+   }
+  ]
+ },
+ "pinus-strobus": {
+  "herken": "<b>Vijf naalden per bundel</b>, 7–13 cm, <b>dun, zacht en glanzend blauwgroen</b>, met witte huidmondjeslijnen aan de binnenkant; de naaldschede valt snel af. Jonge twijgen met een pluimpje dons onder elke naaldbundel. <b>Lange (13–20 cm), cilindrische, gebogen kegels</b> met dunne, gladde schubben.",
+  "verwar": "<i>Pinus wallichiana</i>: langere (13–18 cm) naalden die bij de voet <b>knikken en slap afhangen</b>, en kale twijgen. <i>Pinus cembra</i>: dicht opeengepakte naalden, <b>bruinviltige</b> jonge twijgen en kleine eivormige kegels. <i>Pinus parviflora</i>: korte (4–6,5 cm), gedraaide naalden.",
+  "letop": "Zeer gevoelig voor <b>blaasroest</b> van de vijfnaaldige dennen (<i>Cronartium ribicola</i>), een schimmel die bessenstruiken (<i>Ribes</i>, zoals zwarte bes) als tweede gastheer gebruikt. Daardoor zijn veel oude bomen in Europa gestorven. Plant hem niet naast bessen.",
+  "weetje": "De Engelse naam 'Weymouth pine' verwijst niet naar de stad, maar naar een Lord Weymouth die hem rond 1700 massaal aanplantte op zijn landgoed Longleat.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Pinus strobus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2022"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus strobus",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-strobus/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus wallichiana",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-wallichiana/"
+   }
+  ]
+ },
+ "pinus-pinea": {
+  "herken": "In de vrije stand een lage boom met een korte, diep gegroefde stam en een <b>brede, platte parasolkroon</b>, breder dan hoog. Opvallende knoppen met <b>gekrulde, gepunte schubben met lange zilverige draden</b>. <b>Twee (soms drie) naalden per bundel</b>, 7,5–12,5 cm. <b>Grote, bolronde tot eivormige kegels</b> (tot 10 cm breed), glanzend lichtbruin, met grote zaden. Zaailingen hebben eerst losse, blauwe naaldjes van 2,5 cm.",
+  "verwar": "<i>Pinus nigra</i>: ook twee lange naalden, maar een kegelvormige tot brede kroon (geen parasol) en kleinere kegels (3–8 cm) met kleine gevleugelde zaden.",
+  "letop": "Jonge planten kunnen bij strenge vorst beschadigd worden, en ze verdragen verplanten slecht als ze langer dan twee à drie jaar op dezelfde plek hebben gestaan.",
+  "weetje": "In Italië al eeuwenlang gewaardeerd om de eetbare zaden (pijnboompitten); er zijn zelfs doppen van gevonden in Romeinse legerkampen in Groot-Brittannië.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Pinus pinea",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-pinea/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus nigra",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-nigra/"
+   }
+  ]
+ },
+ "pinus-cembra": {
+  "herken": "Boom met een <b>dichte, smalle, kegelvormige</b> bouw, zeker jong. Jonge twijgen <b>dik bruinviltig behaard</b>. <b>Vijf naalden per bundel</b>, 4–11 cm, <b>zeer dicht opeengepakt</b> en naar voren gericht, rijk groen en geurig in de zomer. Eivormige kegels van 5–7,5 cm die <b>niet opengaan</b>: de zaden vallen met de kegel af.",
+  "verwar": "<i>Pinus strobus</i>: kale twijgen op een pluimpje dons na, open kroon, en lange, gebogen kegels die wel opengaan. <i>Pinus parviflora</i>: kortere, gedraaide naalden en een onregelmatige kroon.",
+  "weetje": "Groeit in de Alpen en de Karpaten, zelden lager dan 1500 m; samen met de lork vormt hij er de hoogste boomgrens, met eeuwenoude veteranen. Vogels en andere dieren halen de zaden uit de kegels.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Pinus cembra",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-cembra/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus strobus",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-strobus/"
+   }
+  ]
+ },
+ "pinus-parviflora": {
+  "herken": "In tuinen meestal een <b>traag groeiende, bossige boom</b> met een onregelmatige, gelaagde kroon. <b>Vijf korte naalden per bundel (4–6,5 cm)</b>, <b>gedraaid</b>, met zilverige huidmondjeslijnen aan de binnenkant, zodat ze blauwgrijs ogen. Eivormige kegels (3–10 cm), vaak per 3–4 in kransen, <b>overvloedig, al op jonge bomen</b>; na het openen buigen de schubben terug en blijven de kegels 6–7 jaar aan de takken.",
+  "verwar": "<i>Pinus strobus</i>: veel langere (7–13 cm), rechte naalden en lange, gebogen kegels. <i>Pinus cembra</i>: dicht opeengepakte, rechte naalden en bruinviltige twijgen.",
+  "weetje": "Komt uit Japan. De meeste planten in cultuur zijn een tuinvorm; de wilde vorm, een boom tot 15–20 m, is in Europa zeldzaam.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Pinus parviflora",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-parviflora/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus strobus",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-strobus/"
+   }
+  ]
+ },
+ "pinus-wallichiana": {
+  "herken": "Grote boom met stevige, <b>blauwgroene, volkomen kale</b> jonge scheuten. <b>Vijf naalden per bundel</b>, lang (13–18 cm), met twee witte zijden, <b>vaak vlak bij de voet geknikt</b> zodat het grootste deel <b>slap naar beneden hangt</b>; de naaldschede valt snel af. <b>Lange, cilindrische kegels</b> (15–25 cm) aan een steel van 2,5–5 cm.",
+  "verwar": "<i>Pinus strobus</i>: kortere (7–13 cm) naalden die niet afhangen, en kleinere kegels (13–20 cm). <i>P. armandii</i> en <i>P. ayacahuite</i>: min of meer donzige twijgen en andere kegels.",
+  "weetje": "Uit de Himalaya. Groeit jong zeer snel (60–90 cm per jaar) en draagt al vroeg kegels. Staat het best beschut tegen stormwind, anders ziet hij er snel verfomfaaid uit.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Pinus wallichiana",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-wallichiana/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus strobus",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-strobus/"
+   }
+  ]
+ },
+ "pinus-heldreichii": {
+  "herken": "Boom met <b>asgrijze, gladde schors</b> die bij oude bomen in <b>min of meer rechthoekige platen</b> barst. Jonge stengels eerst <b>blauw berijpt</b>, het tweede jaar witachtig. <b>Twee naalden per bundel</b>, <b>zeer stijf en rechtop</b>, donkergroen, 5–7,5 cm, 5 jaar blijvend. Spitse knoppen <b>zonder hars</b>. Kegels eerst <b>diep blauw</b>, rijp dof donkerbruin, 5–7,5 cm.",
+  "verwar": "<i>Pinus nigra</i>: langere (8–16 cm), minder rechtopstaande naalden, harsige knoppen, grijszwarte schors en kegels die nooit blauw zijn.",
+  "weetje": "Een hooggebergteboom uit de Dinarische Alpen en Albanië, bijna altijd op kalksteen, en net als <i>P. cembra</i> bestand tegen barre omstandigheden.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Pinus heldreichii",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-heldreichii/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus nigra",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-nigra/"
+   }
+  ]
+ },
+ "pinus-contorta": {
+  "herken": "In het wild een boom van 6–9 m (in cultuur hoger) met dikke, ruw gegroefde schors. Jonge scheuten vaak <b>vreemd gedraaid</b> (<i>contorta</i>); lange, smalle, <b>harsige</b> eindknoppen. <b>Twee korte naalden per bundel</b> (4–6 cm), <b>donkergroen</b>, met een blijvende naaldschede. <b>Scheef kegelvormige kegels</b> (tot 5 cm) waarvan de schubben een <b>dun stekeltje</b> dragen; ze blijven soms jarenlang gesloten aan de boom.",
+  "verwar": "<i>Pinus mugo</i> en <i>P. uncinata</i>: naalden blijven 5–10 jaar en de naaldschede is langer (tot 1,5 cm). <i>Pinus sylvestris</i>: grijsgroene naalden en oranje schors.",
+  "weetje": "Komt uit de kuststreek van West-Noord-Amerika, van Alaska tot Californië. In Groot-Brittannië is hij een belangrijke bosbouwboom geworden, als pionier op arme veengrond.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Pinus contorta",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-contorta/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pinus mugo",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-mugo/"
+   }
+  ]
  }
 };
 const FAMILIES = {
