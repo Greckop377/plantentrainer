@@ -2297,6 +2297,184 @@ const SOORTINFO = {
     "url": "https://www.treesandshrubsonline.org/articles/pinus/pinus-mugo/"
    }
   ]
+ },
+ "prunus-laurocerasus": {
+  "herken": "Wintergroene, snelgroeiende, <b>breed uitgroeiende</b> struik, overal <b>volkomen kaal</b>. Blad <b>groot (10–15 cm)</b>, langwerpig, <b>leerachtig en sterk glanzend donkergroen</b>, met een onduidelijk getande rand en <b>twee of meer kliertjes onderaan bij de voet</b>. <b>Bladstelen en jonge twijgen groen</b>. In april <b>rechtopstaande trossen</b> (7,5–12,5 cm) van kleine, vuilwitte bloempjes uit de bladoksels. Zwartpaarse, kegelvormige vruchten.",
+  "verwar": "<i>Prunus lusitanica</i>: kleiner, eirond blad, <b>zeer donkere</b> jonge twijgen, en veel langere, slanke trossen die bijna twee maanden later bloeien (juni). <i>Magnolia grandiflora</i>: nog groter blad, vaak met roestbruin vilt onderaan, en enorme losse bloemen.",
+  "letop": "<b>Giftig:</b> de hele plant (vooral blad en zaden, die blauwzuurvormende stoffen bevatten). Staat op de Belgische <b>bewakingslijst (B1)</b> van invasieve exoten: vogels verspreiden de vruchten, en zaailingen duiken steeds vaker op in vochtige bossen.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus laurocerasus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3385"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus laurocerasus",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-laurocerasus/"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Prunus laurocerasus",
+    "url": "https://ias.biodiversity.be/species/show/112"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "prunus-lusitanica": {
+  "herken": "Wintergroene, breed bossige struik of boom met <b>zeer donkere, kale jonge twijgen</b>. Blad <b>eirond tot ovaal, 6–12,5 cm</b>, aan beide kanten kaal, boven <b>zeer donker glanzend groen</b>, met een ondiep gekartelde rand. In juni een overvloed aan <b>lange, slanke trossen (15–25 cm)</b>, min of meer rechtopstaand, met kleine witte bloempjes. Donkerpaarse, puntige kegelvormige vruchtjes.",
+  "verwar": "<i>Prunus laurocerasus</i>: groter, langwerpig blad, groene bladstelen en twijgen, en kortere trossen die al in april bloeien.",
+  "weetje": "Komt uit Spanje en Portugal en is winterharder dan de laurierkers. Hij staat op zijn mooist als vrijstaande struik.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Prunus lusitanica",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-lusitanica/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus laurocerasus",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-laurocerasus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus laurocerasus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3385"
+   }
+  ]
+ },
+ "prunus-avium": {
+  "herken": "Grote boom (tot 20 m) met <b>glanzende schors die in horizontale banden afpelt</b> en opvallende, dwars uitgerekte lenticellen. Blad eirond-ovaal met een <b>lang uitgetrokken punt</b>, 7,5–15 cm, <b>grof en onregelmatig getand</b>, onderaan behaard langs de nerven; bladsteel 3–7 cm met <b>roodachtige klieren vlak onder het blad</b>. In april–mei <b>zuiver witte bloemen</b> (2,5 cm) op lange steeltjes in <b>ongesteelde bundels</b>. Ronde, donkerrode kersen, zoet of bitter maar niet zuur.",
+  "verwar": "Zure kers (<i>P. cerasus</i>): struikvormig, fijner getand en kaal blad, zure vruchten. <i>Prunus padus</i>: bloemen in lange trossen, zwarte bittere vruchtjes.",
+  "weetje": "Een van de ouders van de gekweekte kersen, vooral de zwarte. Wordt ook gebruikt als onderstam voor fruitkersen en veel Japanse sierkersen. Inheems in lichte loofbossen en houtwallen.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus avium",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3389"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus avium",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-avium/"
+   }
+  ]
+ },
+ "prunus-serrulata": {
+  "herken": "Japanse sierkers. Blad eirond tot eirond-lancetvormig, 7,5–12,5 cm, <b>lang toegespitst</b>, (soms dubbel) getand, aan beide kanten kaal en onderaan wat blauwig. Bloemen in korte trosjes van 2–5, geurloos, <b>tegelijk met het jonge blad</b> (april–begin mei), wit of roze getint, bij tuinvormen vaak gevuld. Kleine zwarte kersjes.",
+  "verwar": "<i>Prunus avium</i>: bloeit zuiver wit in ongesteelde bundels, grof getand, onderaan behaard blad, en afpellende schors in horizontale banden. <i>Prunus × subhirtella</i>: kleinere, behaarde bladeren en bloei vóór het blad.",
+  "weetje": "In tuinen staan vooral de Japanse cultivars met gevulde bloemen (de Sato-zakura, zoals 'Kanzan').",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Prunus serrulata",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-serrulata/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus avium",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-avium/"
+   }
+  ]
+ },
+ "prunus-padus": {
+  "herken": "Inheemse boom of grote struik (tot 15 m) met <b>scherp, onaangenaam ruikende schors</b>. Blad 7,5–12,5 cm, fijn getand, <b>boven mat donkergroen en kruidachtig</b>, met <b>7–12 paar zijnerven die onderaan duidelijk uitspringen</b> en haarplukjes in de nerfoksels. In mei <b>geurende witte bloemen in lange hangende of uitstaande trossen</b> (7,5–15 cm) aan korte beblade twijgen; kroonbladen 6–10 mm. Zwarte, bittere vruchtjes; het kelkbuisje valt af. Vormt worteluitlopers.",
+  "verwar": "De invasieve <b>Amerikaanse vogelkers</b> (<i>Prunus serotina</i>): blad <b>boven kaal, glanzend en wat leerachtig</b>, met veel nauwelijks uitspringende zijnerven en onderaan langs de middennerf behaard; bloeit later (eind mei–juni) met kleinere kroonbladen (2,5–4 mm), en de vrucht houdt aan de voet een <b>'kroontje'</b> (de kelkbuis). Geen worteluitlopers.",
+  "weetje": "Zeer algemeen op vochtige, voedselrijke grond in lichte loofbossen, houtwallen en struwelen op de zandgronden en in de duinen. Let op het verschil met de Amerikaanse vogelkers, die op de Belgische zwarte lijst (A3) staat.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus padus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3387"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus serotina",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3386"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus padus",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-padus/"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Prunus serotina",
+    "url": "https://ias.biodiversity.be/species/show/14"
+   }
+  ]
+ },
+ "prunus-spinosa": {
+  "herken": "Dichte, <b>wortelopslag vormende</b> struik (tot 3–4 m) met <b>donzige jonge twijgen</b>, dof en zwartachtig van bast, en <b>veel korte zijtakjes die in een doorn eindigen</b>. Blad klein (2–4 cm), scherp getand. In maart–april, meestal <b>vóór het blad</b>, kleine <b>zuiver witte bloemen</b> (1,2–2 cm), meestal alleen, soms per twee, op een kaal steeltje. <b>Rechtopstaande, donkerblauwe, sterk berijpte</b> vruchtjes (sleeën, 1–1,5 cm), hard en zeer wrang.",
+  "verwar": "<i>Prunus cerasifera</i>: kale, glanzend groene twijgen zonder doorns en grotere (2–3 cm) rode of gele pruimpjes. Meidoorn (<i>Crataegus</i>) bloeit pas na het uitlopen, in schermen, en heeft gelobd blad. De bastaard <i>P. × fruticans</i> (met pruim) is minder doornig, met grotere bloemen en vruchten.",
+  "weetje": "De sleeën worden gebruikt om gin en andere dranken op smaak te brengen en voor confituur. Het zeer harde hout diende vroeger voor de tanden van hooiharken. Door de wortelopslag minder geschikt als haag in een tuin.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus spinosa",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3390"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus spinosa",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-spinosa/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus cerasifera",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3391"
+   }
+  ]
+ },
+ "prunus-cerasifera": {
+  "herken": "Ronde boom tot ca. 8 m met <b>kale, glanzend groene jonge twijgen</b> en (meestal) zonder doorns. Blad eirond tot omgekeerd eirond, 4–6 cm, getand, <b>snel kaal</b>. Heel vroeg (<b>februari–maart</b>) zuiver witte (soms roze) bloemen van 2–2,5 cm, <b>meestal alleen</b> maar vaak dicht opeen op korte kortloten, vóór het blad. <b>Ronde rode of gele pruimpjes van 2–3 cm</b> met een ronde, gladde steen.",
+  "verwar": "<i>Prunus spinosa</i>: doornig, donzige zwartachtige twijgen, kleinere bloemen en kleine blauwberijpte sleeën. <i>Prunus domestica</i>: bloeit later (april), meestal met twee bloemen samen, en grotere, vaak langwerpige pruimen met een platte steen.",
+  "weetje": "De roodbladige 'Nigra' en 'Pissardii' zijn cultivars; de soort zelf is groenbladig. Wordt ook gebruikt als onderstam (myrobalaan) en laat zich goed tot haag scheren. Hij is alleen uit cultuur bekend en stamt af van de wilde <i>P. divaricata</i>.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus cerasifera",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3391"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus cerasifera",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-cerasifera/"
+   }
+  ]
+ },
+ "prunus-subhirtella": {
+  "herken": "Kruising (<i>P. × subhirtella</i>). Kleine boom met <b>fijne, twijgerige, opgaande takken</b> en <b>behaarde jonge twijgen</b>. Blad 4–7,5 cm, toegespitst, <b>scherp en ongelijk, vaak dubbel getand</b>, onderaan op de nerven donzig. Van <b>eind maart tot half april, vóór het blad</b>, trosjes van 2–5 <b>zachtroze bloempjes</b> (2 cm) die bleker verouderen, met <b>ingekeepte kroonbladen</b> en een cilindrische kelk. Glanzend zwarte kersjes.",
+  "verwar": "De <b>winterbloeiende</b> 'Autumnalis' is een cultivar van deze kruising, met halfgevulde, bijna witte bloemen vanaf november. <i>Prunus incisa</i>: kleiner, nog dieper gezaagd blad en een wijnrode kelkbuis. <i>Prunus serrulata</i>: bloeit tegelijk met het blad, groter kaal blad.",
+  "weetje": "Waarschijnlijk ontstaan uit een kruising van de wilde Japanse <i>P. pendula</i> (var. <i>ascendens</i>) met <i>P. incisa</i>, waarvan hij de kleine, dubbel gezaagde bladeren heeft.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Prunus subhirtella",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-subhirtella/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus incisa",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-incisa/"
+   }
+  ]
+ },
+ "prunus-incisa": {
+  "herken": "Sierlijke kleine boom of, vaker, een <b>struik</b> (2–5,5 m) met dunne, kale twijgen. Blad klein (2,5–6 cm), jong roodachtig, slank toegespitst en <b>scherp dubbel tot driedubbel gezaagd</b> (diep 'ingesneden'), boven donzig; bladsteel met twee paarse kliertjes. Begin april trosjes van 2–4 kleine <b>witte of lichtroze</b> bloemen (1,2–2 cm) met <b>ingekeepte kroonblaadjes</b>, een <b>wijnrode kelkbuis</b> en <b>diep getande, bladachtige schutblaadjes</b>. Paarszwarte vruchtjes.",
+  "verwar": "<i>Prunus × subhirtella</i>: groter, minder diep gezaagd blad, behaarde twijgen, en een boomvorm. <i>Prunus serrulata</i>: veel groter, kaal blad.",
+  "weetje": "Komt uit Japan, waar Thunberg hem al in 1776 ontdekte. Hij is een van de ouders van <i>P. × subhirtella</i>.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Prunus incisa",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-incisa/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus subhirtella",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-subhirtella/"
+   }
+  ]
+ },
+ "prunus-domestica": {
+  "herken": "Kleine boom (4,5–6 m) die <b>wortelopslag</b> vormt, met bruine, (bijna) <b>kale, doornloze</b> takken. Blad elliptisch tot omgekeerd eirond, 4–7,5 cm, <b>dof grijsgroen</b>, met <b>ronde, regelmatige tandjes</b>, onderaan donzig op de nerven. In april witte tot groenwitte bloemen, <b>meestal per twee</b>. Vruchten zeer verschillend van vorm en kleur (2–7,5 cm); de steen is <b>afgeplat, scherp gekield</b> en licht putjesrijk.",
+  "verwar": "De kroos (subsp. <i>insititia</i>): donzig blijvende, vaak doornige twijgen en rondere vruchten met een minder platte steen. <i>Prunus cerasifera</i>: bloeit vroeger met meestal één bloem, glanzend groene twijgen en kleinere ronde pruimpjes. <i>Prunus spinosa</i>: doornig, kleine blauwe sleeën.",
+  "weetje": "De pruim is een hexaploïde plant van bastaardoorsprong: hij ontstond uit kruisingen van de sleedoorn met de kerspruim, gevolgd door verdubbeling van het aantal chromosomen. Verwilderd komt hij af en toe in heggen voor.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus domestica",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3392"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus domestica",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-domestica/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Prunus cerasifera",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-cerasifera/"
+   }
+  ]
  }
 };
 const FAMILIES = {
