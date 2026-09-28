@@ -233,6 +233,8 @@ nav button[aria-current="true"]{color:#06120C;
   border-radius:999px;border:1px solid rgba(185,140,255,.45);background:rgba(185,140,255,.12);
   color:#D7C2FF;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .famchip:hover{background:rgba(185,140,255,.22)}
+.famchip.gesc{border-color:rgba(110,231,160,.5);background:rgba(110,231,160,.13);color:#BFF5D5}
+.famchip.gesc:hover{background:rgba(110,231,160,.24)}
 .blok.herk{background:rgba(125,216,232,.10);border-color:rgba(125,216,232,.34)}
 .blok.verw{background:rgba(255,138,61,.09);border-color:rgba(255,138,61,.30)}
 .blok.fam{background:rgba(185,140,255,.10);border-color:rgba(185,140,255,.32)}
@@ -574,9 +576,9 @@ dialog::backdrop{background:rgba(4,9,7,.74);backdrop-filter:blur(4px)}
   <div class="titelrij"><h2>Plantenfiches</h2><span class="klein" id="ficheTel"></span></div>
   <div class="tabs" id="ficheTabs">
     <button data-tab="planten" aria-pressed="true">Planten</button>
-    <button data-tab="families" aria-pressed="false">Families</button>
+    <button data-tab="geslachten" aria-pressed="false">Geslachten</button>
   </div>
-  <input class="zoek" id="zoek" placeholder="Zoek op naam, familie, standplaats…"
+  <input class="zoek" id="zoek" placeholder="Zoek op naam, geslacht, standplaats…"
     autocomplete="off">
   <div class="rij" style="margin-bottom:14px" id="filters"></div>
   <div class="fiches" id="fichesLijst"></div>
@@ -707,6 +709,7 @@ const ALLEFOTOS = typeof FOTOS !== "undefined" ? FOTOS : {};
    (zie herkenning.js). */
 const INFO = typeof SOORTINFO !== "undefined" ? SOORTINFO : {};
 const FAM = typeof FAMILIES !== "undefined" ? FAMILIES : {};
+const GF = typeof GESLACHTEN !== "undefined" ? GESLACHTEN : {};
 const $$ = s => [...document.querySelectorAll(s)];
 const DAG = 864e5;
 const vandaag = () => new Date().toISOString().slice(0, 10);
@@ -1181,6 +1184,9 @@ function antwoord(plant, juist, basis, extra, bron) {
 /* Herkenningspunten van het geslacht — dit is wat je op niveau 1 te zien
    krijgt zodra je een of meer geslachten hebt aangeduid. */
 function geslachtBlok(geslachtNaam) {
+  if (GF[geslachtNaam]) return `<div class="gesl"><div class="naam">${geslachtNaam}</div>
+    <div class="klein" style="font-style:normal">${geslNl(geslachtNaam)}</div>
+    ${geslachtInhoud(geslachtNaam)}</div>`;
   const g = erGeslachtdata ? GESL[geslachtNaam] : null;
   if (!g) return "";
   return `<div class="gesl">
@@ -1195,7 +1201,42 @@ function geslachtBlok(geslachtNaam) {
   </div>`;
 }
 
-/* ═══════════ plantinfo en familiefiches ═══════════ */
+/* ═══════════ plantinfo, geslachts- en familiefiches ═══════════ */
+const geslNl = g => (GF[g] && GF[g].nl) || (GESL[g] && GESL[g].nl) || "";
+function gesChip(geslacht) {
+  return `<button class="famchip gesc" data-geslacht="${geslacht}">🌿 <i>${geslacht}</i>${geslNl(geslacht)
+    ? " · " + geslNl(geslacht) : ""} <span style="opacity:.7">→</span></button>`;
+}
+function geslachtInhoud(g) {
+  const f = GF[g];
+  return `
+    <div class="blok fam"><h4>Wat is er speciaal aan dit geslacht</h4>${f.speciaal}</div>
+    <div class="blok herk"><h4>Zo herken je het geslacht</h4>
+      <ul>${f.herken.map(r => `<li>${r}</li>`).join("")}</ul></div>
+    ${f.tuin ? `<div class="blok weet"><h4>In de tuin</h4>${f.tuin}</div>` : ""}
+    ${f.wild ? `<div class="blok eco"><h4>In het wild</h4>${f.wild}</div>` : ""}
+    ${f.verwar ? `<div class="blok verw"><h4>Niet verwarren met</h4>${f.verwar}</div>` : ""}
+    ${f.letop ? `<div class="blok gif"><h4>Belangrijk om te weten</h4>${f.letop}</div>` : ""}`;
+}
+function opentGeslacht(g) {
+  const f = GF[g];
+  const leden = PLANTEN.filter(p => p.geslacht === g);
+  const familie = leden.length ? leden[0].familie : (GESL[g] || {}).familie;
+  $("#dlgTitel").innerHTML = `<i>${g}</i><div class="klein" style="font-style:normal">
+    ${geslNl(g) ? geslNl(g) + " · " : ""}${leden.length} ${leden.length === 1 ? "soort" : "soorten"} in de tool</div>`;
+  $("#dlgBody").innerHTML = `
+    ${familie ? `<div style="margin-bottom:6px">${famChip(familie)}</div>` : ""}
+    ${f ? geslachtInhoud(g) : GESL[g] ? `<div class="blok herk"><h4>Zo herken je het geslacht</h4>
+      <ul>${GESL[g].herkenning.map(r => `<li>${r}</li>`).join("")}</ul></div>`
+      : `<p class="klein">Voor dit geslacht is nog geen fiche.</p>`}
+    <div style="margin-top:16px"><h4 style="font-size:12px;text-transform:uppercase;letter-spacing:.05em;
+      color:var(--zacht);margin:0 0 6px">Soorten uit dit geslacht in de tool</h4>
+      ${leden.map(p => `<button class="famlid" data-fiche-open="${p.id}">${volnaam(p)}</button>`).join("")}
+    </div>
+    ${f ? bronLijst(f.bronnen) : ""}`;
+  if (!dlg.open) dlg.showModal();
+  $("#dlgBody").scrollTop = 0;
+}
 function famChip(familie) {
   const f = FAM[familie];
   return `<button class="famchip" data-familie="${familie}">🧬 ${familie}${f ? " · " + f.nl : ""}
@@ -1265,6 +1306,8 @@ function opentFamilie(naam) {
 
 /* één afhandeling voor familie-knoppen, soortknoppen en fotozoom, ook in later getekende inhoud */
 document.addEventListener("click", e => {
+  const ges = e.target.closest("[data-geslacht]");
+  if (ges) { e.preventDefault(); FX.klik(); opentGeslacht(ges.dataset.geslacht); return; }
   const fam = e.target.closest("[data-familie]");
   if (fam) { e.preventDefault(); FX.klik(); opentFamilie(fam.dataset.familie); return; }
   const lid = e.target.closest("[data-fiche-open]");
@@ -1292,7 +1335,7 @@ function toonTerug(plant, juist, extra) {
       : juist ? "Juist" : "Niet juist"}</div>
     <b>${volnaam(plant)}</b> <span class="nlnaam">· ${plant.nl}</span>
     ${extra ? `<div style="margin-top:7px">${extra}</div>` : ""}
-    <div>${famChip(plant.familie)}</div>
+    <div>${gesChip(plant.geslacht)} ${famChip(plant.familie)}</div>
     ${plantInfo(plant)}
     ${(niveau === 1 && (S.groepen || []).length && spel.modus === "herkennen")
       ? geslachtBlok(plant.geslacht) : ""}
@@ -1322,7 +1365,7 @@ function vraagLeren() {
       <div class="kaart pad" style="margin-top:12px">
         <div class="wetens" style="font-size:19px;font-family:Georgia,serif">${volnaam(p)}</div>
         <div class="klein">${p.nl}</div>
-        <div>${famChip(p.familie)}</div>
+        <div>${gesChip(p.geslacht)} ${famChip(p.familie)}</div>
         ${plantInfo(p)}</div>
       <p class="vraag" style="font-size:16px">Wist je het?</p>
       <div class="rij"><button class="knop licht" id="nee" style="flex:1">Nee, nog niet</button>
@@ -1598,25 +1641,25 @@ $$("[data-tab]").forEach(b => b.onclick = () => {
   $$("[data-tab]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
   tekenFiches();
 });
-function tekenFamilies() {
+function tekenGeslachten() {
   const q = norm($("#zoek").value);
-  const fams = [...new Set(PLANTEN.map(p => p.familie))].sort()
-    .filter(f => !q || norm(f + " " + (FAM[f] ? FAM[f].nl : "") + " " +
-      PLANTEN.filter(p => p.familie === f).map(p => p.geslacht + " " + p.nl).join(" ")).includes(q));
+  const gsl = [...new Set(PLANTEN.map(p => p.geslacht))].sort()
+    .filter(g => !q || norm(g + " " + geslNl(g) + " " + PLANTEN.filter(p => p.geslacht === g)
+      .map(p => p.familie + " " + p.soort + " " + p.nl).join(" ")).includes(q));
   $("#filters").innerHTML = "";
-  $("#ficheTel").textContent = fams.length + " families";
-  $("#fichesLijst").innerHTML = fams.map(f => {
-    const leden = PLANTEN.filter(p => p.familie === f);
+  $("#ficheTel").textContent = gsl.length + " geslachten";
+  $("#fichesLijst").innerHTML = gsl.map(g => {
+    const leden = PLANTEN.filter(p => p.geslacht === g);
     const met = leden.find(p => heeftFoto(p.id));
     const ft = met ? foto(met.id, ["habitus"]) : null;
-    return `<button class="famkaart" data-familie="${f}">
+    return `<button class="famkaart" data-geslacht="${g}">
       ${ft ? `<img src="${ft.bestand}" alt="" loading="lazy">` : `<div style="aspect-ratio:16/9;background:rgba(255,255,255,.05)"></div>`}
-      <span class="tx"><b>${f}</b><span>${FAM[f] ? FAM[f].nl + " · " : ""}${leden.length}
+      <span class="tx"><b><i>${g}</i></b><span>${geslNl(g) ? geslNl(g) + " · " : ""}${leden.length}
         ${leden.length === 1 ? "soort" : "soorten"}</span></span></button>`;
   }).join("") || `<p class="klein">Niets gevonden.</p>`;
 }
 function tekenFiches() {
-  if (ficheTab === "families") return tekenFamilies();
+  if (ficheTab === "geslachten") return tekenGeslachten();
   const groepen = ["alle", ...new Set(PLANTEN.map(p => p.groep))];
   $("#filters").innerHTML = groepen.map(g => `<button class="knop licht" data-g="${g}"
     style="min-height:38px;padding:7px 14px;font-size:13.5px;${g === ficheFilter
@@ -1658,7 +1701,7 @@ function opentFiche(id) {
       data-bijschrift="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})"
       title="${FOTOVAK[f.soort_foto]} — foto: ${f.auteur} (${f.licentie})">`).join("")}</div>
       <div class="klein" style="margin:-8px 0 4px">${fs.map(f => FOTOVAK[f.soort_foto] || "Detail").join(" · ")}</div>` : ""}
-    <div style="margin-bottom:6px">${famChip(p.familie)}</div>
+    <div style="margin-bottom:6px">${gesChip(p.geslacht)} ${famChip(p.familie)}</div>
     ${herken ? `<div class="blok herk"><h4>Zo herken je deze soort</h4>${herken}</div>` : ""}
     ${info.verwar ? `<div class="blok verw"><h4>Niet verwarren met</h4>${info.verwar}</div>` : ""}
     ${info.letop ? `<div class="blok gif"><h4>Belangrijk om te weten</h4>${info.letop}</div>`

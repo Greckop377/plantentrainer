@@ -2998,3 +2998,457 @@ const FAMILIES = {
   ]
  }
 };
+const GESLACHTEN = {
+ "Acer": {
+  "nl": "Esdoorn",
+  "speciaal": "Een groot geslacht van ruim 150 soorten bomen en struiken uit de hele noordelijke gematigde zone. Onmiskenbaar door de vrucht: <b>twee gevleugelde nootjes aan elkaar</b>, de 'helikoptertjes' die draaiend wegvliegen. Veel soorten worden geplant om hun herfstkleur of hun schors.",
+  "herken": [
+   "Bladeren en knoppen staan <b>tegenover elkaar</b>. Dat sluit al het grootste deel van onze bomen uit.",
+   "Blad meestal <b>handvormig gelobd</b> (3–7 lobben, soms tot 13), maar er zijn uitzonderingen: geveerd (<i>A. negundo</i>), drietallig (<i>A. griseum</i>) of ongelobd (<i>A. davidii</i>).",
+   "De vrucht is een <b>gevleugelde splitvrucht</b>; de hoek tussen de twee vleugels helpt je de soort te bepalen.",
+   "Breek een bladsteel: bij enkele soorten (Noorse esdoorn, veldesdoorn) komt er <b>wit melksap</b> uit."
+  ],
+  "tuin": "Van de fijne Japanse esdoorns (<i>A. palmatum</i>, <i>A. japonicum</i>) tot grote laan- en parkbomen (Noorse esdoorn, rode esdoorn, zilveresdoorn) en schorsbomen zoals de papieresdoorn en de slangenbastesdoorns.",
+  "wild": "De veldesdoorn is inheems (heggen en bossen op kalkrijke grond). De gewone esdoorn is in de middeleeuwen ingevoerd en nu overal ingeburgerd; de Noorse esdoorn is vrij algemeen, en de vederesdoorn burgert steeds meer in langs rivieren.",
+  "verwar": "Plataan (<i>Platanus</i>): lijkt op het blad, maar de bladeren staan <b>verspreid</b> en de vruchten hangen als bolletjes. Paardenkastanje: ook tegenoverstaand, maar handvormig samengesteld blad.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Acer",
+    "url": "https://www.treesandshrubsonline.org/articles/acer/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Acer platanoides",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3641"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Acer campestre",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3642"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Acer pseudoplatanus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3640"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Platanus ×hispanica",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2751"
+   }
+  ]
+ },
+ "Berberis": {
+  "nl": "Zuurbes",
+  "speciaal": "Doornige struiken, bladverliezend of wintergroen, met <b>geel hout</b> door de stof berberine. De meeldraden zijn <b>aanrakingsgevoelig</b>: raakt een insect ze aan, dan klappen ze naar binnen en drukken ze stuifmeel tegen het insect.",
+  "herken": [
+   "<b>Doorns</b> op de takken (omgevormde bladeren), enkelvoudig of <b>drie- tot meerdelig</b>, met in de oksel een <b>bundeltje bladeren</b> op een kortlot.",
+   "<b>Gele bloemen</b> (soms oranje of rood aangelopen), alleen, in bundeltjes of in trosjes.",
+   "Vrucht een <b>bes</b>: rood, of blauwzwart met een waslaag.",
+   "Kras de bast van een twijg: het hout eronder is <b>felgeel</b>."
+  ],
+  "tuin": "Bladverliezende soorten zoals <i>B. thunbergii</i> (vaak roodbladig) en wintergroene zoals <i>B. julianae</i>, <i>B. darwinii</i> en <i>B. × stenophylla</i>, als vrije struik of ondoordringbare haag.",
+  "wild": "Alleen de gewone zuurbes (<i>B. vulgaris</i>) is inheems, en in Nederland vooral in de duinen te vinden; elders is hij zeldzaam.",
+  "verwar": "<i>Mahonia</i> (dezelfde familie): ook geel hout en gele bloemen, maar <b>geveerd</b>, hulstachtig blad en geen doorns op de takken.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Berberis",
+    "url": "https://www.treesandshrubsonline.org/articles/berberis/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Berberis vulgaris",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2660"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Berberis (geslacht)",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2657"
+   },
+   {
+    "naam": "Kellenberger e.a. (2022), eLife — aanrakingsgevoelige meeldraden bij Berberis",
+    "url": "https://elifesciences.org/articles/81449"
+   }
+  ]
+ },
+ "Buxus": {
+  "nl": "Buxus (palmboompje)",
+  "speciaal": "Wintergroene struiken of kleine bomen met <b>zeer hard, beenachtig hout</b>. Eeuwenlang de belangrijkste wintergroene plant voor hagen en vormsnoei in Europa, maar nu bedreigd door de buxusmot en de schimmelziekte buxustaksterfte.",
+  "herken": [
+   "Klein, <b>tegenoverstaand</b>, leerachtig blad dat <b>gaafrandig</b> en ongelobd is en zich gemakkelijk in twee laagjes laat splitsen.",
+   "Onopvallende, groenige bloempjes zonder kroonbladen, in dichte kluwentjes in de bladoksels (voorjaar); mannelijke en vrouwelijke in hetzelfde kluwentje.",
+   "Vrucht een <b>driehokkig doosvruchtje met hoorntjes</b>; zaden zwart en glanzend.",
+   "De plant heeft een sterke, typische geur."
+  ],
+  "tuin": "Vooral <i>B. sempervirens</i> in hagen, randjes en vormsnoei; daarnaast kleinbladige soorten zoals <i>B. microphylla</i> en <i>B. sinica</i>.",
+  "wild": "In Nederland zelden verwilderd; in het wild groeien buxussen vaak op kalkgrond.",
+  "verwar": "<i>Ilex crenata</i> (Japanse hulst) lijkt er als haag sterk op, maar heeft <b>verspreid staand</b>, fijn getand blad en zwarte besjes. <i>Lonicera nitida</i>: ook klein tegenoverstaand blad, maar blauwpaarse besjes.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Buxus",
+    "url": "https://www.treesandshrubsonline.org/articles/buxus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Buxus sempervirens",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2754"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Buxus sempervirens",
+    "url": "https://www.treesandshrubsonline.org/articles/buxus/buxus-sempervirens/"
+   }
+  ]
+ },
+ "Carex": {
+  "nl": "Zegge",
+  "speciaal": "Een zeer groot, wereldwijd verspreid geslacht van grasachtige planten, vaak van natte plekken. Elk vrouwelijk bloempje zit in een zakvormig omhulsel, het <b>urntje</b>, en de vorm daarvan is vaak nodig om soorten te onderscheiden.",
+  "herken": [
+   "Grasachtig, maar met <b>driekantige stengels zonder knopen</b>. Ezelsbrug: zeggen hebben kanten, grassen hebben knopen.",
+   "Bladeren in <b>drie rijen</b> rond de stengel.",
+   "Bloempjes zonder bloemdek, in aren: meestal <b>mannelijke aren bovenaan</b> en vrouwelijke lager.",
+   "Elk nootje zit in een <b>urntje</b> met een snavel aan de top."
+  ],
+  "tuin": "Sierzeggen zoals <i>C. oshimensis</i> en <i>C. morrowii</i> (Japan), de bronskleurige Nieuw-Zeelandse soorten (<i>C. buchananii</i>, <i>C. comans</i>, <i>C. testacea</i>) en de palmzegge <i>C. muskingumensis</i>.",
+  "wild": "Tientallen inheemse soorten in moerassen, oevers, natte graslanden en bossen, zoals de stijve zegge (<i>C. elata</i>) en de zeldzame hangende zegge (<i>C. pendula</i>).",
+  "verwar": "Grassen (<i>Poaceae</i>): <b>ronde, holle stengels met knopen</b> en bladeren in twee rijen. Russen (<i>Juncus</i>): ronde stengels.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Carex (geslacht)",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=1783"
+   },
+   {
+    "naam": "Missouri Botanical Garden Plant Finder — Carex morrowii",
+    "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=279740"
+   }
+  ]
+ },
+ "Clematis": {
+  "nl": "Bosrank",
+  "speciaal": "Vooral houtige klimmers die klimmen met hun <b>bladstelen</b>, die zich rond een steun winden. Wat eruitziet als kroonbladen, zijn meestal <b>gekleurde kelkbladen</b>. Het plantensap is blaartrekkend.",
+  "herken": [
+   "Bladeren <b>tegenoverstaand</b>, meestal samengesteld (drietallig of geveerd); de bladstelen winden rond takken of draad.",
+   "Bloemen met meestal <b>4 (soms 5–8) gekleurde kelkbladen</b> en veel losse meeldraden.",
+   "De vruchtjes dragen meestal een lange, <b>gevederde staart</b>, zodat de vruchtstand een zilverig pluizenbolletje wordt.",
+   "Uitzonderingen: enkele soorten klimmen niet (<i>C. recta</i>, <i>C. integrifolia</i>)."
+  ],
+  "tuin": "Van de voorjaarsbloeiers (<i>C. montana</i>, <i>C. alpina</i>, <i>C. macropetala</i>) over de zomerbloeiers (<i>C. viticella</i>, <i>C. tangutica</i>, <i>C. flammula</i>) tot wintergroene soorten (<i>C. armandii</i>, <i>C. cirrhosa</i>).",
+  "wild": "De wilde bosrank (<i>C. vitalba</i>) is vrij algemeen in Zuid-Limburg en het oosten van het rivierengebied, in bosranden en heggen op kalkhoudende grond, en neemt elders toe.",
+  "verwar": "Andere klimmers hebben geen tegenoverstaand samengesteld blad met windende bladstelen: kamperfoelie heeft enkelvoudig blad en windt met de stengel.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Clematis",
+    "url": "https://www.treesandshrubsonline.org/articles/clematis/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Clematis vitalba",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2687"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Clematis viticella",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2688"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Cornus": {
+  "nl": "Kornoelje",
+  "speciaal": "Struiken, bomen en een paar kruiden. Sommige soorten hebben grote witte of roze <b>schutbladen</b> rond een hoofdje van kleine bloemen (<i>C. kousa</i>, <i>C. florida</i>), andere worden geplant om hun gekleurde wintertwijgen.",
+  "herken": [
+   "Blad <b>tegenoverstaand</b> (behalve bij <i>C. alternifolia</i> en <i>C. controversa</i>), gaafrandig, met <b>boogvormige zijnerven</b> die naar de bladtop toe buigen.",
+   "De <b>draadjestest</b>: scheur een blad voorzichtig dwars door en trek de helften uit elkaar. Tussen de nerven blijven dunne, elastische draadjes hangen.",
+   "Bloemen klein en viertallig, in schermen of in hoofdjes met grote schutbladen.",
+   "Vrucht een besachtige steenvrucht: wit, blauw, zwart of rood."
+  ],
+  "tuin": "Kornoeljes met rode of gele wintertwijgen (<i>C. alba</i>, <i>C. sericea</i>, <i>C. sanguinea</i>), de vroegbloeiende gele kornoelje (<i>C. mas</i>) en de bloeiende 'dogwoods' met schutbladen (<i>C. kousa</i>, <i>C. florida</i>).",
+  "wild": "De rode kornoelje (<i>C. sanguinea</i>) is inheems en algemeen in Zuid-Limburg en het rivierengebied. De gele kornoelje is in Zuid-Limburg waarschijnlijk oorspronkelijk wild. <i>C. sericea</i> verwildert en staat op de Belgische zwarte lijst.",
+  "verwar": "Andere struiken met tegenoverstaand blad (zoals <i>Lonicera</i> of <i>Viburnum</i>) hebben geen boogvormige nerven die naar de top buigen, en geen draadjes als je het blad doorscheurt.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Cornus",
+    "url": "https://www.treesandshrubsonline.org/articles/cornus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Cornus sanguinea",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3654"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Cornus mas",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3652"
+   },
+   {
+    "naam": "University of Vermont — Plant ID: Cornus",
+    "url": "https://www.uvm.edu/~jshane/plant-id/angiosperms/cornaceae/cornus.html"
+   },
+   {
+    "naam": "Harmonia — Cornus sericea",
+    "url": "https://ias.biodiversity.be/species/show/106"
+   }
+  ]
+ },
+ "Cotoneaster": {
+  "nl": "Dwergmispel",
+  "speciaal": "Struiken, van plat kruipend tot boomvormig, bladverliezend of wintergroen, met een overvloed aan rode (soms zwarte) <b>bessen</b> die vogels graag eten. Veel soorten planten zich voort zonder bevruchting (apomixie), waardoor het geslacht taxonomisch lastig is.",
+  "herken": [
+   "Blad <b>verspreid, gaafrandig</b> (nooit getand) en meestal klein; bij de wintergroene soorten vaak met een viltige onderkant.",
+   "Kleine bloemen met 5 kroonblaadjes: óf <b>rechtopstaand en roze-wit</b>, óf <b>open en zuiver wit</b>.",
+   "Vruchtjes als <b>miniatuurappeltjes</b> (meestal rood) met 2–5 steentjes.",
+   "Geen doorns (anders dan vuurdoorn en meidoorn)."
+  ],
+  "tuin": "Bodembedekkers (<i>C. dammeri</i>), de visgraatdwergmispel (<i>C. horizontalis</i>) en grotere wintergroene struiken (<i>C. lacteus</i>, <i>C. franchetii</i>, <i>C. salicifolius</i>).",
+  "wild": "Alleen de gewone dwergmispel (<i>C. integerrimus</i>) is inheems, zeer zeldzaam in Zuid-Limburg. <i>C. horizontalis</i> verwildert op muren en in kalkgraslanden en staat op de Belgische zwarte lijst.",
+  "verwar": "Vuurdoorn (<i>Pyracantha</i>): ook oranje of rode besjes, maar <b>doornig</b> en met <b>fijn getand</b> blad. Meidoorn: doornig en gelobd blad.",
+  "letop": "De bessen zijn matig giftig.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Cotoneaster",
+    "url": "https://www.treesandshrubsonline.org/articles/cotoneaster/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Cotoneaster integerrimus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3373"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Cotoneaster horizontalis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3374"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Euonymus": {
+  "nl": "Kardinaalsmuts",
+  "speciaal": "Bomen, struiken en kruipers met onopvallende bloempjes maar <b>opvallende vruchten</b>: gekleurde doosvruchten die openspringen, waarna de zaden in een felle <b>zaadmantel</b> (meestal oranje) naar buiten hangen. Alle delen zijn giftig.",
+  "herken": [
+   "Blad <b>tegenoverstaand</b> en (bij de soorten in cultuur) <b>getand</b>.",
+   "Jonge twijgen vaak <b>groen en vierkantig</b>, soms met kurkvleugels of wratjes.",
+   "Kleine groenige, gele of witte bloempjes met de delen per 4 of 5, in gevorkte trosjes.",
+   "Hangende, 3- tot 5-lobbige doosvruchten (roze, rood, geel) met oranje of rode zaadmantels."
+  ],
+  "tuin": "De wilde kardinaalsmuts en verwanten om hun vruchten en herfstkleur, <i>E. alatus</i> om zijn kurkvleugels, en de wintergroene <i>E. japonicus</i> en <i>E. fortunei</i> als haag en bodembedekker.",
+  "wild": "De wilde kardinaalsmuts (<i>E. europaeus</i>) is inheems: algemeen in de duinen, elders vrij algemeen in struwelen, heggen en bosranden.",
+  "verwar": "Andere struiken met tegenoverstaand blad hebben geen vierlobbige, roze doosvruchten met oranje zaden. Let op de groene, vierkantige twijgen.",
+  "letop": "<b>Giftig:</b> de hele plant, vooral de vruchten.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Euonymus",
+    "url": "https://www.treesandshrubsonline.org/articles/euonymus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Euonymus europaeus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3082"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Hydrangea": {
+  "nl": "Hortensia",
+  "speciaal": "Vooral bladverliezende struiken en klimmers. De grote, opvallende 'bloemen' aan de rand zijn <b>steriel</b>: wat je ziet zijn gekleurde kelkbladen rond de kleine vruchtbare bloempjes. Bij de boerenhortensia bepaalt het aluminium in de bodem of de bloemen blauw of roze zijn.",
+  "herken": [
+   "Blad <b>tegenoverstaand</b>, enkelvoudig, meestal getand (bij de eikenbladhortensia gelobd).",
+   "Bloeiwijze met kleine vruchtbare bloempjes en meestal een krans <b>grote steriele bloemen</b> van 3–5 kelkbladen; bij tuinvormen vaak een bol van alleen steriele bloemen.",
+   "Vorm van de bloeiwijze: plat scherm, bol of <b>kegelvormige pluim</b> (<i>H. paniculata</i>, <i>H. quercifolia</i>).",
+   "Vrucht een klein, droog doosvruchtje."
+  ],
+  "tuin": "Boerenhortensia en berghortensia (bloeien op het hout van vorig jaar), pluimhortensia en sneeuwbalhortensia (bloeien op nieuw hout), eikenbladhortensia, fluweelhortensia en de klimhortensia.",
+  "wild": "Geen inheemse soorten: alle hortensia's komen uit Oost-Azië of Noord-Amerika.",
+  "verwar": "Sneeuwbal (<i>Viburnum</i>, bv. <i>V. opulus</i>) heeft ook platte schermen met steriele randbloemen, maar bij <i>Viburnum</i> zijn dat echte, vergroeide <b>kroonbladen</b> en volgen er besachtige vruchten.",
+  "letop": "<b>Giftig:</b> hortensia's bevatten blauwzuurvormende stoffen en saponinen.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Hydrangea",
+    "url": "https://www.treesandshrubsonline.org/articles/hydrangea/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Hydrangea macrophylla",
+    "url": "https://www.treesandshrubsonline.org/articles/hydrangea/hydrangea-macrophylla/"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Ilex": {
+  "nl": "Hulst",
+  "speciaal": "Het enige geslacht van zijn familie, met honderden soorten wereldwijd, wintergroen of bladverliezend. Hulst is <b>tweehuizig</b>: alleen vrouwelijke planten dragen bessen, en dan nog alleen als er een mannelijke plant in de buurt staat.",
+  "herken": [
+   "Blad <b>verspreid</b>, enkelvoudig, vaak leerachtig en glanzend: stekelig, getand of gaafrandig.",
+   "Kleine witte, 4- tot 6-tallige bloempjes in de bladoksels.",
+   "Besachtige steenvruchtjes met enkele pitjes, meestal <b>rood of zwart</b>.",
+   "Bij de gewone hulst hebben jonge planten en lage takken stekelig blad, en is het blad hoger in de boom vaak gaafrandig."
+  ],
+  "tuin": "Gewone hulst en zijn kruisingen (<i>I. × altaclarensis</i>, <i>I. × meserveae</i>), de kleinbladige <i>I. crenata</i> als buxusvervanger, en de bladverliezende winterbessen (<i>I. verticillata</i>, <i>I. serrata</i>) om hun rode bessen.",
+  "wild": "De gewone hulst (<i>I. aquifolium</i>) is inheems en algemeen op vochtige, matig voedselrijke zand- en leemgrond in loofbossen en op oude houtwallen.",
+  "verwar": "<i>Osmanthus</i> en <i>Mahonia</i> hebben ook stekelig, hulstachtig blad, maar tegenoverstaand (<i>Osmanthus</i>) of geveerd (<i>Mahonia</i>). Buxus: tegenoverstaand blad.",
+  "letop": "De bessen van de gewone hulst zijn matig giftig.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Ilex",
+    "url": "https://www.treesandshrubsonline.org/articles/ilex/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Ilex aquifolium",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4105"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Juniperus": {
+  "nl": "Jeneverbes",
+  "speciaal": "Naaldhoutstruiken en -bomen uit de cipresfamilie, van platte kruipers tot zuilen. Bijzonder: de kegelschubben worden vlezig en vergroeien tot een <b>kegelbes</b>. De blauwe 'jeneverbessen' zijn dus eigenlijk kegels.",
+  "herken": [
+   "Bladeren <b>naaldvormig en stekend</b> (in kransen van drie of in paren), of <b>schubvormig</b> en dicht tegen de twijg; veel soorten hebben beide vormen tegelijk.",
+   "Naalden vaak met één of twee witte huidmondjesbanden aan de bovenkant.",
+   "Vruchten: kleine, <b>vlezige, blauw of zwart berijpte kegelbessen</b>.",
+   "Takjes ruiken aromatisch als je ze kneust (bij <i>J. sabina</i> scherp en onaangenaam)."
+  ],
+  "tuin": "Bodembedekkers (<i>J. horizontalis</i>, <i>J. procumbens</i>, <i>J. conferta</i>), struiken (<i>J. × pfitzeriana</i>, <i>J. squamata</i>, <i>J. sabina</i>) en zuilvormen (<i>J. scopulorum</i>, <i>J. virginiana</i>, <i>J. communis</i>).",
+  "wild": "Alleen de gewone jeneverbes (<i>J. communis</i>) is inheems, op stuifzand, droge heide en in de duinen; hij gaat achteruit en is nu vrij zeldzaam.",
+  "verwar": "<i>Thuja</i> en <i>Chamaecyparis</i> hebben ook schubblad, maar houtige kegeltjes en platte twijgvlakken. Taxus: platte naalden in twee rijen en een rode zaadmantel.",
+  "letop": "<i>J. sabina</i> is zeer sterk giftig. Verschillende jeneverbessen herbergen de perenroest.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Juniperus",
+    "url": "https://www.treesandshrubsonline.org/articles/juniperus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Juniperus communis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2034"
+   },
+   {
+    "naam": "CliniTox — Juniperus sabina",
+    "url": "https://www.vetpharm.uzh.ch/giftdb/pflanzen/0033_tox.htm"
+   },
+   {
+    "naam": "Pacific Northwest Plant Disease Handbook — pear trellis rust",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/juniper-juniperus-spp-pear-trellis-rust"
+   }
+  ]
+ },
+ "Lonicera": {
+  "nl": "Kamperfoelie",
+  "speciaal": "Klimmers en struiken, bladverliezend of wintergroen, vaak met <b>sterk geurende</b> bloemen. De bloemen en bessen staan vaak <b>per twee</b> naast elkaar.",
+  "herken": [
+   "Blad <b>tegenoverstaand</b>, enkelvoudig en meestal gaafrandig; bij sommige klimmers zijn de bovenste bladparen <b>rond de stengel vergroeid</b>.",
+   "Buisvormige tot <b>tweelippige</b> bloemen met een onderstandig vruchtbeginsel.",
+   "Bloemen <b>per twee</b> in de bladoksels (struiken, <i>L. japonica</i>) of in kransen en hoofdjes aan de takpunt (de meeste klimmers).",
+   "Bessen rood, oranje, zwart of blauwpaars; twijgen vaak hol."
+  ],
+  "tuin": "Klimmers (wilde kamperfoelie, tuinkamperfoelie, trompetkamperfoelie, <i>L. henryi</i>), winterbloeiende struiken (<i>L. fragrantissima</i>) en de kleinbladige <i>L. nitida</i> als haag.",
+  "wild": "Wilde kamperfoelie (<i>L. periclymenum</i>) is zeer algemeen op de zandgronden, in Zuid-Limburg en de duinen. De rode kamperfoelie (<i>L. xylosteum</i>) is zeldzaam in Zuid-Limburg en de duinen.",
+  "verwar": "Weigela (dezelfde familie): tegenoverstaand, maar <b>getand</b> blad en trechtervormige bloemen die droge doosvruchten geven. Sneeuwbes (<i>Symphoricarpos</i>): witte bessen.",
+  "letop": "De bessen en bladeren zijn giftig. <i>L. japonica</i> staat op de Belgische bewakingslijst van invasieve exoten.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Lonicera",
+    "url": "https://www.treesandshrubsonline.org/articles/lonicera/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Lonicera periclymenum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4237"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Lonicera xylosteum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4235"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Magnolia": {
+  "nl": "Magnolia",
+  "speciaal": "Bomen en struiken met grote, alleenstaande bloemen die anders gebouwd zijn dan bij de meeste bloemplanten: de bloemdekbladen (tepalen) staan in kransen, en de vele meeldraden en vruchtbladen staan in een <b>spiraal op een langwerpige as</b>.",
+  "herken": [
+   "Blad <b>verspreid</b>, enkelvoudig, <b>gaafrandig</b> en veernervig.",
+   "Steunblaadjes omhullen de eindknop en laten een <b>ringvormig litteken</b> rond de twijg achter; de bloemknoppen zijn vaak <b>dicht zilverig behaard</b>.",
+   "Grote bloemen met 6 tot 30 of meer tepalen, bij veel soorten <b>vóór het blad</b>.",
+   "Vrucht een kegelvormige verzamelvrucht die openspringt; de zaden hebben een <b>rode, vlezige zaadhuid</b>."
+  ],
+  "tuin": "Voorjaarsbloeiers vóór het blad (<i>M. stellata</i>, <i>M. × loebneri</i>, <i>M. kobus</i>, <i>M. × soulangeana</i>, <i>M. denudata</i>), zomerbloeiers met hangende bloemen (<i>M. sieboldii</i>, <i>M. wilsonii</i>) en de wintergroene <i>M. grandiflora</i>.",
+  "wild": "Geen inheemse soorten: magnolia's komen uit Oost-Azië en Amerika.",
+  "verwar": "Tulpenboom (<i>Liriodendron</i>, dezelfde familie): ook het ringlitteken rond de twijg, maar <b>vierhoekig gelobd</b> blad met een afgeknotte top.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Magnolia",
+    "url": "https://www.treesandshrubsonline.org/articles/magnolia/"
+   },
+   {
+    "naam": "Flora of China — Magnoliaceae",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=10530"
+   }
+  ]
+ },
+ "Pinus": {
+  "nl": "Den",
+  "speciaal": "Het grootste geslacht van de naaldbomen, met ruim 100 soorten, bijna allemaal van het noordelijk halfrond. Dennen hebben <b>naalden in bundeltjes</b>, harsrijk hout en houtige kegels die meestal pas in hun tweede jaar rijp zijn.",
+  "herken": [
+   "Naalden <b>in bundels van 2, 3 of 5</b>, met een vliezige schede aan de voet (bij de vijfnaaldige soorten valt die snel af).",
+   "Het aantal naalden per bundel is je eerste stap: 2 (grove den, zwarte den, bergden), 5 (weymouthden, alpenden, tranenden).",
+   "Houtige kegels met <b>spiraalsgewijs geplaatste schubben</b>, vaak met een verdikt schild.",
+   "Harsgeur; knoppen harsig of niet (een nuttig kenmerk)."
+  ],
+  "tuin": "Van de dwergvormige bergden (<i>P. mugo</i>) tot grote bomen (<i>P. nigra</i>, <i>P. sylvestris</i>, <i>P. wallichiana</i>), en de parasolden (<i>P. pinea</i>) met zijn eetbare zaden.",
+  "wild": "De grove den was vroeger inheems, verdween in de late middeleeuwen en is sinds de 16e eeuw massaal aangeplant; nu is hij ingeburgerd op heide en stuifzand. De zwarte den is veel aangeplant, ook in de duinen.",
+  "verwar": "Lariks en ceder: naalden in <b>toefjes op kortloten</b> (veel meer dan 5). Sparren en zilversparren: losse naalden.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Pinus",
+    "url": "https://www.treesandshrubsonline.org/articles/pinus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Pinus sylvestris",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2025"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Pinus nigra",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2024"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Pinus strobus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2022"
+   }
+  ]
+ },
+ "Prunus": {
+  "nl": "Kers, pruim, laurierkers",
+  "speciaal": "Een groot geslacht met veel fruit (kers, pruim, abrikoos, perzik, amandel) en sierbomen (Japanse sierkersen). De vrucht is altijd een <b>steenvrucht</b>. Blad en zaden bevatten vaak blauwzuurvormende stoffen.",
+  "herken": [
+   "Blad <b>verspreid</b>, meestal <b>gezaagd</b>, vaak met <b>kliertjes</b> bovenaan de bladsteel of onderaan de bladvoet.",
+   "Bloemen met 5 witte of roze kroonblaadjes en veel meeldraden, alleen, in bundels of in trossen.",
+   "Vrucht een <b>steenvrucht</b>: vlezig, met één harde pit.",
+   "Schors vaak met opvallende, dwarse lenticellen (kersen)."
+  ],
+  "tuin": "Sierkersen (<i>P. serrulata</i>, <i>P. × subhirtella</i>, <i>P. incisa</i>), kerspruim, en de wintergroene laurierkers en Portugese laurier als haag.",
+  "wild": "Inheems zijn onder meer de zoete kers, de vogelkers en de sleedoorn. De Amerikaanse vogelkers (<i>P. serotina</i>) is massaal ingeburgerd en staat op de Belgische zwarte lijst.",
+  "verwar": "Meidoorn en lijsterbes (ook rozenfamilie) hebben gelobd of geveerd blad en appelvruchtjes in plaats van steenvruchten.",
+  "letop": "De laurierkers is in alle delen giftig en staat op de Belgische bewakingslijst van invasieve exoten.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Prunus",
+    "url": "https://www.treesandshrubsonline.org/articles/prunus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus avium",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3389"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus padus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3387"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Prunus serotina",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3386"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ }
+};
