@@ -535,7 +535,7 @@ const SOORTDATA2 = [
   onderscheid:"<b>Bijna zwartpaarse bloempjes met teruggeslagen kroonbladen</b> — er is geen andere ooievaarsbek met zo'n donkere kleur. Vaak een donkere vlek op het blad.",
   weetje:"Wordt ook rouwviooltje genoemd. Bloeit in volle schaduw waar bijna niets anders het doet." },
 
-{ id:"geranium-endressii", g:"Geranium", s:"endressii", nl:"Berkenooievaarsbek",
+{ id:"geranium-endressii", g:"Geranium", s:"endressii", nl:"Roze ooievaarsbek",
   standplaats:"Zon tot halfschaduw", water:"Normaal", hoogte:"40–50 cm", breedte:"50–60 cm",
   blad:"Halfbladhoudend", bloeitijd:"Juni–september", bloeikleur:"Zalmroze",
   groeivorm:"Bodembedekker", groei:"Snel", gebruik:["Border","Bodembedekker","Massief"],

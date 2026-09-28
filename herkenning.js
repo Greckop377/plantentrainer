@@ -1289,6 +1289,168 @@ const SOORTINFO = {
    }
   ]
  },
+ "geranium-macrorrhizum": {
+  "herken": "Half wintergroene bodembedekker (20–50 cm) op <b>dikke, kruipende wortelstokken</b>, bovenaan klierachtig behaard. Blad rond, 5–7-lobbig, elke lob met 3–5 inkepingen aan de top; het blad <b>ruikt sterk aromatisch</b> als je erover wrijft en kleurt <b>rood in de herfst</b>. Paarsroze bloemen (12–18 mm kroonbladen) met een <b>opgeblazen, donkerrode kelk</b>; de kelkbladen staan rechtop en omsluiten na de bloei de vrucht. Bij deze soort is de plaat van het kroonblad <b>veel korter dan de nagel</b>.",
+  "verwar": "<i>Geranium × cantabrigiense</i>: kleiner, glanzender blad en een lagere, compactere mat. <i>Geranium endressii</i> en <i>G. × oxonianum</i>: niet aromatisch, met bredere, roze kroonbladen.",
+  "weetje": "Dankzij zijn dikke wortelstokken verdraagt hij droogte, en hij kan zowel in de zon als in halfschaduw. In Bulgarije is hij diep geworteld in de volksgeneeskunde: samentrekkend, bloedstelpend en voor wondheling. Het aromatische blad bevat etherische olie.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium macrorrhizum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3032"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium macrorrhizum",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=280850"
+   },
+   {
+    "naam": "Comparative phytochemical analysis of Pelargonium radula and Geranium macrorrhizum cultivated in Bulgaria (PMC)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13028625/"
+   }
+  ]
+ },
+ "geranium-sanguineum": {
+  "herken": "Lage, dichte pol (10–45 cm) met <b>wit behaarde, uitgespreide stengels</b>. Blad 5–7-delig en <b>zeer diep ingesneden</b>: het middensegment eindigt in 1–5 smalle, lijnvormige slipjes. Bloemen <b>alleen</b> (zelden per twee) op een steel, groot (kroonbladen 15–20 mm), <b>helder karmijnrood tot roodpaars</b>, met ongedeelde kroonbladen en donkerdere adertjes. In de herfst kleurt het blad rood.",
+  "verwar": "Andere ooievaarsbekken dragen hun bloemen meestal <b>per twee</b>. <i>Geranium macrorrhizum</i>: breder, aromatisch blad en paarsroze bloemen met een opgeblazen kelk.",
+  "weetje": "In het grootste deel van Europa inheems, maar de natuurlijke grens van zijn areaal ligt net ten zuiden van Nederland. De naam komt van het Latijnse <i>sanguineus</i> (bloedrood), naar de bloemkleur en het rode herfstblad.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium sanguineum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3033"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium sanguineum",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=280851"
+   }
+  ]
+ },
+ "geranium-x-cantabrigiense": {
+  "herken": "Lage, half wintergroene mat (20–30 cm) die zich uitbreidt met <b>kruipende stengels</b>. Blad kleiner dan bij <i>G. macrorrhizum</i> (tot 9 cm breed), diep ingesneden in 7 lobben, <b>glanzend lichtgroen</b> en <b>aromatisch</b>. Van eind mei tot in de zomer witte tot roze bloemen van ongeveer 2,5 cm die <b>geen zaad vormen</b>; ze blijven lang staan.",
+  "verwar": "<i>Geranium macrorrhizum</i> (een van de ouders): groter, dof grijsgroen blad, dikke wortelstokken, en bloemen met een opgeblazen donkerrode kelk.",
+  "weetje": "Een steriele kruising van <i>G. macrorrhizum</i> (moeder) en <i>G. dalmaticum</i> (vader), in 1974 gemaakt door Helen Kiefer in de botanische tuin van Cambridge; de naam komt van <i>Cantabrigia</i>, Latijn voor Cambridge. Bekende cultivars zijn 'Biokovo' en 'Karmina'.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium × cantabrigiense 'Biokovo'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=245839"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium × cantabrigiense 'Karmina'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=245613"
+   }
+  ]
+ },
+ "geranium-pratense": {
+  "herken": "Hoge pol (30–90 cm). Blad handdelig in 7–9 segmenten, het middensegment <b>vanaf het midden diep ingesneden-getand</b>, zonder vlekken. Bloemen per twee, <b>helder violetblauw</b> (soms wit), kroonbladen 15–20 mm met een afgeronde top. De bloemstelen <b>buigen na de bloei naar beneden</b> en richten zich later weer op.",
+  "verwar": "<i>Geranium sylvaticum</i>: kleinere, roodpaarsachtige bloemen met een witte voet, en bloemstelen die <b>blijvend rechtop</b> staan. <i>Geranium himalayense</i>: lager en meer uitgespreid, met kleinere, hoekige bladeren en grotere bloemen.",
+  "weetje": "Inheems maar vrij zeldzaam, op vochtige, voedselrijke, kalkhoudende grazige grond, zoals wegbermen. De rijpe vruchten springen open en slingeren de zaden een flink eind weg. 'Johnson's Blue', een van de bekendste blauwe tuingeraniums, is vermoedelijk een kruising van deze soort met <i>G. himalayense</i>.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium pratense",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3036"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium pratense",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=297660"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium 'Johnson's Blue'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=245610"
+   }
+  ]
+ },
+ "geranium-phaeum": {
+  "herken": "Rechtopgaande pol (45–60 cm) op een wortelstok. Bloemen klein (kroonbladen 8–10 mm), <b>zwartachtig paars</b>, soms violet, met kroonbladen die <b>recht afstaan of terugslaan</b> en aan de top vaak wat uitgebeten zijn; het hart is lichter. Blad handdelig, het middensegment alleen in het bovenste derde ingesneden-getand, met <b>vaak een donkere vlek</b> bij de insnijdingen. De bloemstelen buigen na de bloei niet naar beneden.",
+  "verwar": "Geen andere ooievaarsbek hier heeft zo'n donkere bloem. <i>Geranium sylvaticum</i> en <i>G. pratense</i>: grotere, violette tot blauwe bloemen en dieper ingesneden, ongevlekt blad.",
+  "weetje": "Een <b>stinsenplant</b>: in Nederland vooral verwilderd in loofbossen en op beschaduwde grasgrond bij buitenplaatsen en parken, onder meer langs de Utrechtse Vecht. Anders dan de meeste ooievaarsbekken doet hij het best in de schaduw. In het Engels heet hij <i>mourning widow</i>, 'rouwende weduwe'.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium phaeum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3034"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium phaeum",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=280874"
+   }
+  ]
+ },
+ "geranium-endressii": {
+  "herken": "Pol (40–70 cm) met frisgroen, handvormig ingesneden blad. <b>Helderroze</b> bloemen met grote kroonbladen (16–33 mm) die aan de top <b>iets uitgerand</b> zijn. Klierharen alleen bovenaan de bloemsteel en op de kelkbladen, of helemaal niet. Bloeit lang, van mei tot in de zomer.",
+  "verwar": "<i>Geranium × oxonianum</i>, de kruising met <i>G. versicolor</i>, is in tuinen veel gewoner: roze bloemen met <b>donkerdere adertjes</b> en ingekeepte kroonbladen. <i>Geranium macrorrhizum</i>: aromatisch blad en een opgeblazen kelk.",
+  "weetje": "Komt uit de Pyreneeën en verwildert soms. Zijn kruising met <i>G. versicolor</i> (<i>G. × oxonianum</i>, naar Oxford genoemd) is vruchtbaar; veel 'roze geraniums' in tuinen, zoals 'Wargrave Pink', horen daarbij.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium endressii",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3035"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium × oxonianum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=9026"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium × oxonianum 'Wargrave Pink'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=257621"
+   }
+  ]
+ },
+ "geranium-himalayense": {
+  "herken": "Pol (tot ongeveer 45 cm) op een schuine wortelstok, met <b>opstijgende</b> stengels. Blad handvormig ingesneden, 5–7-hoekig, 3–10 cm breed, met ruitvormige segmenten. Bloemen per twee, <b>groot (3–3,5 cm)</b>, <b>diep violetblauw</b>, met kroonbladen van 16–22 mm. De bloemsteeltjes buigen bij de vrucht naar beneden.",
+  "verwar": "<i>Geranium pratense</i>: hoger en rechtopgaand, met grotere, fijner verdeelde bladeren, een langere kelkspits en kleinere kroonbladen.",
+  "weetje": "Komt uit de noordwestelijke Himalaya en Afghanistan, waar hij in de zomer (juli–augustus) bloeit. De populaire 'Johnson's Blue' is vermoedelijk een kruising van deze soort met <i>G. pratense</i>.",
+  "bronnen": [
+   {
+    "naam": "Flora of Pakistan — Geranium himalayense",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=5&taxon_id=242323250"
+   },
+   {
+    "naam": "Flora of China — Geranium himalayense",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=242323250"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium 'Johnson's Blue'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=245610"
+   }
+  ]
+ },
+ "geranium-renardii": {
+  "herken": "Dichte, lage pol (20–30 cm) met <b>grijsgroen, viltig, gerimpeld</b> blad aan lange stelen. Elk blad (tot 12 cm breed) heeft 5–7 <b>ondiep gelobde</b>, geschulpte segmenten; het blijft het hele seizoen mooi en kleurt geel in de herfst. In mei–juni bleek lila tot <b>witte bloemen</b> (tot 4 cm) met <b>diep ingetekende violette adertjes</b> en ingekeepte kroonbladen.",
+  "verwar": "Geen andere ooievaarsbek hier heeft zulk grijs, fluweelachtig en gerimpeld blad. <i>Geranium macrorrhizum</i>: groter, aromatisch blad en paarsroze bloemen.",
+  "weetje": "Komt uit de Kaukasus, waar hij vaak op rotswanden groeit, en verdraagt eenmaal ingeworteld droogte. De naam eert Karl Ivanovich Renard (1809–1886) uit Moskou.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium renardii",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=280880"
+   }
+  ]
+ },
+ "geranium-nodosum": {
+  "herken": "Pol (20–50 cm) met weinig vertakte stengels die <b>bij de vertakkingen wat verdikt</b> zijn (de 'knopen' uit de naam). Blad <b>glanzend</b>, tot over het midden 3–5-delig, met <b>brede, eironde, toegespitste</b>, onregelmatig getande segmenten: veel minder fijn verdeeld dan bij de meeste andere soorten. Bloemen meestal per twee, bleek violet tot lila-paars met fijne donkere adertjes; de kroonbladen (12–18 mm) zijn aan de top <b>ingekeept</b>.",
+  "verwar": "<i>Geranium pratense</i> en <i>G. sylvaticum</i>: blad veel dieper en fijner ingesneden, in 7 of meer segmenten. <i>Geranium phaeum</i>: veel donkerdere bloemen.",
+  "weetje": "Groeit in het wild in loofbossen en struikgewas; in Zwitserland vooral in het zuiden van Ticino, en daar staat hij als gevoelig op de rode lijst. In de tuin is hij volgens de RHS een goede bodembedekker, zelfs in droge schaduw, met een lange bloei.",
+  "bronnen": [
+   {
+    "naam": "Info Flora (Zwitserland) — Geranium nodosum",
+    "url": "https://www.infoflora.ch/de/flora/geranium-nodosum.html"
+   },
+   {
+    "naam": "Royal Horticultural Society — Geranium nodosum 'Swish Purple'",
+    "url": "https://www.rhs.org.uk/plants/66920/geranium-nodosum-swish-purple/details"
+   }
+  ]
+ },
+ "geranium-sylvaticum": {
+  "herken": "Pol (30–70 cm). Blad handdelig, het middensegment vanaf het midden diep ingesneden-getand, zonder vlekken. Bloemen meestal <b>roodpaarsachtig met een witte voet</b> (kroonbladen 12–16 mm, afgerond). De bloemstelen blijven <b>na de bloei rechtop staan</b>.",
+  "verwar": "<i>Geranium pratense</i>: grotere, helder violetblauwe bloemen, en bloemstelen die na de bloei eerst naar beneden buigen.",
+  "weetje": "Komt uit Noord- en Midden-Europa en Noord-Azië; in Nederland is hij een tuinplant die soms verwildert. Zijn blad lijkt sterk op dat van de beemdooievaarsbek: kijk dus naar de bloemkleur en de bloemstelen na de bloei.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium sylvaticum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3037"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium pratense",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3036"
+   }
+  ]
+ },
  "hydrangea-macrophylla": {
   "herken": "Stevige, <b>dikstengelige</b> struik tot 3 m die makkelijk uit de voet uitloopt, met dik wit merg. Blad <b>dik, glanzend en vrijwel kaal</b>, langwerpig tot eirond-elliptisch, 10–15 cm, met <b>grove driehoekige tanden</b> en een toegespitste top. Bloeiwijze 10–20 cm: bij de wilde vorm een platte 'lacecap' (vruchtbare bloempjes met een krans steriele randbloemen), in tuinen vaak een bol ('mophead') van bijna alleen steriele bloemen met ca. 4 kelkbladen. Kleur wit, roze, blauw of paars.",
   "verwar": "<i>Hydrangea serrata</i>: in alles kleiner en fijner, met dunne twijgen en <b>dun, mat, wat ruw aanvoelend</b> blad; bloeit vroeger en heeft meestal platte schermen. <i>Hydrangea aspera</i>: dicht behaard, fluweelachtig blad.",
@@ -4304,6 +4466,41 @@ const GESLACHTEN = {
    {
     "naam": "Gyeltshen & Hodges, Viburnum leaf beetle — University of Florida IFAS (EDIS IN656)",
     "url": "https://ask.ifas.ufl.edu/publication/IN656"
+   }
+  ]
+ },
+ "Geranium": {
+  "nl": "Ooievaarsbek",
+  "speciaal": "Een groot geslacht van meer dan 300 soorten, vooral in de koelere gematigde streken. De naam komt van het Griekse <i>geranos</i> (kraanvogel): de lange, snavelvormige vrucht lijkt op de kop van een kraanvogel of ooievaar. Bij rijpheid springen de vijf deelvruchten los van de centrale zuil en <b>slingeren ze de zaden weg</b>.",
+  "herken": [
+   "Blad <b>handvormig gelobd of ingesneden</b>, vaak diep, met steunblaadjes.",
+   "Regelmatige bloemen met <b>5 kelkbladen en 5 kroonbladen</b> en meestal 10 meeldraden, vaak <b>per twee</b> op een steel.",
+   "De vrucht is een <b>lange 'snavel'</b> die in 5 deelvruchten uiteenvalt.",
+   "Om soorten te onderscheiden: kijk naar de <b>bloemkleur</b>, de vorm van de kroonbladen (afgerond, uitgerand of ingekeept), hoe diep het blad is ingesneden, en of de <b>bloemstelen na de bloei naar beneden buigen</b>."
+  ],
+  "tuin": "Winterharde vaste planten voor bodembedekking en borders: <i>G. macrorrhizum</i> en <i>G. × cantabrigiense</i> als groenblijvende matten, <i>G. phaeum</i> en <i>G. nodosum</i> voor schaduw, <i>G. sanguineum</i> voor zon, en de blauwe <i>G. pratense</i> en <i>G. himalayense</i> in de border.",
+  "wild": "Inheems zijn onder meer de beemdooievaarsbek (vochtige, kalkhoudende bermen) en het robertskruid. De donkere ooievaarsbek is een stinsenplant bij buitenplaatsen; andere tuinsoorten verwilderen soms.",
+  "verwar": "De 'geraniums' in balkonbakken zijn <i>Pelargonium</i> (dezelfde familie), die niet winterhard zijn. Reigersbek (<i>Erodium</i>) heeft geveerd blad.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels): Geraniaceae",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/highertaxa/taxon.php?id=1821"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium pratense",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3036"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Geranium phaeum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3034"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium × cantabrigiense 'Biokovo'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=245839"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Geranium pratense",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=297660"
    }
   ]
  }
