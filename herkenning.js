@@ -2475,6 +2475,186 @@ const SOORTINFO = {
     "url": "https://www.treesandshrubsonline.org/articles/prunus/prunus-cerasifera/"
    }
   ]
+ },
+ "quercus-robur": {
+  "herken": "Grote inheemse boom met een <b>brede, grillige kroon</b>: de stam lost zich laag in de kroon op in zware, kronkelige takken. Blad <b>vrijwel zonder steel</b> (0–3, zelden 7 mm), omgekeerd eirond, <b>onregelmatig gelobd</b> met 3–6 ronde lobben aan elke kant en <b>twee oortjes aan de bladvoet</b>; onderaan kaal. Eikels met 1–5 aan een <b>lange gemeenschappelijke steel van 2–9 cm</b>, vers met donkere overlangse streepjes.",
+  "verwar": "<i>Quercus petraea</i>: bladsteel 1–2,5 cm, wigvormige voet zonder oortjes, regelmatig gelobd blad en eikels zonder steel. Onthoud het omgekeerde: bij de zomereik zit de lange steel aan de eikel, bij de wintereik aan het blad. Veel bomen zitten ertussenin: de bastaard <i>Q. × rosacea</i> is vruchtbaar en volgens Heukels vaak algemener dan de ouders. <i>Quercus frainetto</i>: ook oortjes en een korte steel, maar veel dieper ingesneden blad met 6–10 lobben aan elke kant.",
+  "letop": "De <b>eikels</b> veroorzaken bij inname spijsverteringsproblemen.",
+  "weetje": "Een Brits onderzoek telde <b>2300 soorten</b> die op zomer- en wintereik leven (ongewervelden, korstmossen, mossen, zwammen, vogels en zoogdieren); <b>326</b> daarvan komen alleen op eik voor. Als hoge boom groeit de zomereik vooral op voedselrijke, vochtige grond, als hakhout ook op arme, droge grond.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus robur",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3441"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus robur",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-robur/"
+   },
+   {
+    "naam": "Mitchell et al. (2019), Collapsing foundations: the ecology of the British oak — Biological Conservation 233",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0006320718317920"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "quercus-petraea": {
+  "herken": "Grote inheemse boom met een <b>smallere, dichtere kroon</b> dan de zomereik: de stam loopt door tot hoog in de kroon en de takken zijn rechter. Blad met een <b>duidelijke steel van 1–2,5 cm</b>, een <b>wigvormige voet zonder oortjes</b> en <b>regelmatige, symmetrische lobben</b>; boven <b>glanzend</b> groen, onderaan met sterharen, vooral op de nerven. Eikels met 3–7 bij elkaar, <b>zittend</b> of op een zeer kort steeltje, zonder overlangse streepjes.",
+  "verwar": "<i>Quercus robur</i>: bijna ongesteeld blad met oortjes aan de voet, onregelmatiger gelobd, en eikels aan een lange steel. Tussenvormen (de bastaard <i>Q. × rosacea</i>) komen veel voor.",
+  "weetje": "Groeit op drogere, vrij voedselarme grond, vooral in heuvelgebieden, en is in Nederland veel zeldzamer dan de zomereik. Op het vasteland loopt hij tot twee weken later uit en bloeit hij later dan de zomereik.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus petraea",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3442"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus petraea",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-petraea/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus robur",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3441"
+   }
+  ]
+ },
+ "quercus-rubra": {
+  "herken": "Snelgroeiende boom (tot 25–30 m). Schors op jonge bomen <b>glad</b>, later grijs met brede, glanzende, ondiep gescheiden ribben. Blad <b>groot (12–20 cm)</b>, met aan elke kant 4–6 <b>spitse lobben die uitlopen in naaldpuntjes</b>, gescheiden door <b>ondiepe insnijdingen</b> (hooguit tot halverwege de middennerf); boven <b>dof groen</b>, onder bleek met alleen piepkleine haarplukjes in de nerfoksels. Bladsteel 2,5–5 cm, vaak rood aangelopen. Herfstkleur roodbruin, soms deels geel of bruin. <b>Grote eikels</b> (1,5–3 cm) in een <b>plat schoteltje</b> dat alleen de voet bedekt; ze rijpen pas in het <b>tweede jaar</b>.",
+  "verwar": "<i>Quercus palustris</i>: kleiner, dieper ingesneden, glanzend blad met opvallende bruine haarplukjes onderaan, kleine eikels en hangende onderste takken. <i>Quercus coccinea</i>: diep, rond (C-vormig) ingesneden, glanzend blad. Inheemse eiken: ronde lobben zonder naaldpuntjes.",
+  "letop": "Staat op de Belgische <b>bewakingslijst (B3)</b> van invasieve exoten. Waar hij geplant is, verjongt hij massaal en vormt hij een dichte onderetage die de bosflora verdringt. Zijn strooisel verteert slecht en verzuurt de bodem.",
+  "weetje": "Op de Amerikaanse eik leven veel minder bladeters en houtbewoners dan op onze inheemse eiken.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus rubra",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3438"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus rubra",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-rubra/"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Quercus rubra",
+    "url": "https://ias.biodiversity.be/species/show/87"
+   }
+  ]
+ },
+ "quercus-palustris": {
+  "herken": "Boom met veel dunne, dicht opeen staande zijtakken en <b>onderste takken die naar beneden hangen</b>, een silhouet dat je vooral in de winter meteen herkent. Blad kleiner dan bij de Amerikaanse eik (7–15 cm), <b>diep ingesneden</b> met aan elke kant 2–4 smalle, spitse, genaalde lobben; boven <b>glanzend heldergroen</b>, onderaan met <b>opvallende bruine haarplukjes in de nerfoksels</b>. Jonge bomen houden hun <b>dorre blad tot diep in de winter</b>. Kleine, bolle eikels (1–1,5 cm), vaak gestreept, in een ondiep napje; ze rijpen in het tweede jaar.",
+  "verwar": "<i>Quercus coccinea</i>: ronde, <b>C-vormige</b> insnijdingen, alleen piepkleine haarplukjes en eikels met ringetjes rond de top. Oude moeraseiken met brede kronen lijken er sterk op. <i>Quercus rubra</i>: groter, dof blad met ondiepe insnijdingen.",
+  "weetje": "Verdraagt af en toe overstroming én droogte, maar <b>geen kalkrijke grond</b>: daar wordt het blad geel (chlorose). Hij is daarom hét lesvoorbeeld van een boom die zure grond nodig heeft. Bij ons meestal als laanboom geplant; de herfstkleur is rood.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus palustris",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3439"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus palustris",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-palustris/"
+   }
+  ]
+ },
+ "quercus-cerris": {
+  "herken": "Grote boom met <b>diep gegroefde schors</b>, met <b>oranjebruine groeven</b> tussen dikke platen. De knoppen staan in een groepje aan de twijgtop en zijn <b>omgeven door lange, gekrulde, draadvormige steunblaadjes</b> die blijven zitten: een goed kenmerk, ook in de winter. Blad kort gesteeld en zeer wisselend van vorm (ondiep gelobd tot diep ingesneden), met kort genaalde lobben; boven donkergroen en <b>wat ruw</b>, onderaan kort behaard. Het <b>napje</b> is bezet met <b>lange, stijve, afstaande borstels</b>, vandaar 'moseik'. De eikels rijpen pas in het <b>tweede jaar</b>.",
+  "verwar": "Zomer- en wintereik: knoppen zonder draadvormige steunblaadjes en een napje met platte, aanliggende schubben. <i>Quercus frainetto</i>: groter, dieper en regelmatiger gelobd blad met oortjes aan de voet, en een napje met platte schubben.",
+  "weetje": "Verwildert hier en daar, vooral in de duinen. De Italiaanse naam <i>cerro</i> zit in de plaatsnaam Cerreto di Spoleto. Rondtrekkende kwakzalvers kwamen daar volgens de overlevering vandaan en heetten <i>cerretani</i>; vermengd met <i>ciarlare</i> (kletsen) werd dat <i>ciarlatano</i>, ons <b>charlatan</b>.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus cerris",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3437"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus cerris",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-cerris/"
+   }
+  ]
+ },
+ "quercus-ilex": {
+  "herken": "<b>Wintergroene</b> boom of grote struik met een brede, dichte, koepelvormige kroon. Blad leerachtig, 4–12 cm en zeer wisselend van vorm: boven <b>glanzend zwartgroen</b>, onderaan <b>grijs- of bruinviltig</b>. Op jonge bomen en onderaan in de kroon <b>stekelig getand</b> als hulst, hogerop vaak <b>gaafrandig</b>. Jonge twijgen dicht grijs behaard. Schors hard, zwartachtig, ondiep gebarsten in <b>kleine vierkante plaatjes</b>, dus geen kurk. De eikels rijpen in het eerste jaar.",
+  "verwar": "<i>Quercus suber</i>: ook wintergroen met een viltige onderkant, maar met een dikke, zachte <b>kurkschors</b>. Hulst (<i>Ilex aquifolium</i>): blad aan beide kanten kaal en glanzend, en rode bessen.",
+  "weetje": "Verdraagt zeewind en schaduw en laat zich goed scheren. Hij is een van de beste bomen voor windschermen aan de kust; in Kent verwildert hij zelfs op strandkeien.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Quercus ilex",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-ilex/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus suber",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-suber/"
+   }
+  ]
+ },
+ "quercus-coccinea": {
+  "herken": "Boom met een smalle, open kroon waarin <b>dode takken lang blijven zitten</b>. Blad 7–16 cm, <b>diep ingesneden</b> (meer dan halverwege de middennerf), met 5–9 genaalde lobben en <b>ronde, C-vormige insnijdingen</b>; boven <b>glanzend donkergroen</b>, onderaan alleen piepkleine haarplukjes. Knoppen <b>vijfhoekig</b> en alleen in de <b>bovenste helft behaard</b>. Eikels ongeveer zo breed als lang, met <b>concentrische ringetjes rond de top</b>, voor een derde tot de helft in een glanzend napje; ze rijpen in het tweede jaar. Herfstkleur scharlakenrood.",
+  "verwar": "<i>Quercus palustris</i>: kleiner blad met opvallende bruine haarplukjes onderaan, kleine bolle eikels en hangende onderste takken. <i>Quercus rubra</i>: dof blad met ondiepe insnijdingen. Ezelsbrug uit Trees and Shrubs Online: de drie c's van <i>coccinea</i> staan voor de <b>C-vormige</b> insnijdingen.",
+  "weetje": "Een van de eerste Amerikaanse bomen in Europa: hij groeide al vóór 1691 in Engeland. Hij verdraagt kalkrijke grond beter dan de moeraseik, als de grond maar goed doorlatend is. De herfstkleur verschilt sterk van boom tot boom, en vroege vorst kan het blad doen verdorren voor het kleurt.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Quercus coccinea",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-coccinea/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus palustris",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-palustris/"
+   }
+  ]
+ },
+ "quercus-frainetto": {
+  "herken": "Statige boom. Blad omgekeerd eirond en <b>diep ingesneden in 6–10 langwerpige lobben aan elke kant</b>, die half tot driekwart tot aan de middennerf reiken en zelf vaak nog 2–5 ronde tandjes hebben. De grootste bladeren worden 15–20 cm. <b>Zeer korte bladsteel</b> (hooguit 8 mm) en meestal <b>twee kleine oortjes</b> aan de bladvoet; onderaan donzig grijsgroen. Eikels met 2–4 bij elkaar, bijna zonder steel, in een napje met platte, donzige schubben.",
+  "verwar": "<i>Quercus robur</i>: ook oortjes, maar veel minder diep gelobd (3–6 ronde lobben) en eikels aan een lange steel. <i>Quercus cerris</i>: lange gekrulde steunblaadjes rond de knoppen en een borstelig napje.",
+  "weetje": "Verdraagt eenmaal ingeworteld droge omstandigheden. Volgens de Italiaanse flora Acta Plantarum is de soortnaam een nooit verbeterde drukfout voor een naam die 'lijkend op een kleine <i>farnia</i>' betekent (<i>farnia</i> is het Italiaanse woord voor zomereik).",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Quercus frainetto",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-frainetto/"
+   },
+   {
+    "naam": "Oregon State University, Landscape Plants — Quercus frainetto",
+    "url": "https://landscapeplants.oregonstate.edu/plants/quercus-frainetto"
+   },
+   {
+    "naam": "Acta Plantarum — Quercus frainetto",
+    "url": "https://www.actaplantarum.org/flora/flora_info.php?id=6290"
+   }
+  ]
+ },
+ "quercus-phellos": {
+  "herken": "Boom met een dichte, ovale kroon en hangende onderste takken. Blad <b>smal lijnvormig tot smal elliptisch</b>, 5–12 × 1–2,5 cm, <b>gaafrandig en nooit gelobd</b>, vaak wat golvend, met <b>één naaldpuntje aan de top</b>; kaal en lichtgroen. Kleine eikels (8–12 mm) in een ondiep schoteltje, die in het <b>tweede jaar</b> rijpen. Herfstkleur goudgeel.",
+  "verwar": "Wilgen (<i>Salix</i>): blad meestal gezaagd, knoppen onder <b>één kapvormige knopschub</b>, katjes en pluizige zaden, geen eikels. Bij de wilgbladige eik staan de knoppen, typisch voor een eik, in een groepje aan de twijgtop.",
+  "weetje": "Dat naaldpuntje aan de bladtop verraadt dat hij bij de <b>rode eiken</b> hoort, net als de Amerikaanse eik en de moeraseik: die groep heeft naaldpuntjes aan de lobben of de bladtop, en eikels die pas in het tweede jaar rijpen.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Quercus phellos",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-phellos/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/"
+   },
+   {
+    "naam": "University of Vermont, Plant Identification — Quercus",
+    "url": "https://www.uvm.edu/~jshane/plant-id/angiosperms/fagaceae/quercus.html"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/"
+   }
+  ]
+ },
+ "quercus-suber": {
+  "herken": "<b>Wintergroene</b> boom met een brede, onregelmatige kroon en een <b>dikke (tot 5 cm), zachte, diep gegroefde kurkschors</b>; waar de kurk geoogst is, is de stam roodbruin. Blad klein (3–7 cm), stijf en leerachtig, met <b>fijne stekelpuntige tandjes</b>, vaak <b>bol</b>; boven glanzend donkergroen, onderaan <b>dicht grijsviltig</b>. Jonge twijgen grijsviltig. Het napje omsluit minstens de halve eikel, met lange, rechtopstaande schubben bovenaan.",
+  "verwar": "<i>Quercus ilex</i>: vergelijkbaar blad, maar harde schors die in kleine plaatjes barst, geen kurk. Het napje heeft aanliggende schubben.",
+  "weetje": "De enige boom waarvan de kurk duurzaam geoogst kan worden: om de negen jaar, zo'n anderhalve eeuw lang, zonder dat de boom sterft. Na de oogst schildert men het laatste cijfer van het jaartal op de stam.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Quercus suber",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-suber/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Quercus ilex",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-ilex/"
+   }
+  ]
  }
 };
 const FAMILIES = {
@@ -3448,6 +3628,67 @@ const GESLACHTEN = {
    {
     "naam": "Antigifcentrum (België) — brochure Planten",
     "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Quercus": {
+  "nl": "Eik",
+  "speciaal": "Een groot geslacht van 400–450 soorten bomen en struiken over het hele noordelijk halfrond, met de meeste soorten in Mexico en Oost-Azië. Onmiskenbaar door de vrucht: de <b>eikel</b>, een noot in een houtig <b>napje</b>. Eiken zijn ecologisch goud waard: in Groot-Brittannië leven 2300 soorten op de twee inheemse eiken, waarvan 326 uitsluitend op eik.",
+  "herken": [
+   "De <b>eikel</b>: één noot in een houtig napje met schubben. Het napje kan een plat schoteltje zijn of de halve noot omsluiten; de schubben liggen plat of zijn lange borstels (moseik).",
+   "<b>Knoppen in een groepje aan de twijgtop</b>, met veel dakpansgewijs overlappende knopschubben. Het merg van de twijg is stervormig.",
+   "Blad <b>verspreid</b>, gelobd of ongelobd, gaafrandig, getand of stekelig, en sterk wisselend, zelfs binnen één boom.",
+   "Mannelijke bloemen in <b>hangende katjes</b>, in het voorjaar vóór of tegelijk met het jonge blad.",
+   "Twee grote groepen: <b>witte eiken</b> (zomer- en wintereik) met ronde lobben zonder naaldpuntjes en eikels die in één jaar rijpen, en <b>rode eiken</b> (Amerikaanse eik, moeraseik, scharlaken eik, wilgbladige eik) met <b>naaldpuntjes</b> aan de lobben of de bladtop en eikels die pas in het tweede jaar rijpen."
+  ],
+  "tuin": "Vooral park- en laanbomen: de inheemse zomer- en wintereik, de Amerikaanse eik, de moeraseik (meestal als laanboom), de moseik en de Hongaarse eik. Wintergroen zijn de steeneik (ook als geschoren haag) en de kurkeik.",
+  "wild": "Inheems zijn de zomereik (zeer algemeen in loofbossen en struikgewas) en de wintereik (vooral op drogere, arme grond in heuvelgebieden). Hun bastaard is vruchtbaar en vaak algemener dan de ouders. De Amerikaanse eik is algemeen geworden op zandgrond en staat op de Belgische bewakingslijst; de moseik verwildert hier en daar in de duinen.",
+  "verwar": "Beuk en tamme kastanje (dezelfde familie): de beuk heeft driekantige nootjes in een stekelige bolster, de tamme kastanje glanzende kastanjes in een zeer stekelige bolster. Het napje van een eik springt nooit open in kleppen, de bolster van beuk en kastanje wel.",
+  "letop": "De eikels veroorzaken bij inname spijsverteringsproblemen (vermeld voor de zomereik).",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Quercus (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/quercus/"
+   },
+   {
+    "naam": "Flora of North America — Quercus",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=127839"
+   },
+   {
+    "naam": "University of Vermont, Plant Identification — Quercus",
+    "url": "https://www.uvm.edu/~jshane/plant-id/angiosperms/fagaceae/quercus.html"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus robur",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3441"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus petraea",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3442"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus rubra",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3438"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Quercus cerris",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3437"
+   },
+   {
+    "naam": "Mitchell et al. (2019), Collapsing foundations: the ecology of the British oak — Biological Conservation 233",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0006320718317920"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Quercus rubra",
+    "url": "https://ias.biodiversity.be/species/show/87"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels): Fagaceae",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/highertaxa/taxon.php?id=1851"
    }
   ]
  }
