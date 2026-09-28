@@ -2813,6 +2813,166 @@ const SOORTINFO = {
     "url": "https://www.treesandshrubsonline.org/articles/salix/salix-triandra/"
    }
   ]
+ },
+ "spiraea-japonica": {
+  "herken": "Struik tot ongeveer 1,5 m. Blad kortgesteeld, lancetvormig tot eirond, tot 7,5 cm, <b>scherp getand of ingesneden</b>. In juli–augustus <b>roze bloempjes in platte schermen</b> aan de toppen van de <b>scheuten van dit jaar</b>, vaak met kleinere zijschermen eromheen, samen soms tot 30 cm breed. De <b>meeldraden steken ver boven de kroonblaadjes uit</b>, wat de schermen een pluizig uitzicht geeft.",
+  "verwar": "<i>Spiraea betulifolia</i>: lager, met breed elliptisch, stomp blad en meestal witte bloemen. <i>Spiraea douglasii</i> en <i>S. × billardii</i>: roze bloemen in <b>rechtopstaande, lange pluimen</b> in plaats van platte schermen.",
+  "weetje": "Bloeit op <b>nieuw hout</b>: in de late winter of het vroege voorjaar mag je de scheuten flink inkorten. In tuinen staan vooral cultivars, sommige met goudgeel blad (zoals 'Golden Princess'). Planten die vroeger <i>S. × bumalda</i> heetten, horen volgens Japanse botanici gewoon bij deze zeer variabele soort.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Spiraea japonica",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-japonica/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/"
+   }
+  ]
+ },
+ "spiraea-nipponica": {
+  "herken": "Ronde, dichte struik (1,2–2,4 m), <b>overal kaal</b>, met roodachtig jong hout en <b>horizontale tot boogvormige takken</b>. Blad klein (1,3–2,5 cm), <b>zeer breed omgekeerd eirond tot bijna rond</b>, met een paar brede tandjes aan de afgeronde top. In juni <b>zuiver witte bloempjes in dichte, bolle trosjes</b> (2,5–4 cm), elk aan het eind van een kort, bebladerd twijgje; ze staan allemaal <b>aan de bovenkant</b> van de takken.",
+  "verwar": "<i>Spiraea × vanhouttei</i>: groter, ruitvormig, soms drielobbig blad dat onderaan blauwig is. <i>Spiraea × arguta</i> en <i>S. thunbergii</i>: bloeien al in april, met smaller blad. De veelgeplante cultivar 'Snowmound' heeft smaller, langwerpig blad.",
+  "weetje": "Komt uit Japan en kwam via de kwekerij van Siebold in <b>Leiden</b> naar Europa. Hij bloeit op twijgjes van vorig jaar: snoei dus meteen na de bloei, en haal uitgebloeide oude takken weg.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Spiraea nipponica",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-nipponica/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/"
+   }
+  ]
+ },
+ "spiraea-x-arguta": {
+  "herken": "Ronde struik (1,8–2,4 m) met <b>slanke, fijn vertakte, donzige, overhangende twijgen</b>. Blad omgekeerd lancetvormig, 2–4 cm lang en 0,6–1,2 cm breed, gaafrandig of met enkele tandjes bij de top, helder groen. In april–mei <b>zuiver witte bloempjes</b> in bundeltjes van 4–8, elk op een slank steeltje, zo dicht op de bovenkant van vorig jaar's twijgen dat die <b>witte slingers van 15–30 cm</b> vormen.",
+  "verwar": "<i>Spiraea thunbergii</i>: bloeit nog vroeger, heeft smaller, lijnvormig blad en bundeltjes van 2–5 bloemen. <i>Spiraea × vanhouttei</i>: bloeit later, met bolle schermpjes en groter, ruitvormig blad.",
+  "weetje": "Een tuinkruising die vóór 1884 ontstond, met <i>S. thunbergii</i> als vermoedelijke ouder. Trees and Shrubs Online noemt hem de mooiste van de voorjaarsbloeiende spirea's: winterhard en elk jaar vol bloemen.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Spiraea 'Arguta'",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-arguta/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea thunbergii",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-thunbergii/"
+   }
+  ]
+ },
+ "spiraea-thunbergii": {
+  "herken": "Fijn vertakte, brede struik (0,9–1,5 m) met slanke, hoekige, donzige twijgen. Blad <b>smal lijnlancetvormig</b> (2,5–4 cm lang, maar 3–6 mm breed), lang toegespitst, met een paar naar binnen gebogen tandjes, <b>aan beide kanten lichtgroen</b>. In maart–april <b>zuiver witte bloempjes</b> in bundeltjes van 2–5 op de <b>nog kale</b>, draadachtige twijgen. Het blad valt laat en blijft soms de hele winter hangen.",
+  "verwar": "<i>Spiraea × arguta</i>: bloeit iets later, heeft breder, omgekeerd lancetvormig blad en grotere bundels (4–8 bloemen).",
+  "weetje": "De vroegste spirea in de tuin. Hij is vernoemd naar de Zweedse botanicus Carl Peter Thunberg en kwam uit Japan naar Europa. Toch is hij daar niet inheems: hij komt uit China.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Spiraea thunbergii",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-thunbergii/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/"
+   }
+  ]
+ },
+ "spiraea-betulifolia": {
+  "herken": "Lage, ronde struik (rond 60 cm, in tuinen tot 1 m) met <b>zigzaggende, roodbruine twijgen</b>. Blad veernervig, <b>elliptisch met een stompe top</b>, gekarteld of dubbel getand in het bovenste deel of rondom, als een klein berkenblad. Vanaf juni witte, soms roze bloempjes in <b>vlakke tot licht bolle schermen</b> tot 9 cm breed, met <b>meeldraden die veel langer zijn dan de kroonblaadjes</b>, aan de scheuten van dit jaar.",
+  "verwar": "<i>Spiraea japonica</i>: hoger, met scherp getand, spits blad en roze schermen. <i>Spiraea nipponica</i>: ook rondachtig blad, maar hoge struik die in juni bloeit op de bovenkant van oude takken.",
+  "weetje": "Komt uit Noordoost-Azië tot in Japan en werd in 1812 ingevoerd. De echte soort is zeldzaam in cultuur. Hij vernieuwt zich met nieuwe scheuten vanuit de voet; haal daarom oud hout weg.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Spiraea betulifolia",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-betulifolia/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/"
+   }
+  ]
+ },
+ "spiraea-douglasii": {
+  "herken": "Struik (0,5–1,8 m) die met wortelstokken <b>dichte bestanden van rechte stengels</b> vormt; jonge stengels roodachtig en fijn viltig. Blad smal langwerpig (4–10 cm), <b>alleen in de bovenste helft grof getand</b>, onderaan <b>wit- of grijsviltig</b>. In juli–september <b>donker paarsroze bloemen</b> in een <b>smalle, rechtopstaande, dichte pluim</b> (10–20 cm), met roze meeldraden die ver uitsteken. De kelkblaadjes buigen na de bloei terug.",
+  "verwar": "<i>Spiraea salicifolia</i>: witte tot lichtroze bloemen, blad over de hele lengte getand en onderaan kaal, kelkblaadjes blijven rechtop. <i>Spiraea × billardii</i>: hun bastaard, in alles daartussenin.",
+  "letop": "Staat op de Belgische <b>zwarte lijst (A2)</b> van invasieve exoten: niet aanplanten. Hij vormt met zijn wortelstokken dichte, soortenarme struwelen in moerassen, venen en natte heide, verdringt de oorspronkelijke plantengroei en zet in België, anders dan andere Noord-Amerikaanse spirea's, ook kiemkrachtig zaad. Oude, droge stengels vatten makkelijk vuur.",
+  "weetje": "Ontdekt door David Douglas in Brits-Columbia rond 1827 en voor het eerst gekweekt in de botanische tuin van Glasgow uit zijn zaad.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Spiraea douglasii",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3287"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea douglasii",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-douglasii/"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Spiraea douglasii",
+    "url": "https://ias.biodiversity.be/species/show/139"
+   }
+  ]
+ },
+ "spiraea-salicifolia": {
+  "herken": "Struik (0,5–2 m) met <b>kruipende wortels</b> die een <b>dicht struweel</b> van rechte stengels vormt; stengels snel kaal. Blad lancetvormig tot smal ovaal (4–7,5 cm), spits, <b>over de hele lengte scherp, vaak dubbel getand</b>, <b>aan beide kanten kaal en groen</b>. In juni–augustus <b>witte tot lichtroze bloemen</b> in rechtopstaande, licht donzige pluimen van ongeveer 10 cm. De kelkblaadjes blijven na de bloei rechtop staan.",
+  "verwar": "<i>Spiraea douglasii</i>: donker paarsroze pluimen, blad alleen bovenaan getand en onderaan viltig. <i>Spiraea × billardii</i>: roze pluimen, blad onderaan wat grijs behaard.",
+  "weetje": "In Heukels heet hij <b>theeboompje</b>. Hij komt van Midden-Europa tot Japan en wordt al sinds de 16e eeuw gekweekt. Als hij eenmaal voet aan de grond heeft, houdt hij volgens Trees and Shrubs Online stand tegen elke andere plantengroei, met een bijna ondoordringbaar struweel.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Spiraea salicifolia",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3286"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea salicifolia",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-salicifolia/"
+   }
+  ]
+ },
+ "spiraea-x-vanhouttei": {
+  "herken": "Struik (1,8–2,5 m) met eerst rechte, dan <b>sierlijk overhangende</b>, kale bruine takken. Blad <b>ruitvormig tot omgekeerd eirond</b>, soms <b>duidelijk drielobbig</b>, 2–4,5 cm, gaafrandig aan de voet en grof getand in de bovenste helft; boven donkergroen, onderaan <b>blauwig</b>, aan beide kanten kaal. In mei–juni <b>witte bloempjes in bolle, schermachtige trosjes</b> (2,5–5 cm), dicht op de bovenkant van de takken.",
+  "verwar": "<i>Spiraea nipponica</i>: kleiner, bijna rond blad dat niet gelobd is. <i>Spiraea × arguta</i>: bloeit vroeger, in losse bundeltjes, met smal blad.",
+  "weetje": "Een kruising van <i>S. trilobata</i> (vandaar het soms drielobbige blad) en <i>S. cantoniensis</i>, rond 1862 gekweekt door Billiard in Fontenay-aux-Roses bij Parijs. De naam eert de Gentse kweker Louis Van Houtte. Volgens Trees and Shrubs Online op zijn best de mooiste witte spirea, op <i>S. × arguta</i> na.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Spiraea × vanhouttei",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-x-vanhouttei/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/"
+   }
+  ]
+ },
+ "spiraea-x-billardii": {
+  "herken": "Struik (tot 2 m) die met wortelstokken <b>dichte, gelijkvormige bestanden</b> vormt. In alle kenmerken <b>tussen zijn ouders in</b>: blad langwerpig, getand over een groot deel van de rand, onderaan wat grijs behaard; in de zomer <b>roze bloemen in lange, rechtopstaande pluimen</b>.",
+  "verwar": "<i>Spiraea douglasii</i>: donkerder paarsroze, blad alleen bovenaan getand en onderaan duidelijk viltig. <i>Spiraea salicifolia</i>: witte tot lichtroze bloemen, blad onderaan kaal.",
+  "letop": "Staat op de Belgische <b>bewakingslijst (B2)</b> van invasieve exoten. Hij is steriel, maar breidt zich met zijn wortelstokken snel uit tot dichte struwelen die de inheemse plantengroei verstikken. Volgens Heukels verwildert hij vaker dan zijn ouders, vooral op zandgrond in bermen en langs bosranden.",
+  "weetje": "De eerste kloon werd gekweekt door Billiard in Fontenay-aux-Roses en beschreven in 1855, door dezelfde kweker die ook <i>S. × vanhouttei</i> maakte. Over de ouders zijn de bronnen het niet eens: Heukels noemt <i>S. douglasii</i> × <i>S. salicifolia</i>, Harmonia <i>S. douglasii</i> × <i>S. alba</i>.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Spiraea douglasii",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3287"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea douglasii",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-douglasii/"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Spiraea × billardii",
+    "url": "https://ias.biodiversity.be/species/show/142"
+   }
+  ]
+ },
+ "spiraea-chamaedryfolia": {
+  "herken": "Rechtopgaande struik (tot 1,8 m) met <b>gelige, kale, hoekige, zigzaggende jonge twijgen</b>. Blad eirond tot eirond-lancetvormig, 4–7,5 cm, <b>grof, onregelmatig en vaak dubbel getand</b> (bij var. <i>ulmifolia</i>, de westelijke vorm, vooral in de bovenste twee derde); boven donkergroen, onderaan wat blauwig. In mei witte bloempjes in <b>halfbolvormige schermpjes</b> of korte trosjes, met <b>opvallend lange meeldraden</b>.",
+  "verwar": "<i>Spiraea × vanhouttei</i>: overhangende takken en ruitvormig, soms drielobbig blad. <i>Spiraea nipponica</i>: veel kleiner, bijna rond blad.",
+  "weetje": "Komt van de oostelijke Alpen, de Karpaten en de Balkan tot in Siberië. Elk jaar schiet hij krachtige, rechte uitlopers uit de grond, die het jaar daarna bloeien; snoei daarom na de bloei wat oude takken weg.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Spiraea chamaedryfolia",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/spiraea-chamaedryfolia/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Spiraea (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/"
+   }
+  ]
  }
 };
 const FAMILIES = {
@@ -3903,6 +4063,46 @@ const GESLACHTEN = {
    {
     "naam": "Flora van Nederland (Heukels): Salicaceae",
     "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/highertaxa/taxon.php?id=1829"
+   }
+  ]
+ },
+ "Spiraea": {
+  "nl": "Spirea",
+  "speciaal": "Een geslacht van ongeveer zeventig soorten struiken uit de gematigde streken van het noordelijk halfrond, in de rozenfamilie. Vroeger hoorden ook de moerasspirea en de geitenbaard erbij. Van de oude naam <i>Spiraea ulmaria</i> (moerasspirea), waaruit voor het eerst salicylzuur werd gewonnen, komt het 'spir' in <b>aspirine</b>.",
+  "herken": [
+   "Blad <b>verspreid, enkelvoudig</b>, getand (soms gelobd of gaafrandig) en <b>zonder steunblaadjes</b>.",
+   "Veel <b>kleine bloempjes</b> (meestal hooguit 1 cm) met 5 kroonblaadjes en veel meeldraden, wit of roze, in schermen, trosjes of pluimen.",
+   "Vruchtjes: <b>vijf kleine, droge kokervruchtjes</b> die aan de binnenkant openspringen.",
+   "Twee groepen: <b>voorjaarsbloeiers</b> met witte bloemen op de twijgen van vorig jaar (<i>S. × arguta</i>, <i>S. thunbergii</i>, <i>S. × vanhouttei</i>), en <b>zomerbloeiers</b> met vaak roze bloemen aan de toppen van de scheuten van dit jaar (<i>S. japonica</i>, <i>S. douglasii</i>, <i>S. salicifolia</i>)."
+  ],
+  "tuin": "Zeer veel geplant: de voorjaarsbloeiers als bloeiende solitair of losse haag, de lage <i>S. japonica</i>-cultivars in borders en massief. Snoei hangt af van de groep: voorjaarsbloeiers alleen uitdunnen na de bloei, zomerbloeiers in de late winter inkorten.",
+  "wild": "Geen enkele soort is bij ons inheems. De Douglasspirea en <i>S. × billardii</i> verwilderen met wortelstokken in bermen, bosranden en natte natuur; ze staan op de Belgische zwarte lijst en bewakingslijst.",
+  "verwar": "Moerasspirea en geitenbaard: kruidachtige planten, geen struiken. Lijsterbesspirea (<i>Sorbaria</i>): geveerd blad.",
+  "letop": "<i>S. douglasii</i> staat op de Belgische zwarte lijst (niet aanplanten), <i>S. × billardii</i> op de bewakingslijst. Ook <i>S. salicifolia</i> vormt woekerende struwelen.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Spiraea (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/spiraea/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Spiraea douglasii",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3287"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Spiraea salicifolia",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3286"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Spiraea douglasii",
+    "url": "https://ias.biodiversity.be/species/show/139"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Spiraea × billardii",
+    "url": "https://ias.biodiversity.be/species/show/142"
+   },
+   {
+    "naam": "Cheng (2007), The history of aspirin — Texas Heart Institute Journal 34(3)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1995051/"
    }
   ]
  }

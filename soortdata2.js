@@ -117,7 +117,7 @@ const SOORTDATA2 = [
   onderscheid:"<b>Rechtopstaande donkerroze pluim</b> in plaats van een plat scherm, en blad dat <b>grijsviltig behaard is aan de onderkant</b>. Vormt uitlopers.",
   weetje:"Verwildert op vochtige heide en in natuurgebied; daar geldt hij als ongewenste exoot." },
 
-{ id:"spiraea-salicifolia", g:"Spiraea", s:"salicifolia", nl:"Wilgbladige spirea",
+{ id:"spiraea-salicifolia", g:"Spiraea", s:"salicifolia", nl:"Theeboompje / wilgbladige spirea",
   standplaats:"Zon tot halfschaduw", water:"Normaal tot vochtig", hoogte:"1–2 m", breedte:"1,5–2 m",
   blad:"Bladverliezend", bloeitijd:"Juni–augustus", bloeikleur:"Lichtroze pluim",
   groeivorm:"Heester", groei:"Snel", gebruik:["Oever","Landschap","Massief"],
