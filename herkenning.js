@@ -187,6 +187,33 @@ const SOORTINFO = {
    }
   ]
  },
+ "allium-giganteum": {
+  "herken": "Bolgewas met een rozet van <b>brede, grijsgroene, riemvormige bladeren</b> (5–10 cm breed) die al <b>afsterven als hij begint te bloeien</b>. Uit het midden groeit een <b>dikke, bladloze bloemstengel van 1–1,5 m</b>, met in mei–juni een <b>dicht, bolvormig scherm</b> (10–15 cm) van kleine, stervormige, lila tot paarse bloempjes. Blad en stengel ruiken naar ui als je ze kneust.",
+  "verwar": "<i>Allium cristophii</i>: veel lager (30–60 cm), met een nog grotere bol (tot 30 cm) van bleek lila sterretjes. 'Globemaster' (<i>A. cristophii</i> × <i>A. macleanii</i>): 50–75 cm, met een enorme diep lila bol. 'Purple Sensation': kleinere bol (10–12 cm) van felpaarse bloemen op 60–75 cm.",
+  "weetje": "Komt uit het zuiden van Centraal-Azië en Iran, en is misschien de hoogste van alle sieruien. Omdat het blad al tijdens de bloei afsterft, plant je hem best tussen vaste planten die dat verbergen. Plant de bollen in de herfst, 12–15 cm diep, op een plek uit de wind.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Allium giganteum",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=282192"
+   },
+   {
+    "naam": "Ornamental Plants from Russia (eFloras) — Allium giganteum",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=120&taxon_id=242442258"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Allium cristophii",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=282301"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Allium 'Globemaster'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=243553"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Allium 'Purple Sensation'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=243555"
+   }
+  ]
+ },
  "amelanchier-lamarckii": {
   "herken": "Grote struik met meerdere schuin opgaande stammen, of kleine boom (tot 12 m). Blad elliptisch tot omgekeerd eirond, 3–7 cm, <b>fijn en scherp gezaagd</b>, bij het uitlopen <b>koperkleurig tot bruinrood</b> en jong behaard, later kaal. Eind april–mei, als het blad half uit is, <b>witte bloemen met smalle, lange kroonblaadjes</b> (10–20 mm) in trosjes van 7–12. Ronde, <b>eerst rode, dan donkerpaarse, sappige bessen</b> (1–1,5 cm), rijp kort na midzomer, met rechtopstaande kelkslippen. Rode herfstkleur.",
   "verwar": "Andere krentenboompjes lijken sterk; typisch voor deze soort is de combinatie van koperkleurig, jong behaard blad, grote bloemen en rechtopstaande kelkslippen op de vrucht. Meidoorn: gelobd blad en doornen.",
@@ -453,6 +480,25 @@ const SOORTINFO = {
    {
     "naam": "Trees and Shrubs Online — Buxus microphylla",
     "url": "https://www.treesandshrubsonline.org/articles/buxus/buxus-microphylla/"
+   }
+  ]
+ },
+ "calamagrostis-x-acutiflora": {
+  "herken": "Pollengras met een <b>smalle, kaarsrechte</b> vorm: een pol van smalle, platte, groene bladeren (45–90 cm), waarboven al in juni <b>stijf rechtopstaande bloeistengels tot 1,5 m</b> staan met <b>smalle, vederachtige pluimen</b>, eerst roze tot paars getint, later goudgeel en strokleurig. Ze blijven tot in de winter staan.",
+  "verwar": "Duinriet (<i>C. epigejos</i>, een van de ouders): inheems, met een lossere pluim met schuin opstaande zijtakken. <i>Miscanthus sinensis</i>: overhangend blad met een witte middennerf, en pluimen pas in de late zomer.",
+  "weetje": "Een kruising van <i>C. arundinacea</i> en duinriet (<i>C. epigejos</i>) die ook in de natuur voorkomt, maar zelden. De zaden zijn <b>steriel</b>, dus hij zaait zich niet uit. 'Karl Foerster' is veruit de bekendste cultivar. Hij groeit ook goed op zware klei en vochtige grond; knip hem in de late winter af, vlak voor de nieuwe scheuten verschijnen.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Calamagrostis × acutiflora",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=269735"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Calamagrostis × acutiflora 'Karl Foerster'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=243336"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Calamagrostis epigejos",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2536"
    }
   ]
  },
@@ -1159,6 +1205,25 @@ const SOORTINFO = {
    }
   ]
  },
+ "echinacea-purpurea": {
+  "herken": "Ruwharige vaste plant (50–120 cm) met stijve stengels en <b>vezelige wortels</b>. Blad eirond tot smal lancetvormig, met 3–5 hoofdnerven, gezaagd tot getand, onderaan met een ronde tot hartvormige voet. Van juli tot september grote hoofdjes met <b>roze tot paarse lintbloemen</b> (3–8 cm lang) die vaak <b>naar beneden hangen</b>, rond een <b>bolle, kegelvormige schijf</b> vol <b>stekelige, oranjerode kafjes</b> die boven de buisbloemen uitsteken.",
+  "verwar": "<i>Rudbeckia</i>: gele lintbloemen en een schijf zonder stekelige kafjes. Andere <i>Echinacea</i>-soorten hebben een penwortel en meestal smaller blad. Er zijn veel cultivars, ook met gele, oranje of witte bloemen.",
+  "weetje": "De naam komt van het Griekse <i>echinos</i> (egel), naar de stekelige schijf. Laat de uitgebloeide hoofdjes staan: ze blijven tot diep in de winter overeind en vogels eten de zaden. In het wild groeit hij in prairies en open bossen in het midden en oosten van de VS.",
+  "bronnen": [
+   {
+    "naam": "Flora of North America — Echinacea purpurea",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=220004561"
+   },
+   {
+    "naam": "Flora of North America — Echinacea",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=111203"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Echinacea purpurea",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277422"
+   }
+  ]
+ },
  "euonymus-europaeus": {
   "herken": "Inheemse struik of kleine boom (1,5–6 m) met <b>groene bast</b> en groene, vierkantige twijgen zonder kurklijsten. Blad langwerpig tot lancetvormig, 3–10 cm, fijn gekarteld-gezaagd. Kleine geelgroene, <b>viertallige</b> bloempjes met <b>gele</b> helmknoppen (mei–juni). Doosvrucht <b>stomp vierkantig, 4-hokkig, paarsachtig rozerood</b>; elk hokje met één <b>wit zaad dat helemaal omgeven is door een helder oranje zaadrok</b>.",
   "verwar": "<i>Euonymus hamiltonianus</i>: <b>paarse</b> helmknoppen en groter blad (6–15 cm). <i>Euonymus verrucosus</i>: twijgen vol wratjes, bruinpaarse bloempjes en <b>zwarte</b> zaden. <i>Euonymus latifolius</i> en <i>E. planipes</i>: grotere, meestal vijflobbige vruchten en lange spitse winterknoppen.",
@@ -1359,6 +1424,21 @@ const SOORTINFO = {
    }
   ]
  },
+ "festuca-glauca": {
+  "herken": "Klein, <b>halfbolvormig pollengras</b> (15–20 cm, in bloei 25–35 cm) met <b>naaldvormige, blauwgrijs berijpte</b> bladeren die als een egeltje naar alle kanten uitsteken. In juni–juli weinig opvallende, lichtgroene, paars getinte pluimpjes boven het blad, die later strokleurig worden.",
+  "verwar": "Schapengras (<i>F. ovina</i>, inheems): groen tot grijsgroen fijn blad en een hogere pol (30–70 cm).",
+  "weetje": "Komt uit Midden- en Zuid-Europa en wordt ook wel als vorm van het schapengras gezien (<i>F. ovina</i> var. <i>glauca</i>). De blauwe kleur is het mooist in de volle zon. Hij leeft niet lang: het hart sterft na 2–3 jaar af, dus scheuren of vervangen. Natte, slecht doorlatende grond verdraagt hij niet.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Festuca glauca",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=285404"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Festuca ovina",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2425"
+   }
+  ]
+ },
  "geranium-macrorrhizum": {
   "herken": "Half wintergroene bodembedekker (20–50 cm) op <b>dikke, kruipende wortelstokken</b>, bovenaan klierachtig behaard. Blad rond, 5–7-lobbig, elke lob met 3–5 inkepingen aan de top; het blad <b>ruikt sterk aromatisch</b> als je erover wrijft en kleurt <b>rood in de herfst</b>. Paarsroze bloemen (12–18 mm kroonbladen) met een <b>opgeblazen, donkerrode kelk</b>; de kelkbladen staan rechtop en omsluiten na de bloei de vrucht. Bij deze soort is de plaat van het kroonblad <b>veel korter dan de nagel</b>.",
   "verwar": "<i>Geranium × cantabrigiense</i>: kleiner, glanzender blad en een lagere, compactere mat. <i>Geranium endressii</i> en <i>G. × oxonianum</i>: niet aromatisch, met bredere, roze kroonbladen.",
@@ -1546,6 +1626,21 @@ const SOORTINFO = {
    {
     "naam": "CliniTox (Universiteit Zürich) — Hedera helix",
     "url": "https://www.vetpharm.uzh.ch/giftdb/pflanzen/0032_tox.htm"
+   }
+  ]
+ },
+ "hosta-sieboldiana": {
+  "herken": "Grote hosta (ongeveer 60 cm hoog en 1,2–1,5 m breed) met <b>dikke, gerimpelde, komvormige, breed eironde bladeren</b> (tot 35 × 30 cm) met diep ingedrukte nerven, een korte spits en een hartvormige voet; ze lopen vaak <b>blauwgrijs</b> uit. In juni–juli trechtervormige, bijna <b>witte bloemen</b> (soms lila aan de voet) in trossen die <b>net onder tot net boven het blad</b> uitkomen.",
+  "verwar": "Hosta's zijn moeilijk op naam te brengen, door de vele synoniemen en cultivars. Veel planten die als deze soort verkocht worden, zijn eigenlijk de cultivar 'Elegans'. Typisch zijn het zeer dikke, sterk gerimpelde blad en de bloemtrossen die nauwelijks boven het blad uitkomen.",
+  "weetje": "De soortnaam eert Philipp Franz von Siebold, die veel Japanse planten naar Europa bracht. Het geslacht is genoemd naar de Oostenrijkse botanicus Nicolaus Host, en heette een tijdlang <i>Funkia</i>. Slakken vreten grote gaten in het blad.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Hosta sieboldiana",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248944"
+   },
+   {
+    "naam": "Flora of China — Hosta",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=115795"
    }
   ]
  },
@@ -2421,6 +2516,25 @@ const SOORTINFO = {
    }
   ]
  },
+ "miscanthus-sinensis": {
+  "herken": "Groot pollengras (1–2 m, in bloei tot 2,5 m) met <b>boogvormig overhangende</b>, lijnvormige bladeren (tot 1 m lang en 1–2 cm breed) met een <b>opvallende witachtige middennerf</b> en ruwe randen. Van eind augustus tot oktober <b>pluimen van vele vingervormige trossen</b>, eerst roze tot rood, later zilverig beige; de aartjes staan in paren en dragen <b>lange zijdeharen</b> en een geknikte kafnaald. Pluimen en blad blijven de hele winter staan.",
+  "verwar": "<i>Calamagrostis × acutiflora</i>: stijf rechtop, met smalle, dichte pluimen al in juni en zonder witte middennerf.",
+  "weetje": "Een <b>warmteminnend gras</b> dat pas laat in het voorjaar uitloopt. Laat het blad in de winter staan (het beschermt het hart) en knip het pas in de late winter af, vlak voor de nieuwe scheuten verschijnen. In delen van de VS zaait hij zich zo sterk uit dat hij daar als invasief geldt.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Miscanthus sinensis",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=285333"
+   },
+   {
+    "naam": "Flora of China — Miscanthus sinensis",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=200025714"
+   },
+   {
+    "naam": "Flora of China — Miscanthus",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=120798"
+   }
+  ]
+ },
  "pachysandra-terminalis": {
   "herken": "Wintergroene, halfhoutige <b>bodembedekker</b> (10–30 cm) die zich uitbreidt met <b>ondergrondse uitlopers</b>. Blad omgekeerd eirond tot ruitvormig, 5–10 cm, <b>alleen in de bovenste helft grof getand</b>, onderaan versmald en gaaf, kaal, met drie duidelijke nerven aan de voet. De bladeren staan in <b>kransachtige toefjes</b> aan het eind van elke jaarscheut. In maart–april korte <b>eindstandige aartjes</b> met bloempjes zonder kroonblaadjes en met <b>dikke, witte, ver uitstekende meeldraden</b>. Vrucht een doosvrucht met twee hoorntjes.",
   "verwar": "<i>Pachysandra procumbens</i> (uit Amerika): groter blad en bloeiaren die opzij uit de stengel komen, niet aan de top. Buxus (dezelfde familie): tegenoverstaand, gaafrandig blad.",
@@ -2954,6 +3068,33 @@ const SOORTINFO = {
    }
   ]
  },
+ "rudbeckia-fulgida": {
+  "herken": "Vaste plant (tot ongeveer 90 cm) die zich uitbreidt met <b>uitlopers</b>. Blad lancetvormig tot eirond, <b>ongedeeld</b>, gaafrandig of gezaagd. Van juli tot oktober hoofdjes (tot 6 cm) met 10–15 (bij 'Goldsturm' tot 21) <b>goudgele lintbloemen</b> rond een <b>bolle, bruinpaarse tot bijna zwarte schijf</b>. De kafjes op de schijf zijn kort (2,5–4 mm) en stomp.",
+  "verwar": "<i>Echinacea purpurea</i>: roze tot paarse lintbloemen en een stekelige, oranjerode schijf. <i>Rudbeckia laciniata</i>: veel hoger (tot 2 m), met diep ingesneden bladeren en een gele schijf.",
+  "weetje": "Genoemd naar Olof Rudbeck (1630–1702), stichter van de botanische tuin van Uppsala. In tuinen staat bijna altijd de cultivar 'Goldsturm' (var. <i>sullivantii</i>). Hij verdraagt veel soorten grond, ook klei, en brengt kleur in de late zomer.",
+  "bronnen": [
+   {
+    "naam": "Flora of North America — Rudbeckia fulgida",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=242417172"
+   },
+   {
+    "naam": "Flora of North America — Rudbeckia",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=128840"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Rudbeckia fulgida",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277460"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Rudbeckia fulgida var. sullivantii 'Goldsturm'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=252562"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Rudbeckia laciniata",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4355"
+   }
+  ]
+ },
  "salix-alba": {
   "herken": "Grote boom (tot 20 m) met een vrij smalle kroon en <b>schuin opstijgende takken</b> (30–50°), die van ver <b>zilvergrijs</b> lijkt. Blad lancetvormig, in het midden het breedst, naar beide kanten versmald, <b>zeer fijn getand</b>, onderaan <b>blijvend zijdeachtig zilverig behaard</b>; bladsteel zonder kliertjes. Twijgen jong behaard, <b>breken niet gemakkelijk af</b>. De katjes verschijnen met het blad (april–mei).",
   "verwar": "Kraakwilg (<i>S. × fragilis</i>): twijgen die met een knakje afbreken aan de voet. Hun bastaard <i>S. × rubens</i> wordt veel aangeplant en is algemener dan de kraakwilg. <i>Salix viminalis</i>: veel langer en smaller blad, struik.",
@@ -3109,6 +3250,29 @@ const SOORTINFO = {
    {
     "naam": "Trees and Shrubs Online — Salix triandra",
     "url": "https://www.treesandshrubsonline.org/articles/salix/salix-triandra/"
+   }
+  ]
+ },
+ "salvia-nemorosa": {
+  "herken": "Rechtopgaande, vertakte vaste plant (30–60 cm) met een verhoute voet. Blad langwerpig tot lancetvormig, gerimpeld en gekarteld, aromatisch als je het kneust, met een korte steel <b>zonder oortjes</b>. Van juni tot september dichte, rechtopstaande aren van <b>schijnkransen met 6–10 bloemen</b>, ook onderaan dicht op elkaar, met opvallende, <b>donkerpurperen schutbladen</b>. Bloemkroon meestal helderblauw tot violet (zelden roze of wit, en dan met groene schutbladen), met een kapvormige bovenlip.",
+  "verwar": "<i>Salvia pratensis</i> (veldsalie, inheems): grotere bloemen (15–30 mm) met veel klierharen, en een kelk met lange, bruinige klierharen. Lavendel: smal, grijs blad en bloemen met een tweelobbige, niet kapvormige bovenlip.",
+  "weetje": "Een tuinplant uit Zuidoost-Europa die soms verwildert. Knip uitgebloeide aren weg en snoei na de bloei terug: dan bloeit hij vaak opnieuw, tot in de herfst. Bijen en vlinders komen er graag op.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salvia nemorosa",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3983"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salvia pratensis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3980"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Salvia nemorosa",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=281423"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salvia (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/salvia/"
    }
   ]
  },
@@ -4955,6 +5119,229 @@ const GESLACHTEN = {
    {
     "naam": "Royal Horticultural Society — Lavender: growing guide",
     "url": "https://www.rhs.org.uk/plants/lavender/growing-guide"
+   }
+  ]
+ },
+ "Salvia": {
+  "nl": "Salie",
+  "speciaal": "Met ruim duizend soorten een van de grootste geslachten van planten. Sinds kort horen ook de rozemarijn (<i>Salvia rosmarinus</i>) en de Russische salie (vroeger <i>Perovskia</i>) erbij. De naam komt van het Latijnse <i>salveo</i>, 'genezen'.",
+  "herken": [
+   "Lipbloemenfamilie: <b>vierkante stengels</b>, <b>tegenoverstaand</b> blad, vaak aromatisch.",
+   "Tweelippige bloemen met een vaak <b>kapvormige bovenlip</b>, in schijnkransen langs een aar.",
+   "Maar <b>twee vruchtbare meeldraden</b> (de meeste lipbloemen hebben er vier), met een typische bouw: elke meeldraad heeft bovenaan <b>twee armen</b>, één met een vruchtbaar helmhokje en één onvruchtbare."
+  ],
+  "tuin": "Bossalie en andere blauwe siersalies in de border, keukensalie (<i>S. officinalis</i>) en rozemarijn als kruid, en de Russische salie (<i>S. yangii</i>) voor droge, zonnige plekken.",
+  "wild": "Inheems is de veldsalie, vrij zeldzaam op kalkrijke grond in graslanden langs de rivieren.",
+  "verwar": "Lavendel (dezelfde familie): bloemen met een tweelobbige bovenlip in een gesteelde aar. Kattenkruid (<i>Nepeta</i>): vier meeldraden.",
+  "letop": "De bladeren zijn weinig giftig, maar lang en veel salie-aftreksel drinken kan problemen geven.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Salvia (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/salvia/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salvia nemorosa",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3983"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salvia pratensis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3980"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Salvia nemorosa",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=281423"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Allium": {
+  "nl": "Sierui, look",
+  "speciaal": "Meer dan zevenhonderd soorten bol- of wortelstokplanten, waaronder ui, prei, knoflook en bieslook naast veel sieruien. Alle soorten ruiken naar ui. De naam is de klassieke Latijnse naam voor knoflook.",
+  "herken": [
+   "<b>Uigeur</b> als je blad of stengel kneust.",
+   "Bloemen in een <b>scherm</b> bovenaan een <b>bladloze stengel</b>.",
+   "Smalle, grasachtige of riemvormige bladeren uit een <b>bol</b> of wortelstok."
+  ],
+  "tuin": "Sieruien met grote bollen zoals <i>A. giganteum</i>, <i>A. cristophii</i> en 'Globemaster', en eetbare soorten zoals bieslook.",
+  "wild": "In het wild groeien bij ons onder meer daslook en kraailook.",
+  "verwar": "Andere bolgewassen ruiken niet naar ui.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Allium 'Globemaster'",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=243553"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Allium giganteum",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=282192"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Allium ursinum",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2256"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Allium vineale",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2255"
+   }
+  ]
+ },
+ "Echinacea": {
+  "nl": "Zonnehoed (rode zonnehoed)",
+  "speciaal": "Negen soorten vaste planten uit het oosten en midden van Noord-Amerika. De naam komt van het Griekse <i>echinos</i> (egel), naar de stekelige schijf. <i>E. purpurea</i> wordt ook commercieel gekweekt als kruidengeneesmiddel.",
+  "herken": [
+   "Grote composietenhoofdjes met <b>lintbloemen die vaak naar beneden hangen</b>, meestal roze tot paars.",
+   "Een <b>bolle tot kegelvormige schijf</b> met <b>stekelige kafjes</b> die boven de buisbloemen uitsteken.",
+   "De lintbloemen zijn onvruchtbaar; alleen de buisbloemen vormen zaad."
+  ],
+  "tuin": "Vooral <i>E. purpurea</i> en zijn vele cultivars in zonnige borders en prairietuinen.",
+  "wild": "Niet inheems.",
+  "verwar": "<i>Rudbeckia</i>: meestal gele lintbloemen en een schijf zonder stekels.",
+  "bronnen": [
+   {
+    "naam": "Flora of North America — Echinacea",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=111203"
+   },
+   {
+    "naam": "Flora of North America — Echinacea purpurea",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=220004561"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Echinacea purpurea",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277422"
+   }
+  ]
+ },
+ "Rudbeckia": {
+  "nl": "Rudbeckia, zonnehoed",
+  "speciaal": "Drieëntwintig soorten uit Noord-Amerika, sommige in Europa ingeburgerd. Genoemd naar Olof Rudbeck, de Zweedse botanicus die de botanische tuin van Uppsala stichtte (waar Linnaeus later professor was).",
+  "herken": [
+   "Composietenhoofdjes met meestal <b>gele lintbloemen</b> rond een <b>bolle tot kegelvormige</b> of zuilvormige schijf.",
+   "Schijf bruinpaars tot zwart of geel, <b>zonder stekelige kafjes</b>.",
+   "Verspreide bladeren, ongedeeld of (bij sommige soorten) diep ingesneden."
+  ],
+  "tuin": "Late zomerbloeiers voor de border, vooral <i>R. fulgida</i> 'Goldsturm' en de hoge <i>R. laciniata</i>.",
+  "wild": "Niet inheems. De slipbladige rudbeckia (<i>R. laciniata</i>) verwildert zeer zelden, vaak onbestendig, in natte oeverruigten.",
+  "verwar": "<i>Echinacea</i>: roze tot paarse lintbloemen en een stekelige schijf.",
+  "bronnen": [
+   {
+    "naam": "Flora of North America — Rudbeckia",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=128840"
+   },
+   {
+    "naam": "Flora of North America — Rudbeckia fulgida",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=242417172"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Rudbeckia laciniata",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4355"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Rudbeckia fulgida",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277460"
+   }
+  ]
+ },
+ "Hosta": {
+  "nl": "Hartlelie, funkia",
+  "speciaal": "Ongeveer 45 soorten, vooral uit Japan, en daarnaast enkele uit China, Korea en Rusland. Vooral gekweekt om het blad; er bestaan zeer veel cultivars en synoniemen, wat het benoemen moeilijk maakt.",
+  "herken": [
+   "Vaste plant met een wortelstok en een rozet van <b>langgesteelde grondbladeren</b>.",
+   "Bloemen <b>trechter- tot klokvormig</b>, wit tot blauw of lila, in een <b>tros</b> aan een bloemstengel.",
+   "Vrucht een doosvrucht met veel zwarte zaden."
+  ],
+  "tuin": "Bladplanten voor schaduw en halfschaduw, in duizenden cultivars met groen, blauw, geel of bont blad.",
+  "wild": "Niet inheems.",
+  "bronnen": [
+   {
+    "naam": "Flora of China — Hosta",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=115795"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Hosta sieboldiana",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248944"
+   }
+  ]
+ },
+ "Miscanthus": {
+  "nl": "Prachtriet",
+  "speciaal": "Veertien soorten grote grassen, vooral uit Zuidoost-Azië en de eilanden in de Stille Oceaan, tot in tropisch Afrika. Makkelijk te herkennen aan de pluim van vingervormige trossen met paarsgewijs geplaatste, behaarde aartjes.",
+  "herken": [
+   "Groot pollen- of wortelstokgras met <b>lange, lijnvormige bladeren</b>, vaak met een witachtige middennerf.",
+   "Bloeiwijze een <b>pluim van vele trossen</b> met een taaie as.",
+   "Aartjes <b>in paren</b>, allebei gesteeld, met een krans van <b>lange zijdeharen</b> aan de voet."
+  ],
+  "tuin": "Vele cultivars van <i>M. sinensis</i> als solitair of in borders, met een lange winterstand.",
+  "wild": "Niet inheems.",
+  "verwar": "Struisriet (<i>Calamagrostis</i>): stijf rechtop, met smalle, dichte pluimen al in juni.",
+  "bronnen": [
+   {
+    "naam": "Flora of China — Miscanthus",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=120798"
+   },
+   {
+    "naam": "Flora of China — Miscanthus sinensis",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=200025714"
+   },
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Miscanthus sinensis",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=285333"
+   }
+  ]
+ },
+ "Calamagrostis": {
+  "nl": "Struisriet",
+  "speciaal": "Ongeveer 250 soorten koelteminnende grassen, vooral van vochtige tot natte plaatsen in de gematigde streken van het noordelijk halfrond. De naam komt van de Griekse woorden <i>kalamos</i> (riet) en <i>agrostis</i> (een soort gras).",
+  "herken": [
+   "Pollen of uitlopers met <b>smalle, platte bladeren</b>.",
+   "Stijve bloeistengels met een <b>smalle of lossere pluim</b>.",
+   "Groeit al vroeg in het seizoen (koelteminnend gras)."
+  ],
+  "tuin": "Vooral <i>C. × acutiflora</i> 'Karl Foerster' als strak verticaal accent.",
+  "wild": "Inheems zijn onder meer het duinriet (zeer algemeen in de duinen) en het hennegras (<i>C. canescens</i>).",
+  "verwar": "Prachtriet (<i>Miscanthus</i>): breder, overhangend blad en pluimen van vingervormige trossen in de late zomer.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Calamagrostis × acutiflora",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=269735"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Calamagrostis epigejos",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2536"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Calamagrostis canescens",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2535"
+   }
+  ]
+ },
+ "Festuca": {
+  "nl": "Zwenkgras, schapengras",
+  "speciaal": "Een geslacht van grassen, bij ons met onder meer schapengras, rood zwenkgras en beemdlangbloem. De naam komt van een Latijns woord voor een grassprietje of strohalm.",
+  "herken": [
+   "Pollen; bij de schapengrassen met <b>zeer smalle, borstelvormige</b> bladeren (bij schapengras 0,3–0,7 mm breed).",
+   "Bloeiwijze een <b>pluim</b> van aartjes met meerdere bloemen.",
+   "Het kroonkafje (lemma) heeft vaak een korte naald (bij schapengras 0,3–1,5 mm)."
+  ],
+  "tuin": "Blauw schapengras (<i>F. glauca</i>) als lage, blauwe pol.",
+  "wild": "Inheems zijn onder meer rood zwenkgras, schapengras en beemdlangbloem.",
+  "bronnen": [
+   {
+    "naam": "Missouri Botanical Garden, Plant Finder — Festuca glauca",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=285404"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Festuca ovina",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2425"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Festuca rubra",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2423"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Festuca pratensis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2420"
    }
   ]
  }
