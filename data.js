@@ -55,7 +55,7 @@ const PLANTEN = [
 },
 {
   id: "amelanchier-lamarckii", familie: "Rosaceae", geslacht: "Amelanchier", soort: "lamarckii",
-  nl: "Krentenboompje", groep: "Boom",
+  nl: "Amerikaans krentenboompje", groep: "Boom",
   standplaats: "Zon tot halfschaduw", water: "Droog tot normaal",
   hoogte: "4–8 m", breedte: "3–5 m", blad: "Bladverliezend",
   bloeitijd: "April", bloeikleur: "Wit",
@@ -361,10 +361,10 @@ const PLANTEN = [
 /* ---------- BODEMBEDEKKER ---------- */
 {
   id: "pachysandra-terminalis", familie: "Buxaceae", geslacht: "Pachysandra", soort: "terminalis",
-  nl: "Schaduwkruid", groep: "Bodembedekker",
+  nl: "Dikkemanskruid / schaduwkruid", groep: "Bodembedekker",
   standplaats: "Halfschaduw tot schaduw", water: "Normaal tot vochtig",
   hoogte: "20–30 cm", breedte: "30–40 cm", blad: "Bladhoudend",
-  bloeitijd: "April", bloeikleur: "Witte aartjes",
+  bloeitijd: "Maart–april", bloeikleur: "Witte aartjes",
   groeivorm: "Bodembedekker", groei: "Normaal",
   gebruik: ["Bodembedekker", "Onder bomen", "Talud in schaduw"],
   kenmerk5: "Bladhoudende bodembedekker die zich met ondergrondse uitlopers verspreidt tot een gesloten tapijt, op humusrijke, licht zure grond in de schaduw.",

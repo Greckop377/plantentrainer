@@ -187,6 +187,30 @@ const SOORTINFO = {
    }
   ]
  },
+ "amelanchier-lamarckii": {
+  "herken": "Grote struik met meerdere schuin opgaande stammen, of kleine boom (tot 12 m). Blad elliptisch tot omgekeerd eirond, 3–7 cm, <b>fijn en scherp gezaagd</b>, bij het uitlopen <b>koperkleurig tot bruinrood</b> en jong behaard, later kaal. Eind april–mei, als het blad half uit is, <b>witte bloemen met smalle, lange kroonblaadjes</b> (10–20 mm) in trosjes van 7–12. Ronde, <b>eerst rode, dan donkerpaarse, sappige bessen</b> (1–1,5 cm), rijp kort na midzomer, met rechtopstaande kelkslippen. Rode herfstkleur.",
+  "verwar": "Andere krentenboompjes lijken sterk; typisch voor deze soort is de combinatie van koperkleurig, jong behaard blad, grote bloemen en rechtopstaande kelkslippen op de vrucht. Meidoorn: gelobd blad en doornen.",
+  "letop": "Staat op de Belgische <b>bewakingslijst (B2)</b> van invasieve exoten. Vogels verspreiden de bessen over grote afstand, en hij breidt zich langzaam uit op zure zandgrond, heide en bosranden; dichte bestanden vormt hij zelden.",
+  "weetje": "In Heukels heet hij <b>Amerikaans krentenboompje</b>. Hij is vermoedelijk een microsoort van bastaardoorsprong (<i>A. laevis</i> × <i>A. canadensis</i>) die zaad vormt zonder bevruchting en dus zuiver uit zaad komt. In Amerika is hij in het wild niet bekend, maar in Nederland is hij algemeen op zure zandgrond, onder meer rond Dwingeloo.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Amelanchier lamarckii",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3368"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Amelanchier lamarckii",
+    "url": "https://www.treesandshrubsonline.org/articles/amelanchier/amelanchier-lamarckii/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Amelanchier (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/amelanchier/"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Amelanchier lamarckii",
+    "url": "https://ias.biodiversity.be/species/show/35"
+   }
+  ]
+ },
  "berberis-thunbergii": {
   "herken": "Bladverliezend. Doorns bijna altijd <b>enkelvoudig</b> (ca. 1 cm), zelden drietandig. Blaadjes klein (1,2–3 cm), <b>omgekeerd eirond tot spatelvormig en altijd gaafrandig</b>, in bundeltjes langs de takken. Bloempjes <b>alleen of met 2–4</b> aan dunne steeltjes, bleekgeel met rood aangelopen. <b>Helderrode, langwerpige bessen</b> (ca. 8 mm). Felrode herfstkleur.",
   "verwar": "<i>Berberis vulgaris</i>: <b>gezaagde</b> bladrand, drietandige doorns en hangende trossen van 10–25 bloemen. <i>Berberis × ottawensis</i> (kruising van beide): gaaf blad als <i>thunbergii</i>, maar de onderste doorns van een tak zijn vaak drietandig en de bloemen staan in korte trosjes.",
@@ -321,6 +345,33 @@ const SOORTINFO = {
    {
     "naam": "Trees and Shrubs Online — Berberis julianae",
     "url": "https://www.treesandshrubsonline.org/articles/berberis/berberis-julianae/"
+   }
+  ]
+ },
+ "betula-pendula": {
+  "herken": "Boom (tot 25–30 m) met een <b>witte bast die in horizontale banden afschilfert</b>. De twijgen zijn snel kaal, bezet met <b>wrattige harskliertjes</b> (ze voelen ruw aan, vandaar 'ruwe' berk) en <b>hangen over</b>. Blad <b>ruitvormig-eirond</b>, 3–7 cm, met een wigvormige of rechte voet, een lange spits en een <b>dubbel gezaagde</b> rand; onderaan kaal. In april–mei hangende mannelijke katjes; de vrouwelijke katjes vallen uiteen in kleine <b>gevleugelde nootjes</b>, met een vleugel die 2–3 keer zo breed is als het nootje.",
+  "verwar": "<i>Betula pubescens</i> (zachte berk): <b>behaarde</b> twijgen met weinig of geen wratjes, die niet overhangen; blad eirond met een afgeronde voet en haartjes in de nerfoksels; vleugel ongeveer even breed als het nootje. Hij groeit op nattere grond (moerassen, hoogvenen, natte duinvalleien). Bastaarden tussen beide zijn in de natuur uiterst zeldzaam.",
+  "weetje": "Een echte <b>pionier</b>: berken veroveren snel open, verstoorde grond, maar verdragen weinig schaduw en worden vaak niet oud. Je vindt hem op heide, langs vennen, op droge duinhellingen en zelfs op mijnsteenbergen en spoorwegterreinen. De witte kleur komt van <b>betuline</b> in de bast; die weerkaatst het meeste zonlicht en beschermt de stam zo tegen schade door opwarming en vorst.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Betula pendula",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3448"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Betula pubescens",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3449"
+   },
+   {
+    "naam": "Flora of China — Betula pendula",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=200006160"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Betula (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/betula/"
+   },
+   {
+    "naam": "US National Park Service — Species spotlight: paper birch (betuline)",
+    "url": "https://home.nps.gov/articles/netn-species-spotlight-paper-birch.htm"
    }
   ]
  },
@@ -559,6 +610,25 @@ const SOORTINFO = {
    {
     "naam": "Go Botany (Native Plant Trust) — Carex grayi",
     "url": "https://gobotany.nativeplanttrust.org/species/carex/grayi/"
+   }
+  ]
+ },
+ "carpinus-betulus": {
+  "herken": "Boom (tot 25 m) met een <b>gladde, grijze stam die gegroefd is als gespannen spieren</b>, met fijne zilverige lengtestreepjes. Blad eirond tot elliptisch, 4–10 cm, met een iets scheve voet, <b>dubbel gezaagd</b>, met <b>10–15 paar evenwijdige, ingedrukte zijnerven</b>, zodat het blad geplooid lijkt. Knoppen slank en spits, tot 1 cm, met de <b>top naar de twijg toe gebogen</b>. Vruchten in hangende trossen tot 8 cm: elk geribd nootje zit aan een <b>drielobbig schutblad</b> met een veel langere middenlob.",
+  "verwar": "Beuk (<i>Fagus sylvatica</i>): <b>gave, gewimperde bladrand</b>, glanzend blad en beukennootjes in een stekelige bolster. Hopbeuk (<i>Ostrya</i>): het nootje zit in een gesloten blaasje.",
+  "weetje": "Ondanks de naam geen beuk, maar familie van de berk en de hazelaar. Jong of als geschoren haag houdt hij zijn <b>dorre bruine blad de hele winter</b> vast, net als de beuk, en hij groeit ook op zware, moeilijke grond. Wild groeit hij op vochtige, voedselrijke, vaak kalkrijke grond, vooral in Zuid-Limburg; elders is hij vooral aangeplant.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Carpinus betulus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3455"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Carpinus betulus",
+    "url": "https://www.treesandshrubsonline.org/articles/carpinus/carpinus-betulus/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Carpinus (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/carpinus/"
    }
   ]
  },
@@ -1451,6 +1521,34 @@ const SOORTINFO = {
    }
   ]
  },
+ "hedera-helix": {
+  "herken": "Wintergroene klimmer die zich met <b>hechtwortels</b> aan bomen en muren vastzet, of over de grond kruipt. Blad leerachtig en glanzend donkergroen; aan klimmende en kruipende scheuten <b>3–5-lobbig</b>, aan de <b>bloeiende takken eirond en ongelobd</b>. Jonge twijgen met minuscule <b>sterharen</b> (loep). In <b>september–december</b> geelgroene bloemen in bolvormige schermen, daarna <b>zwarte bessen</b> die in de late winter rijpen.",
+  "verwar": "Wilde wingerd (<i>Parthenocissus</i>) klimt ook, maar verliest zijn blad; Linnaeus noemde hem nog <i>Hedera quinquefolia</i>.",
+  "letop": "Blad en vruchten zijn <b>giftig</b> (saponinen zoals hederine).",
+  "weetje": "Klimop heeft twee levensfasen: pas bovenaan zijn steun vormt hij struikvormige bloeiende takken, zonder hechtwortels en met ongelobd blad. Stekken daarvan blijven struikjes. Zolang hij op de stam en de dikke takken blijft, schaadt hij de boom niet, en zijn late bessen zijn belangrijk wintervoer voor vogels.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Hedera helix",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4107"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Hedera helix",
+    "url": "https://www.treesandshrubsonline.org/articles/hedera/hedera-helix/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Hedera (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/hedera/"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   },
+   {
+    "naam": "CliniTox (Universiteit Zürich) — Hedera helix",
+    "url": "https://www.vetpharm.uzh.ch/giftdb/pflanzen/0032_tox.htm"
+   }
+  ]
+ },
  "hydrangea-macrophylla": {
   "herken": "Stevige, <b>dikstengelige</b> struik tot 3 m die makkelijk uit de voet uitloopt, met dik wit merg. Blad <b>dik, glanzend en vrijwel kaal</b>, langwerpig tot eirond-elliptisch, 10–15 cm, met <b>grove driehoekige tanden</b> en een toegespitste top. Bloeiwijze 10–20 cm: bij de wilde vorm een platte 'lacecap' (vruchtbare bloempjes met een krans steriele randbloemen), in tuinen vaak een bol ('mophead') van bijna alleen steriele bloemen met ca. 4 kelkbladen. Kleur wit, roze, blauw of paars.",
   "verwar": "<i>Hydrangea serrata</i>: in alles kleiner en fijner, met dunne twijgen en <b>dun, mat, wat ruw aanvoelend</b> blad; bloeit vroeger en heeft meestal platte schermen. <i>Hydrangea aspera</i>: dicht behaard, fluweelachtig blad.",
@@ -1948,6 +2046,25 @@ const SOORTINFO = {
    }
   ]
  },
+ "lavandula-angustifolia": {
+  "herken": "Halfstruik (tot ongeveer 60 cm) met een <b>verhoute voet</b>. Blad smal lijnvormig, 2,5–4,5 cm, met een iets omgerolde rand, jong grijs en later groener; aan de zijscheuten smaller en blijvend grijs. Lange, <b>vierkante bloemstengels</b> met een <b>smalle aar</b> van kransen lavendelpaarse bloemen: de bovenlip tweelobbig, de onderlip drielobbig. Kelk met 13 ribben en wollig behaard; schutblaadjes papierachtig bruin. Alle schutblaadjes dragen bloemen: <b>geen kuifje</b> bovenop. Sterk geurend.",
+  "verwar": "Lavandin (<i>L. × intermedia</i>): een kruising met de breedbladige spijklavendel (<i>L. latifolia</i>), groter en krachtiger. Kuiflavendel (<i>L. stoechas</i>): dichte aren met een opvallend <b>kuifje van steriele schutbladen</b> bovenop, en minder winterhard.",
+  "weetje": "Komt uit het westelijke Middellandse Zeegebied en levert de <b>echte lavendelolie</b>. Hij verdraagt geen zware klei of grond die in de winter nat blijft: dan rotten de wortels. Snoei meteen na de bloei, maar niet tot in de verhoute stengels, want daar loopt hij moeilijk weer uit.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Lavandula angustifolia",
+    "url": "https://www.treesandshrubsonline.org/articles/lavandula/lavandula-angustifolia/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Lavandula (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/lavandula/"
+   },
+   {
+    "naam": "Royal Horticultural Society — Lavender: growing guide",
+    "url": "https://www.rhs.org.uk/plants/lavender/growing-guide"
+   }
+  ]
+ },
  "lonicera-nitida": {
   "herken": "Dichte, wintergroene struik (1,5–3,5 m) — helemaal geen klimmer. Jonge twijgen dun, rechtop, paarsachtig en donzig. Blaadjes <b>zeer klein (0,6–1,6 cm)</b>, eirond tot rondachtig met een <b>hartvormige voet en stompe top</b>, stevig, <b>boven donker glanzend</b>, onder bleek, dicht op elkaar in paren langs de twijg. Kleine roomwitte, geurende bloempjes per twee in de bladoksels. Bolle, <b>doorschijnend blauwpaarse</b> besjes.",
   "verwar": "<i>Lonicera ligustrina</i> var. <i>pileata</i> (in de handel '<i>L. pileata</i>'): laag en breed met horizontale takken en langwerpig, iets groter blad (1,2–3 cm). <i>Buxus</i>: ook klein tegenoverstaand wintergroen blad, maar leerachtiger, met een ingedeukte top en zonder hartvormige voet.",
@@ -2301,6 +2418,25 @@ const SOORTINFO = {
    {
     "naam": "Trees and Shrubs Online — Magnolia grandiflora",
     "url": "https://www.treesandshrubsonline.org/articles/magnolia/magnolia-grandiflora/"
+   }
+  ]
+ },
+ "pachysandra-terminalis": {
+  "herken": "Wintergroene, halfhoutige <b>bodembedekker</b> (10–30 cm) die zich uitbreidt met <b>ondergrondse uitlopers</b>. Blad omgekeerd eirond tot ruitvormig, 5–10 cm, <b>alleen in de bovenste helft grof getand</b>, onderaan versmald en gaaf, kaal, met drie duidelijke nerven aan de voet. De bladeren staan in <b>kransachtige toefjes</b> aan het eind van elke jaarscheut. In maart–april korte <b>eindstandige aartjes</b> met bloempjes zonder kroonblaadjes en met <b>dikke, witte, ver uitstekende meeldraden</b>. Vrucht een doosvrucht met twee hoorntjes.",
+  "verwar": "<i>Pachysandra procumbens</i> (uit Amerika): groter blad en bloeiaren die opzij uit de stengel komen, niet aan de top. Buxus (dezelfde familie): tegenoverstaand, gaafrandig blad.",
+  "weetje": "In Heukels heet hij <b>dikkemanskruid</b>. Hij komt uit Japan en China en hoort bij de buxusfamilie. De soortnaam <i>terminalis</i> verwijst naar de eindstandige bloeiaren. Met de jaren vormt hij een dichte, lage mat van enkele meters breed.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Pachysandra terminalis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2756"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pachysandra terminalis",
+    "url": "https://www.treesandshrubsonline.org/articles/pachysandra/pachysandra-terminalis/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Pachysandra (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/pachysandra/"
    }
   ]
  },
@@ -3136,6 +3272,66 @@ const SOORTINFO = {
    }
   ]
  },
+ "taxus-baccata": {
+  "herken": "Wintergroene boom of struik (tot 18 m) met <b>platte, lijnvormige naalden</b>, boven glanzend donkergroen en onderaan lichter groen, schijnbaar in twee rijen. De <b>twijgen blijven het eerste jaar helder groen</b>: daarmee onderscheid je hem van sparachtige coniferen. Tweehuizig: vrouwelijke planten dragen elk zaad in een <b>vlezige, scharlakenrode beker</b> (de zaadrok of arillus). Er zijn geen kegels.",
+  "verwar": "Sparachtige coniferen (spar, zilverspar, douglas): bruine twijgen en houtige kegels.",
+  "letop": "<b>Zeer giftig</b>: de zaden en de naalden, ook gedroogd of gekookt, en het meest in de winter. Voor een paard kunnen 100–200 g naalden al dodelijk zijn. Alleen de rode zaadrok zelf is niet giftig.",
+  "weetje": "Een van de weinige coniferen die weer uitloopt als je hem tot in het <b>oude, kale hout</b> terugsnoeit, en daarom ideaal voor hagen en vormsnoei. Oorspronkelijk wild in Zuid-Limburg, nu in grote delen van Nederland ingeburgerd: vogels zaaien hem uit in tuinen, parken en zelfs op muren.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Taxus baccata",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2036"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Taxus (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/taxus/"
+   },
+   {
+    "naam": "Royal Horticultural Society — Conifers: growing guide",
+    "url": "https://www.rhs.org.uk/advice/profile?PID=545"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   },
+   {
+    "naam": "CliniTox (Universiteit Zürich) — Taxus baccata",
+    "url": "https://www.vetpharm.uzh.ch/giftdb/pflanzen/0039_tox.htm"
+   }
+  ]
+ },
+ "thuja-occidentalis": {
+  "herken": "Wintergroene, kegelvormige boom of struik met <b>platte, veervormig vertakte twijgjes</b> vol kleine schubvormige blaadjes, <b>aan beide kanten dof geelgroen</b>, zonder witte tekening onderaan. De middelste blaadjes dragen een verheven, rond harskliertje. Kleine, <b>langwerpige kegeltjes</b> (6–14 mm) met dunne, platte schubben. In de winter wordt hij vaak <b>geelbruin</b>. Schors roodbruin tot grijsbruin en vezelig.",
+  "verwar": "<i>Thuja plicata</i>: glanzend blad met <b>witte tekening onderaan</b> en een frisse, fruitige geur. Schijncipres (<i>Chamaecyparis lawsoniana</i>): overhangende topscheut en kegeltjes met schildvormige schubben.",
+  "letop": "<b>Zeer giftig</b> (de hele plant, door thujon in de etherische olie). Snoeien kan <b>huidirritatie</b> geven: draag handschoenen.",
+  "weetje": "Vermoedelijk de eerste Noord-Amerikaanse boom die naar Europa kwam: Jacques Cartier bracht rond 1536 een jonge plant mee naar de koninklijke tuin van Fontainebleau. Snoei hem in het groene deel: de meeste coniferen lopen niet meer uit uit oud, bruin hout, en thuja doet dat volgens de RHS maar onbetrouwbaar.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Thuja occidentalis",
+    "url": "https://www.treesandshrubsonline.org/articles/thuja/thuja-occidentalis/"
+   },
+   {
+    "naam": "Flora of North America — Thuja occidentalis",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=200005456"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Thuja plicata",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2031"
+   },
+   {
+    "naam": "Royal Horticultural Society — Conifers: growing guide",
+    "url": "https://www.rhs.org.uk/advice/profile?PID=545"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   },
+   {
+    "naam": "CliniTox (Universiteit Zürich) — Thuja",
+    "url": "https://www.vetpharm.uzh.ch/giftdb/pflanzen/0040_tox.htm"
+   }
+  ]
+ },
  "viburnum-tinus": {
   "herken": "Wintergroene, dichte, ronde struik (2–3,5 m) die <b>tot op de grond bebladerd</b> blijft. Blad <b>gaafrandig</b> (niet getand), smal eirond tot langwerpig, 4–10 cm, <b>glanzend donkergroen</b>, onderaan lichter met haarplukjes in de onderste nerfoksels. Van <b>november tot april</b>, naargelang het weer, kleine witte bloempjes in schermen van 5–10 cm. Eivormige, <b>diepblauwe</b>, later zwarte bessen.",
   "verwar": "Onder de winterharde sneeuwballen herken je hem aan de massa's <b>gaafrandige, wintergroene bladeren</b>. <i>V. davidii</i>: ook wintergroen, maar met drie diep ingezonken lengtenerven. <i>V. farreri</i> en <i>V. × bodnantense</i>: bloeien ook in de winter, maar geurend en op kale takken.",
@@ -3297,6 +3493,25 @@ const SOORTINFO = {
    {
     "naam": "Trees and Shrubs Online — Viburnum farreri",
     "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-farreri/"
+   }
+  ]
+ },
+ "weigela-florida": {
+  "herken": "Bladverliezende struik (1–3 m) met <b>tegenoverstaand</b> blad; jonge twijgen met <b>twee lijnen fijne haartjes</b> tussen de knopen. Blad bijna zonder steel, elliptisch tot omgekeerd eirond, 5–10 cm, gezaagd en toegespitst, onderaan dicht behaard, vooral op de nerven. In mei–juni <b>trompetvormige, roze tot purperrode bloemen</b> (3–4 cm), alleen of in kleine trosjes op korte zijscheutjes van vorig jaar. Vrucht een <b>droge doosvrucht met een snaveltje</b> (1,5–2,5 cm) die aan de top openspringt.",
+  "verwar": "Kamperfoelie (<i>Lonicera</i>, dezelfde familie): bessen in plaats van een droge doosvrucht. In tuinen staan vooral cultivars en kruisingen, soms met rood of bont blad.",
+  "weetje": "Thunberg noemde het geslacht naar de Duitse wetenschapper Christian Ehrenfried von Weigel. De bloemen staan op zijscheutjes van <b>vorig jaar</b>: snoei daarom meteen na de bloei en haal dan oude takken weg. Wie elk voorjaar alles inkort, krijgt steeds minder bloemen.",
+  "bronnen": [
+   {
+    "naam": "Flora of China — Weigela florida",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=200022527"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Weigela florida",
+    "url": "https://www.treesandshrubsonline.org/articles/weigela/weigela-florida/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Weigela (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/weigela/"
    }
   ]
  }
@@ -4501,6 +4716,245 @@ const GESLACHTEN = {
    {
     "naam": "Missouri Botanical Garden, Plant Finder — Geranium pratense",
     "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=297660"
+   }
+  ]
+ },
+ "Betula": {
+  "nl": "Berk",
+  "speciaal": "Ongeveer honderd soorten (het precieze aantal is omstreden, want berken kruisen veel) over het hele noordelijk halfrond. Berken zijn <b>pioniers</b>: ze veroveren snel kale, verstoorde grond, maar verdragen weinig schaduw en worden vaak niet oud. De bast is hun sieraad, van donkerbruin tot poederwit.",
+  "herken": [
+   "Bast glad en papierachtig, vaak <b>wit</b> en in banden of repen afschilferend, met opvallende donkere <b>lenticellen</b>.",
+   "Blad <b>verspreid</b>, eirond tot driehoekig, gezaagd of dubbel gezaagd.",
+   "Mannelijke <b>katjes</b> vormen zich al in de zomer en hangen de hele winter zichtbaar aan de twijgen.",
+   "De vrouwelijke katjes <b>vallen uiteen</b> in schubjes en kleine <b>gevleugelde nootjes</b>; ze worden geen houtig 'kegeltje' zoals bij de els.",
+   "Knoppen zittend, met 3–7 knopschubben."
+  ],
+  "tuin": "De ruwe berk als lichte boom, en berken met een opvallend witte of gekleurde bast, zoals <i>Betula utilis</i> subsp. <i>albosinensis</i> en <i>B. ermanii</i>.",
+  "wild": "Inheems zijn de ruwe berk (droge tot vochtige, zure grond, heide) en de zachte berk (natte grond, venen en moerassen), allebei zeer algemeen.",
+  "verwar": "Els (<i>Alnus</i>): meestal maar twee knopschubben en vrouwelijke katjes die houtige 'elzenproppen' worden en blijven hangen. Haagbeuk (dezelfde familie): gladde, gegroefde grijze stam en nootjes aan een drielobbig schutblad.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Betula (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/betula/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Betula pendula",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3448"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Betula pubescens",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3449"
+   }
+  ]
+ },
+ "Carpinus": {
+  "nl": "Haagbeuk",
+  "speciaal": "Ongeveer 45 soorten in de gematigde streken van het noordelijk halfrond. Geen beuk maar een lid van de berkenfamilie, verwant aan de hazelaar en de hopbeuk. Windbestoven, met de vruchten in hangende trossen van bladachtige schutbladen.",
+  "herken": [
+   "Blad <b>verspreid</b>, dubbel gezaagd, met veel <b>evenwijdige, ingedrukte zijnerven</b> (geplooid uitzicht).",
+   "Elk nootje zit aan een <b>bladachtig, vaak drielobbig schutblad</b>; samen vormen ze hangende trossen.",
+   "Stam grijs en glad, vaak <b>gegroefd als spieren</b>.",
+   "Knoppen slank, spits, met veel knopschubben."
+  ],
+  "tuin": "Vooral als <b>haag</b> en voor vormsnoei (houdt geschoren zijn dorre blad in de winter), en zuilvormige cultivars als laanboom.",
+  "wild": "De haagbeuk is inheems in Zuid-Limburg en het aangrenzende rivierengebied, op vochtige, voedselrijke, vaak kalkrijke grond in loofbossen, houtwallen en hakhout.",
+  "verwar": "Beuk: gave, gewimperde bladrand en nootjes in een stekelige bolster. Hopbeuk (<i>Ostrya</i>): nootje in een gesloten blaasje, en mannelijke katjes die de hele winter bloot hangen.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Carpinus (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/carpinus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Carpinus betulus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3455"
+   }
+  ]
+ },
+ "Taxus": {
+  "nl": "Taxus, venijnboom",
+  "speciaal": "Acht of negen nauw verwante soorten in de vochtigere delen van de noordelijke gematigde zone. Geen kegels: elk zaad zit in een <b>vlezige, rode zaadrok</b>. Veel botanici plaatsen de taxusfamilie daarom in een eigen orde, los van de echte coniferen.",
+  "herken": [
+   "Wintergroen, met <b>platte naalden</b> die spiraalsgewijs staan maar in twee rijen lijken.",
+   "Twijgen het eerste jaar <b>groen</b>.",
+   "Meestal <b>tweehuizig</b>: alleen vrouwelijke planten dragen de rode 'bessen'.",
+   "Verdraagt veel schaduw."
+  ],
+  "tuin": "Dé plant voor strakke hagen en vormsnoei, want hij loopt weer uit uit oud hout. Ook zuilvormen zoals de Ierse taxus ('Fastigiata').",
+  "wild": "Oorspronkelijk wild in Zuid-Limburg, nu door vogels in grote delen van Nederland ingeburgerd.",
+  "verwar": "Sparachtige coniferen: bruine twijgen en houtige kegels.",
+  "letop": "Zaden en naalden zijn <b>zeer giftig</b>, ook voor paarden en vee.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Taxus (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/taxus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Taxus baccata",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2036"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   },
+   {
+    "naam": "CliniTox (Universiteit Zürich) — Taxus baccata",
+    "url": "https://www.vetpharm.uzh.ch/giftdb/pflanzen/0039_tox.htm"
+   }
+  ]
+ },
+ "Thuja": {
+  "nl": "Levensboom",
+  "speciaal": "Zes soorten wintergroene bomen met dunne, schilferende of vezelige schors en <b>sterk geurend</b> loof. De naam komt van een Grieks woord dat Theophrastus gebruikte voor een boom met geurig hout.",
+  "herken": [
+   "<b>Platte, veervormig vertakte twijgjes</b> met kleine <b>schubvormige blaadjes</b> in kruisgewijze paren.",
+   "Kegeltjes <b>eivormig of langwerpig</b>, met dunne, platte schubben.",
+   "Loof geurt bij wrijven."
+  ],
+  "tuin": "Veel gebruikt voor wintergroene hagen: <i>T. occidentalis</i> (ook in zeer koude streken) en de glanzender <i>T. plicata</i>.",
+  "wild": "Niet inheems. <i>T. plicata</i> wordt soms in bossen aangeplant (hij levert het hout <i>western red cedar</i>).",
+  "verwar": "Schijncipres (<i>Chamaecyparis</i>): kegeltjes met schildvormige schubben.",
+  "letop": "De hele plant is <b>zeer giftig</b>, en snoeien kan huidirritatie geven.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Thuja (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/thuja/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Thuja plicata",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2031"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   },
+   {
+    "naam": "CliniTox (Universiteit Zürich) — Thuja",
+    "url": "https://www.vetpharm.uzh.ch/giftdb/pflanzen/0040_tox.htm"
+   }
+  ]
+ },
+ "Hedera": {
+  "nl": "Klimop",
+  "speciaal": "Een kleine groep wintergroene klimmers (hoeveel soorten is een kwestie van interpretatie) van de Canarische Eilanden en Europa tot Japan; in de Nieuwe Wereld komen ze in het wild niet voor. Alle klimoppen hebben een <b>jeugdfase</b> die klimt of kruipt, en een <b>volwassen fase</b> die bloeit.",
+  "herken": [
+   "Wintergroene klimmer met <b>hechtwortels</b>.",
+   "Blad <b>gelobd</b> aan klimmende scheuten, <b>ongelobd</b> aan bloeiende takken.",
+   "<b>Sterharen of schubjes</b> op jonge scheuten en in de bloeiwijze.",
+   "Kleine geelgroene bloemen in <b>bolle schermen</b> in de herfst, daarna zwarte bessen."
+  ],
+  "tuin": "Muur- en gevelbegroening, bodembedekker onder bomen waar geen gras groeit, en veel bonte cultivars.",
+  "wild": "De klimop is zeer algemeen op vochtige, voedselrijke grond in loofbossen, op houtwallen en langs muren.",
+  "verwar": "Wilde wingerd (<i>Parthenocissus</i>): klimt ook, maar verliest zijn blad.",
+  "letop": "Blad en vruchten zijn giftig.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Hedera (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/hedera/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Hedera helix",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4107"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "Pachysandra": {
+  "nl": "Dikkemanskruid",
+  "speciaal": "Vier of vijf soorten halfhoutige, lage planten uit Oost-Azië en Noord-Amerika, verwant aan de buxus maar er helemaal anders uitziend. De bloemen zijn eenslachtig en hebben geen kroonblaadjes.",
+  "herken": [
+   "Laag, wintergroen en halfhoutig, met <b>verspreide bladeren</b> die in toefjes aan het eind van de jaarscheut staan.",
+   "Bloemen in <b>rechtopstaande aartjes</b>: bovenaan veel mannelijke bloemen met dikke meeldraden, onderaan enkele vrouwelijke.",
+   "Vrucht een doosvrucht met hoorntjes (de blijvende stijlen)."
+  ],
+  "tuin": "Wintergroene bodembedekker voor schaduw onder bomen en struiken.",
+  "wild": "Niet inheems; soms ogenschijnlijk verwilderd.",
+  "verwar": "Buxus: tegenoverstaand, gaafrandig blad.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Pachysandra (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/pachysandra/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Pachysandra terminalis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2756"
+   }
+  ]
+ },
+ "Amelanchier": {
+  "nl": "Krentenboompje",
+  "speciaal": "Struiken en kleine bomen uit Europa, Azië en vooral Noord-Amerika, in de rozenfamilie. De naam komt van <i>amelancier</i>, een oude naam uit Savoye voor de Europese soort. Ze zijn geliefd om hun overvloed aan witte bloemen en hun rode herfstkleur; door tussenvormen en kruisingen zijn de soorten vaak lastig uit elkaar te houden.",
+  "herken": [
+   "Bladverliezend, met <b>verspreid, enkelvoudig, gezaagd</b> blad.",
+   "Vroeg in het voorjaar trosjes <b>witte bloemen met smalle kroonblaadjes</b>.",
+   "Kleine, ronde <b>zwarte of paarse bessen</b> met 5 of 10 zaadjes.",
+   "Mooie rode, soms gele herfstkleur."
+  ],
+  "tuin": "Meerstammige struik of kleine boom voor elk seizoen: bloei, bessen voor vogels en herfstkleur.",
+  "wild": "Het Amerikaans krentenboompje is algemeen verwilderd op zure zandgrond in bosranden, houtwallen en op heide, en staat op de Belgische bewakingslijst.",
+  "verwar": "Meidoorn en lijsterbes (dezelfde familie): gelobd of geveerd blad.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Amelanchier (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/amelanchier/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Amelanchier lamarckii",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3368"
+   },
+   {
+    "naam": "Harmonia (invasieve exoten België) — Amelanchier lamarckii",
+    "url": "https://ias.biodiversity.be/species/show/35"
+   }
+  ]
+ },
+ "Weigela": {
+  "nl": "Weigelia",
+  "speciaal": "Negen of tien soorten bladverliezende struiken uit Oost-Azië, vooral uit Japan, Korea en Noord-China. Thunberg noemde het geslacht naar Christian Ehrenfried von Weigel. In tuinen staan vooral cultivars, die moeilijk op naam te brengen zijn.",
+  "herken": [
+   "Blad <b>tegenoverstaand</b>, bijna zonder steel, gezaagd.",
+   "<b>Trompetvormige bloemen</b> (wit, geel, roze tot rood), alleen of met 2–3 op korte zijscheutjes van vorig jaar.",
+   "Vrucht een <b>droge doosvrucht</b> die aan de top openspringt."
+  ],
+  "tuin": "Veelgebruikte bloeiende heester voor de border. Snoei na de bloei door oude takken weg te nemen.",
+  "wild": "Niet inheems.",
+  "verwar": "Kamperfoelie (dezelfde familie): bessen in plaats van een doosvrucht.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Weigela (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/weigela/"
+   },
+   {
+    "naam": "Flora of China — Weigela florida",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=200022527"
+   }
+  ]
+ },
+ "Lavandula": {
+  "nl": "Lavendel",
+  "speciaal": "Een geslacht van aromatische struikjes en kruiden, van de Atlantische eilanden via het Middellandse Zeegebied tot India. De echte lavendel levert lavendelolie; de lavandin, een kruising, is productiever.",
+  "herken": [
+   "Aromatisch, met smal, vaak grijs blad en <b>vierkante stengels</b> (lipbloemenfamilie).",
+   "Bloemen in een <b>gesteelde aar</b> aan de top van de stengel, in paren schutbladen.",
+   "Bij de sectie van de echte lavendel dragen alle schutbladen bloemen; bij de kuiflavendel vormen de bovenste steriele schutbladen een <b>kuifje</b>."
+  ],
+  "tuin": "Zonnige, droge borders en lage hagen. Echte lavendel en lavandin zijn winterhard; kuiflavendel veel minder.",
+  "wild": "Niet inheems; de echte lavendel is wel verwilderd in delen van Midden-Europa, vooral in wijnstreken.",
+  "verwar": "Kuiflavendel (<i>L. stoechas</i>) herken je aan het kuifje bovenop de aar; lavandin (<i>L. × intermedia</i>) is groter en krachtiger dan de echte lavendel.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Lavandula (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/lavandula/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Lavandula angustifolia",
+    "url": "https://www.treesandshrubsonline.org/articles/lavandula/lavandula-angustifolia/"
+   },
+   {
+    "naam": "Royal Horticultural Society — Lavender: growing guide",
+    "url": "https://www.rhs.org.uk/plants/lavender/growing-guide"
    }
   ]
  }
