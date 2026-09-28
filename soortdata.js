@@ -216,7 +216,7 @@ const SOORTDATA = [
   weetje:"De laagsgewijze bouw is zijn handelsmerk; plant hem waar je er van bovenaf op kijkt." },
 
 { id:"viburnum-davidii", g:"Viburnum", s:"davidii", nl:"Davids sneeuwbal",
-  standplaats:"Halfschaduw tot schaduw", water:"Normaal", hoogte:"0,6–1 m", breedte:"1–1,5 m",
+  standplaats:"Halfschaduw tot schaduw", water:"Normaal", hoogte:"0,9–1,5 m", breedte:"1–1,5 m",
   blad:"Bladhoudend", bloeitijd:"Mei–juni", bloeikleur:"Wit, klein scherm",
   groeivorm:"Bodembedekker", groei:"Traag", gebruik:["Bodembedekker","Massief","Schaduwborder"],
   onderscheid:"Laag en breed uitgroeiend, met <b>leerachtig blad met drie diep ingezonken lengtenerven</b> — dat nervenpatroon herken je meteen. Metaalblauwe bessen.",
@@ -238,7 +238,7 @@ const SOORTDATA = [
 
 { id:"viburnum-lantana", g:"Viburnum", s:"lantana", nl:"Wollige sneeuwbal",
   standplaats:"Zon tot halfschaduw", water:"Droog tot normaal", hoogte:"3–4 m", breedte:"2–3 m",
-  blad:"Bladverliezend", bloeitijd:"Mei", bloeikleur:"Crèmewit, plat scherm",
+  blad:"Bladverliezend", bloeitijd:"Mei–juni", bloeikleur:"Crèmewit, plat scherm",
   groeivorm:"Heester", groei:"Normaal", gebruik:["Landschap","Haag","Kalkgrond"],
   onderscheid:"Blad en twijgen <b>dicht grijsviltig behaard</b>, ruw aanvoelend. <b>Naakte knoppen zonder schubben</b> — uniek binnen het geslacht en een prima winterkenmerk.",
   weetje:"Inheems op kalkgrond. De bessen kleuren eerst rood en dan zwart, vaak in dezelfde tros tegelijk." },

@@ -2973,6 +2973,170 @@ const SOORTINFO = {
     "url": "https://www.treesandshrubsonline.org/articles/spiraea/"
    }
   ]
+ },
+ "viburnum-tinus": {
+  "herken": "Wintergroene, dichte, ronde struik (2–3,5 m) die <b>tot op de grond bebladerd</b> blijft. Blad <b>gaafrandig</b> (niet getand), smal eirond tot langwerpig, 4–10 cm, <b>glanzend donkergroen</b>, onderaan lichter met haarplukjes in de onderste nerfoksels. Van <b>november tot april</b>, naargelang het weer, kleine witte bloempjes in schermen van 5–10 cm. Eivormige, <b>diepblauwe</b>, later zwarte bessen.",
+  "verwar": "Onder de winterharde sneeuwballen herken je hem aan de massa's <b>gaafrandige, wintergroene bladeren</b>. <i>V. davidii</i>: ook wintergroen, maar met drie diep ingezonken lengtenerven. <i>V. farreri</i> en <i>V. × bodnantense</i>: bloeien ook in de winter, maar geurend en op kale takken.",
+  "weetje": "Komt uit het Middellandse Zeegebied, waar hij in de maquis groeit tussen laurier en mirte; in Engeland wordt hij al sinds de 16e eeuw gekweekt. Hij bloeit het rijkst in de zon, maar verdraagt matige schaduw.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum tinus",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-tinus/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Viburnum (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/"
+   }
+  ]
+ },
+ "viburnum-opulus": {
+  "herken": "Inheemse struik (tot 3–4,5 m) met grijze stengels. Blad <b>handnervig en 3- tot 5-lobbig</b>, als een esdoornblad, grof getand, onderaan zachtharig. De bladsteel heeft <b>twee draadvormige steunblaadjes aan de voet</b> en <b>grote, holle kliertjes vlak onder het blad</b>. In juni vlakke schermen (5–7,5 cm) met een <b>rand van grote, steriele witte bloemen</b> rond kleine vruchtbare bloempjes. <b>Glanzend scharlakenrode</b>, ronde bessen.",
+  "verwar": "Esdoorns (<i>Acer</i>): ook tegenoverstaand, handvormig gelobd blad, maar gevleugelde vruchten en geen kliertjes op de bladsteel. Tuinvorm 'Roseum' (sneeuwbalboom): alleen steriele bloemen in bolle witte ballen, en dus geen bessen.",
+  "letop": "Vooral de <b>bessen</b> zijn giftig.",
+  "weetje": "Algemeen op natte tot vochtige, voedselrijke grond in loofbossen en struikgewas. Het <b>viburnumhaantje</b> (<i>Pyrrhalta viburni</i>), een inheems bladhaantje, eet de bladeren tot een skelet van nerven; de Gelderse roos is een van zijn meest gevoelige waardplanten. Twee à drie jaar na elkaar kaalvreten kan een struik doden.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Viburnum opulus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4223"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Viburnum opulus",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-opulus/"
+   },
+   {
+    "naam": "Gyeltshen & Hodges, Viburnum leaf beetle — University of Florida IFAS (EDIS IN656)",
+    "url": "https://ask.ifas.ufl.edu/publication/IN656"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "viburnum-plicatum": {
+  "herken": "Struik (2–3 m) met <b>bijna horizontale takken in etages</b>, jong met sterharen. Blad eirond, toegespitst, 5–10 cm, getand behalve aan de voet, met <b>diep ingedrukte, evenwijdige zijnerven</b> (geplooid), onderaan grijs stervormig behaard. Vlakke schermen (6–10 cm) op korte, tweebladige zijtwijgjes, in rijen <b>bovenop de takken</b>: in het midden kleine vruchtbare bloempjes, rondom enkele <b>grote witte steriele bloemen</b> (f. <i>tomentosum</i>, zoals 'Mariesii'). Bij de sneeuwbalvorm (f. <i>plicatum</i>) zijn alle bloemen steriel en vormen ze bolle ballen. Bessen eerst koraalrood, later blauwzwart.",
+  "verwar": "<i>Viburnum opulus</i>: ook schermen met steriele randbloemen, maar esdoornachtig gelobd blad en geen etages.",
+  "weetje": "Thunberg gaf de naam <i>plicatum</i> aan de Japanse tuinvorm met bolle sneeuwballen, en noemde de wilde vorm met platte schermen <i>V. tomentosum</i>. Die naam bleek al vergeven (aan de wollige sneeuwbal), dus heet nu de hele soort <i>V. plicatum</i>, en de wilde vorm f. <i>tomentosum</i>.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum plicatum",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-plicatum/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Viburnum (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/"
+   }
+  ]
+ },
+ "viburnum-davidii": {
+  "herken": "Lage, compacte, <b>wintergroene</b> struik (0,9–1,5 m) met wrattige jonge takken. Blad leerachtig, smal ovaal, 5–15 cm, met <b>drie opvallende, diep ingezonken lengtenerven</b>, bovenaan soms onduidelijk getand, donkergroen, kaal op haarplukjes in de nerfoksels na. In het voorjaar kleine dofwitte bloempjes in dichte, stijve schermen (5–7,5 cm). <b>Blauwe, smal ovale bessen</b>.",
+  "verwar": "<i>Viburnum tinus</i>: gaafrandig blad zonder drie diepe lengtenerven, bloeit in de winter. <i>Viburnum rhytidophyllum</i>: veel groter, gerimpeld blad met een viltige onderkant.",
+  "weetje": "In 1904 door Wilson uit West-China ingevoerd. Of hij echt tweehuizig is, is niet zeker, maar in de praktijk werkt het zo: voor de mooie blauwe bessen moet je mannelijke én vrouwelijke planten zetten.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum davidii",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-davidii/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Viburnum (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/"
+   }
+  ]
+ },
+ "viburnum-rhytidophyllum": {
+  "herken": "Grote wintergroene struik (3–6 m) met dikke, <b>stervormig viltige</b> takken. Blad <b>eirond-langwerpig, 7,5–19 cm</b>, boven glanzend en <b>diep gerimpeld</b>, onderaan <b>dik grijs vilt</b>. De grote, schermachtige bloeiwijzen (10–20 cm) worden al in de herfst gevormd en <b>staan de hele winter als knop</b> klaar; in mei–juni gaan de dof geelwitte bloempjes open. Bessen eerst rood, dan glanzend zwart.",
+  "verwar": "<i>Viburnum davidii</i>: kleiner en lager, met drie lengtenerven en een kale onderkant. <i>Viburnum lantana</i>: bladverliezend, met kleiner en minder gerimpeld blad.",
+  "weetje": "In 1900 door Wilson uit Midden- en West-China ingevoerd. Op een goede, beschutte plek is hij indrukwekkend, maar verwaaide of hongerige planten zijn volgens Trees and Shrubs Online 'ronduit lelijk'. Hij is resistent tegen het viburnumhaantje.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum rhytidophyllum",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-rhytidophyllum/"
+   },
+   {
+    "naam": "Gyeltshen & Hodges, Viburnum leaf beetle — University of Florida IFAS (EDIS IN656)",
+    "url": "https://ask.ifas.ufl.edu/publication/IN656"
+   }
+  ]
+ },
+ "viburnum-carlesii": {
+  "herken": "Ronde, bladverliezende struik (1,2–2,4 m) met dicht stervormig behaarde jonge twijgen. Blad breed eirond, onregelmatig getand, 2,5–9 cm, <b>dofgroen</b>, onderaan grijsachtig, aan beide kanten <b>zacht door sterharen</b>. De ronde bloeiwijze (5–7,5 cm) zit de hele winter als <b>knop</b> klaar en gaat in april–mei open: buisvormige bloemen, <b>eerst roze, dan wit</b>, <b>zeer sterk geurend</b> en alle vruchtbaar. Gitzwarte, afgeplatte bessen.",
+  "verwar": "<i>Viburnum × burkwoodii</i>: half wintergroen, donkerder en iets glanzend blad met lichtbruin vilt onderaan, en een grotere struik. <i>Viburnum lantana</i>: kleine witte bloempjes in platte schermen, bessen eerst rood.",
+  "weetje": "Genoemd naar W. R. Carles, een Britse consul die in 1883–1885 Korea verkende. Een grote bloeiende struik hult zich in een wolk van geur: plant hem langs een pad dat je vaak neemt.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum carlesii",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-carlesii/"
+   },
+   {
+    "naam": "Gyeltshen & Hodges, Viburnum leaf beetle — University of Florida IFAS (EDIS IN656)",
+    "url": "https://ask.ifas.ufl.edu/publication/IN656"
+   }
+  ]
+ },
+ "viburnum-lantana": {
+  "herken": "Krachtige inheemse struik (2,5–4,5 m). Jonge twijgen, <b>knoppen</b>, bladonderkant en bloemsteeltjes zijn bedekt met <b>dicht, fijn sterharig vilt</b>. De winterknoppen zijn <b>naakt</b>: kleine, viltige blaadjes zonder knopschubben. Blad breed eirond met een <b>hartvormige voet</b>, fijn getand, 5–12,5 cm, boven fluweelachtig, veernervig; bladsteel zonder kliertjes. In mei–juni kleine witte bloemen, <b>alle even groot en vruchtbaar</b>, in vlakke schermen (5–10 cm). Langwerpige bessen, <b>eerst rood, later zwart</b>.",
+  "verwar": "<i>Viburnum opulus</i>: gelobd, handnervig blad, steriele randbloemen en rode bessen. <i>Viburnum rhytidophyllum</i> en <i>V. carlesii</i> hebben ook naakte knoppen: ze horen bij dezelfde groep.",
+  "letop": "Vooral de <b>bessen</b> zijn giftig.",
+  "weetje": "Zeldzaam inheems op droge, kalkrijke grond in struikgewas, vooral in de kalkrijke duinen, en ook als tuinstruik. Hij is de typesoort van de Lantana-groep: sneeuwballen met naakte knoppen, sterharen en bessen die van rood naar zwart kleuren.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Viburnum lantana",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4224"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Viburnum lantana",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-lantana/"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   }
+  ]
+ },
+ "viburnum-farreri": {
+  "herken": "Bladverliezende struik (tot 3 m of meer), stijf rechtop of wat uitgespreid, met een mooie glanzend bruine schors. Blad omgekeerd eirond of ovaal, spits, 4–10 cm, <b>sterk getand</b>, met <b>ongeveer zes paar evenwijdige nerven</b>, kaal op haarplukjes onderaan na. Vanaf november, de hele winter door, <b>geurende</b> bloemtrosjes (4–5 cm) aan de toppen en zijkanten van de <b>kale takken</b>: bloemen wit, of roze bij het opengaan, met een slanke buis van ongeveer 1 cm.",
+  "verwar": "<i>Viburnum × bodnantense</i>: dieper roze en grotere bloemen, blad met meer nerven en onderaan meer behaard. <i>Viburnum tinus</i>: wintergroen, met gaafrandig blad.",
+  "weetje": "De bloemen verdragen lichte vorst zonder schade en geuren naar heliotroop. Volgens plantenjager Reginald Farrer was dit in heel Noord-China de meest geliefde tuinplant.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum farreri",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-farreri/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Viburnum × bodnantense",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-x-bodnantense/"
+   }
+  ]
+ },
+ "viburnum-x-burkwoodii": {
+  "herken": "Half wintergroene struik (tot ongeveer 2,5 m). Blad eirond, spits, 4–10 cm, onduidelijk getand, boven <b>donker en iets glanzend groen</b>, onderaan <b>dik bedekt met lichtbruine sterharen</b>, net als de jonge twijgen. Eind april–mei <b>sterk geurende</b>, bolle schermen (6–9 cm): bloemen eerst roze, dan zuiver wit. Bij zacht weer gaan soms al in de vroege winter enkele trossen open.",
+  "verwar": "<i>Viburnum carlesii</i>: bladverliezend, dofgroen blad dat aan beide kanten zacht behaard is, compactere struik. <i>Viburnum lantana</i>: bladverliezend, kleine bloempjes in platte schermen.",
+  "weetje": "In 1924 gekweekt door Burkwood en Skipwith in Kingston-on-Thames, uit <i>V. utile</i> bestoven met <i>V. carlesii</i>. Van <i>V. utile</i> erfde hij het wintergroene blad, maar niet helemaal. Hij is zeer winterhard en werd een van de meest geplante sneeuwballen, zelfs in de rookvervuilde stad.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum × burkwoodii",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-x-burkwoodii/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Viburnum carlesii",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-carlesii/"
+   }
+  ]
+ },
+ "viburnum-x-bodnantense": {
+  "herken": "Bladverliezende winterbloeier (tot ongeveer 3 m). Blad onregelmatig getand, met meer nerven dan bij <i>V. farreri</i> en onderaan meer behaard, op de nerven en in de nerfoksels. In de winter <b>geurende trosjes</b> op de kale takken: bij 'Dawn' <b>dieprood-roze in de knop</b>, open wit met een sterke roze blos, en grotere bloemen dan bij <i>V. farreri</i>.",
+  "verwar": "<i>Viburnum farreri</i> (een van de ouders): kleinere, witte tot lichtroze bloemen, en blad met ongeveer zes paar nerven dat bijna kaal is.",
+  "weetje": "Een kruising van <i>V. farreri</i> en <i>V. grandiflorum</i>. Charles Lamont maakte ze in 1933 als eerste in Edinburgh, maar vond ze geen verbetering. In 1934–1935 werd de kruising herhaald in de tuin van Bodnant in Wales; daaruit kwam de kloon 'Dawn'. De bloemen verdragen vorst beter dan die van <i>V. grandiflorum</i>.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum × bodnantense",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-x-bodnantense/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Viburnum farreri",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/viburnum-farreri/"
+   }
+  ]
  }
 };
 const FAMILIES = {
@@ -4103,6 +4267,43 @@ const GESLACHTEN = {
    {
     "naam": "Cheng (2007), The history of aspirin — Texas Heart Institute Journal 34(3)",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1995051/"
+   }
+  ]
+ },
+ "Viburnum": {
+  "nl": "Sneeuwbal, Gelderse roos",
+  "speciaal": "Ruim 100 soorten struiken en kleine bomen, vooral uit de gematigde streken van het noordelijk halfrond. Bijzonder is de taakverdeling in de bloeiwijze van sommige soorten: grote <b>steriele randbloemen</b> dienen alleen om insecten te lokken, de kleine bloempjes in het midden maken vruchten. Bij de echte 'sneeuwbal'-tuinvormen zijn alle bloemen steriel.",
+  "herken": [
+   "Blad <b>tegenoverstaand</b>, enkelvoudig, meestal getand, soms gelobd (Gelderse roos).",
+   "Winterknoppen <b>naakt</b> (zonder schubben, zoals bij de wollige sneeuwbal) of met weinig knopschubben.",
+   "Kleine bloempjes met vijf kroonslippen en vijf meeldraden, in <b>vlakke of bolle schermen</b>.",
+   "Vrucht een <b>steenvrucht met één pit</b>: rood, blauw of zwart.",
+   "Vaak <b>sterharen</b> op de twijgen en de bladonderkant."
+  ],
+  "tuin": "Voor elk seizoen: winterbloeiers (<i>V. tinus</i>, <i>V. farreri</i>, <i>V. × bodnantense</i>), geurende voorjaarsbloeiers (<i>V. carlesii</i>, <i>V. × burkwoodii</i>), de Japanse sneeuwbal met zijn etages, wintergroene bladheesters (<i>V. davidii</i>, <i>V. rhytidophyllum</i>) en de inheemse Gelderse roos en wollige sneeuwbal voor natuurlijke beplanting.",
+  "wild": "Inheems zijn de Gelderse roos (algemeen op natte tot vochtige, voedselrijke grond in loofbossen en struikgewas) en de wollige sneeuwbal (zeldzaam, op droge kalkgrond, vooral in de duinen).",
+  "verwar": "Vlier (<i>Sambucus</i>, dezelfde familie): geveerd blad. Kornoelje (<i>Cornus</i>): ook tegenoverstaand blad en schermen, maar een gave bladrand en nerven die in een boog naar de bladtop lopen.",
+  "letop": "Vooral de bessen zijn giftig (Antigifcentrum: Gelderse roos, wollige sneeuwbal en de gekweekte soorten). Het viburnumhaantje kan vooral de Gelderse roos kaalvreten; <i>V. rhytidophyllum</i>, <i>V. carlesii</i> en <i>V. plicatum</i> f. <i>tomentosum</i> zijn er resistent tegen.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Viburnum (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/viburnum/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Viburnum opulus",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4223"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Viburnum lantana",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4224"
+   },
+   {
+    "naam": "Antigifcentrum (België) — brochure Planten",
+    "url": "https://www.poisoncentre.be/app/uploads/2026/02/Brochure-planten-NL-1.pdf"
+   },
+   {
+    "naam": "Gyeltshen & Hodges, Viburnum leaf beetle — University of Florida IFAS (EDIS IN656)",
+    "url": "https://ask.ifas.ufl.edu/publication/IN656"
    }
   ]
  }
