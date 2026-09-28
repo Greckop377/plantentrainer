@@ -2655,6 +2655,164 @@ const SOORTINFO = {
     "url": "https://www.treesandshrubsonline.org/articles/quercus/quercus-ilex/"
    }
   ]
+ },
+ "salix-alba": {
+  "herken": "Grote boom (tot 20 m) met een vrij smalle kroon en <b>schuin opstijgende takken</b> (30–50°), die van ver <b>zilvergrijs</b> lijkt. Blad lancetvormig, in het midden het breedst, naar beide kanten versmald, <b>zeer fijn getand</b>, onderaan <b>blijvend zijdeachtig zilverig behaard</b>; bladsteel zonder kliertjes. Twijgen jong behaard, <b>breken niet gemakkelijk af</b>. De katjes verschijnen met het blad (april–mei).",
+  "verwar": "Kraakwilg (<i>S. × fragilis</i>): twijgen die met een knakje afbreken aan de voet. Hun bastaard <i>S. × rubens</i> wordt veel aangeplant en is algemener dan de kraakwilg. <i>Salix viminalis</i>: veel langer en smaller blad, struik.",
+  "weetje": "Zeer algemeen langs wegen, sloten en weilanden, en veel aangeplant als <b>knotwilg</b>. Hij bloeit twee weken later dan de kraakwilg. Oude bomen vermeerderen zich doordat afgebroken takken wortel schieten.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix alba",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3093"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix alba",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-alba/"
+   }
+  ]
+ },
+ "salix-caprea": {
+  "herken": "Struik of kleine boom (tot 9 m). Blad <b>breed elliptisch tot eirond</b>, 5–8 cm, als een <b>appelblad</b>, boven gerimpeld en ten slotte iets glanzend, onderaan <b>zacht grijsviltig</b> met uitspringende nerven. Grote, <b>halfhartvormige steunblaadjes</b>. Schraap je de bast van een tweejarige twijg, dan is het <b>hout eronder glad</b>. In maart–april, vóór het blad, zittende katjes: de mannelijke dik en <b>zilverig</b>, daarna geel van de helmknoppen.",
+  "verwar": "<i>Salix cinerea</i>: smaller blad, breedst boven het midden, twijgen blijvend grijs behaard en <b>lengterichels in het hout</b> onder de bast. De bastaard van beide is vruchtbaar en vormt plaatselijk hybridenzwermen.",
+  "weetje": "De bloeiende mannelijke takken zijn de <b>palmtakjes</b> van Palmzondag. De naam <i>caprea</i> (van de geit) gaat terug op een houtsnede in het kruidboek van Hieronymus Bock (1546), met een bok die aan de katjes knabbelt.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix caprea",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3096"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix caprea",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-caprea/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix cinerea",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-cinerea/"
+   }
+  ]
+ },
+ "salix-babylonica": {
+  "herken": "Boom met een lage, grillige stam en een brede kroon waaruit <b>zeer dunne twijgen loodrecht naar beneden hangen</b>. Twijgen kaal (behalve bij de knopen), niet geel. Blad lancetvormig met een lange, slanke punt, 7,5–10 cm, fijn getand, jong iets zijdeachtig maar snel kaal, <b>boven lichtgroen en onderaan blauwig</b>. Katjes in april met het jonge blad; bij de gekweekte vorm altijd vrouwelijk.",
+  "verwar": "De gewone <b>treurwilg in tuinen</b> is bijna altijd de bastaard <i>Salix × sepulcralis</i> 'Chrysocoma' (schietwilg × treurwilg), met jonge twijgen die tegen het eind van de zomer <b>helgeel</b> zijn, en zowel mannelijke als vrouwelijke katjes. De echte <i>S. babylonica</i> is in de koudere delen van Europa zeldzaam geworden: hij is niet goed winterhard en lijdt onder late vorst.",
+  "weetje": "Linnaeus beschreef hem in 1738 naar een boom in de tuin van Clifford op de Hartekamp bij Haarlem. Hij dacht dat het de wilg van Psalm 137 was ('aan de rivieren van Babylon'), maar dat waren populieren (<i>Populus euphratica</i>). De boom komt waarschijnlijk uit Noord-China.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Salix babylonica",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-babylonica/"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix × sepulcralis",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-x-sepulcralis/"
+   }
+  ]
+ },
+ "salix-viminalis": {
+  "herken": "Rechtopgaande struik (1,5–4 m, soms hoger) met <b>lange, rechte, taaie twijgen</b>, jong grijs behaard en daarna geel. Blad <b>zeer lang en smal</b>: 10–25 cm lang en maar 0,5–1,5 cm breed (7 tot 20 keer zo lang als breed), <b>niet getand</b>, vaak wat golvend; boven dof donkergroen, onderaan <b>glanzend zilvergrijs</b> behaard. Katjes in maart–april, vóór het blad. Hout onder de bast glad.",
+  "verwar": "<i>Salix alba</i>: kortere, fijn getande bladeren, boom. <i>Salix purpurea</i>: kaal, blauwgroen blad dat deels tegenover elkaar staat. Bastaarden met de katwilg (onder meer met de boswilg en de grauwe wilg) hebben kortere, bredere bladeren en halfniervormige steunblaadjes.",
+  "weetje": "Een van de belangrijkste <b>mandenwilgen</b>. Hij wordt al zo lang gekweekt dat niemand nog precies weet waar hij oorspronkelijk wild groeide. Bij ons vooral in grienden en langs rivieren.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix viminalis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3095"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix viminalis",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-viminalis/"
+   }
+  ]
+ },
+ "salix-purpurea": {
+  "herken": "Losse, sierlijke struik (1–3 m) met dunne, kale, <b>glanzende twijgen</b>, in de zon purperrood maar vaak ook geelachtig. De bladeren en katjes staan <b>grotendeels tegenover elkaar</b>, uitzonderlijk voor een wilg. Blad smal lijnlancetvormig, <b>vlak onder de top het breedst</b>, alleen bovenaan fijn getand, kaal, onderaan <b>blauwgroen</b>; wordt bij het drogen snel zwart. De helmdraden zijn helemaal vergroeid, zodat elke bloem <b>één meeldraad</b> met paarsrode helmknoppen lijkt te hebben. Bloei in april.",
+  "verwar": "<i>Salix integra</i>: ook (bijna) tegenoverstaand blad, maar breder elliptisch, bijna zonder steel en aan beide kanten lichtgroen. <i>Salix viminalis</i>: veel langer blad met een zilverharige onderkant, verspreid.",
+  "weetje": "De bast is <b>zo bitter als kinine</b> en zeer rijk aan <b>salicine</b>, vandaar de naam. De soepele, taaie twijgen dienen voor fijn vlechtwerk. Hij verdraagt drogere grond beter dan de meeste wilgen en wordt ook in de duinen aangeplant.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix purpurea",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3087"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix purpurea",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-purpurea/"
+   }
+  ]
+ },
+ "salix-integra": {
+  "herken": "Struik (tot 3 m) met kale, glanzende, gele of roodachtige twijgen. Bladeren <b>(bijna) tegenoverstaand</b>, soms met drie in een krans, <b>bijna zonder steel</b> en met de voet wat stengelomvattend; blad <b>elliptisch-langwerpig, 2–5 cm</b>, aan beide kanten lichtgroen en kaal, gaafrandig of bovenaan scherp getand. Katjes vóór het blad, met rode helmknoppen. In tuinen bijna altijd de bonte vorm 'Hakuro-nishiki': blad <b>wit gevlekt</b> en jong <b>roze aangelopen</b>.",
+  "verwar": "<i>Salix purpurea</i>: smaller, lijnlancetvormig blad met een korte steel en een blauwgroene onderkant.",
+  "weetje": "Komt uit Japan, Korea, het oosten van Rusland en Noordoost-China, waar hij langs rivieren en in vochtige graslanden groeit. De bonte vorm wordt ook verkocht als 'Albomaculata'. De Japanse naam 'Fuiri-koriyanagi' betekent gewoon 'bonte mandenwilg'.",
+  "bronnen": [
+   {
+    "naam": "Flora of China — Salix integra",
+    "url": "http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=200005871"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix purpurea",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-purpurea/"
+   }
+  ]
+ },
+ "salix-cinerea": {
+  "herken": "Struik (tot 6, soms 10 m) met <b>grijsviltige jonge takken</b> en behaarde knopschubben. Blad langwerpig tot <b>omgekeerd eirond</b> (breedst boven het midden), met 8 of meer zijnerven aan elke kant, boven dof, onderaan <b>blijvend grijs behaard</b>. Steunblaadjes half hart- tot niervormig. Schraap de bast van een tweejarige twijg: het hout eronder heeft <b>duidelijke lengterichels</b>. Katjes vóór het blad, vaak iets later dan bij de boswilg.",
+  "verwar": "<i>Salix caprea</i>: breder, appelachtig blad en <b>glad hout</b> onder de bast. Rossige wilg (subsp. <i>oleifolia</i>): twijgen worden snel kaal, blad onderaan dunner en ruw behaard, met bruine haren tussen de grijze.",
+  "weetje": "Zeer algemeen op matig voedselrijke, moerassige plaatsen: in moerasbossen, schraallanden en duinvalleien. Hij vormt bastaarden met onder meer de boswilg en de geoorde wilg, die vaak moeilijk van de ouders te onderscheiden zijn.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix cinerea",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3098"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix cinerea subsp. oleifolia (rossige wilg)",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=4605"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix cinerea",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-cinerea/"
+   }
+  ]
+ },
+ "salix-repens": {
+  "herken": "Lage struik (0,15–1 m) die zich uitbreidt met <b>kruipende of ondergrondse stengels</b>, waaruit rechtopstaande takjes groeien. Blad <b>klein (0,5–4,5 cm)</b>, met een stompe of afgeronde top, onderaan <b>glanzend zilverig</b> zijdeachtig behaard, bovenaan kaal tot behaard. Kleine katjes in april–mei, op kale twijgen.",
+  "verwar": "Onder de wilgen met klein blad herken je hem aan de kruipende stengels en de zilverige onderkant. In de duinen groeien vooral planten met blad dat aan <b>beide kanten</b> dicht zilverig behaard is (var. <i>argentea</i>).",
+  "weetje": "Zeer algemeen in de duinen, en ook op natte tot droge zandgrond in moerassen, heide en schraallanden. De zilverige duinvorm groeit op vastgelegde duinen langs de Atlantische kust, de Noordzee en de Oostzee.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix repens",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3086"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix repens",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-repens/"
+   }
+  ]
+ },
+ "salix-daphnoides": {
+  "herken": "Rechtopgaande, krachtige struik of boom (3–9 m, soms hoger) met <b>jonge twijgen onder een opvallende blauwe tot pruimkleurige waslaag</b> (berijpt): in de winter onmiskenbaar. De twijgen zijn bros. Blad ovaal-lancetvormig, 4–11 cm, wat leerachtig, <b>fijn getand met kliertjes op de tandjes</b>, 8–12 paar zijnerven; boven <b>glanzend donkergroen</b>, onderaan dof blauwig grijsgroen. Halfhartvormige steunblaadjes. In maart–april, vóór het blad, katjes; de mannelijke zijn groot (2,5–5 cm) en lijken op die van de boswilg.",
+  "verwar": "<i>Salix acutifolia</i> (soms als ondersoort gezien): slankere, vaak hangende twijgen en smaller blad met 15 of meer paar zijnerven. Andere wilgen missen de blauwwitte berijping.",
+  "weetje": "Niet inheems: hij komt uit Midden- en Oost-Europa en West-Azië. Bij ons wordt hij aangeplant en verwildert hij hier en daar.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix daphnoides",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3089"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix daphnoides",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-daphnoides/"
+   }
+  ]
+ },
+ "salix-triandra": {
+  "herken": "Struik of kleine boom (1,5–4 m, soms hoger). De gladde, olijfgroene tot roodbruine bast van de twijgen <b>bladdert af in repen</b> met naar binnen rollende randen, waaronder de stam <b>oranje (kaneelkleurig)</b> is. Blad lancetvormig, fijn getand, <b>aan beide kanten kaal</b>, boven donkergroen; bladsteel met enkele kliertjes bovenaan. <b>Grote steunblaadjes</b> die meestal blijven zitten. Mannelijke bloemen met <b>drie meeldraden</b>, bij wilgen uitzonderlijk. Bloei in april–mei, met het blad.",
+  "verwar": "Andere wilgen hebben meestal twee meeldraden en geen afbladderende bast. Bastaarden van de amandelwilg herken je aan de drie meeldraden, de langgesteelde vruchtbeginsels en de afbladderende bast.",
+  "weetje": "De soortnaam <i>triandra</i> betekent 'drie meeldraden'. Het is een van de waardevolste mandenwilgen, zo veel geplant dat zijn natuurlijke verspreiding niet meer zeker is. Zeer algemeen langs de grote rivieren, in grienden en langs sloten.",
+  "bronnen": [
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix triandra",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3090"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix triandra",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/salix-triandra/"
+   }
+  ]
  }
 };
 const FAMILIES = {
@@ -2698,8 +2856,12 @@ const FAMILIES = {
     "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/highertaxa/taxon.php?id=1799"
    },
    {
-    "naam": "Flora van Nederland: Buxus sempervirens en Pachysandra terminalis",
-    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/index.php"
+    "naam": "Flora van Nederland (Heukels) — Buxus sempervirens",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2754"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Pachysandra terminalis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=2756"
    }
   ]
  },
@@ -2802,6 +2964,10 @@ const FAMILIES = {
    {
     "naam": "Flora van Nederland (Heukels): Salicaceae",
     "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/highertaxa/taxon.php?id=1829"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Salix (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/"
    }
   ]
  },
@@ -3689,6 +3855,54 @@ const GESLACHTEN = {
    {
     "naam": "Flora van Nederland (Heukels): Fagaceae",
     "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/highertaxa/taxon.php?id=1851"
+   }
+  ]
+ },
+ "Salix": {
+  "nl": "Wilg",
+  "speciaal": "Ongeveer 400 soorten, bijna over de hele wereld maar vooral in de noordelijke gematigde zone: van bomen tot kruipende dwergstruikjes boven de boomgrens. Wilgen zijn <b>tweehuizig</b> (een plant heeft alleen mannelijke óf vrouwelijke katjes) en worden, anders dan eiken, hazelaars en zelfs populieren, <b>door insecten bestoven</b>. Veel wilgen zijn goede bijenplanten.",
+  "herken": [
+   "Knoppen liggen tegen de twijg aan onder <b>één enkele, kapvormige knopschub</b>. Een eindknop ontbreekt meestal.",
+   "Blad enkelvoudig, meestal kortgesteeld en <b>verspreid</b> (bijna tegenoverstaand bij de bittere wilg en de Japanse sierwilg), vaak smal, met <b>steunblaadjes</b>.",
+   "Bloemen zonder kelk of kroon in <b>katjes</b>, vóór of tegelijk met het blad; mannelijke bloemen meestal met twee meeldraden.",
+   "Vrucht een doosvrucht die openspringt en <b>pluizige zaden</b> vrijlaat.",
+   "Bij de breedbladige wilgen helpt het hout onder de bast van een tweejarige twijg: <b>glad</b> (boswilg) of met <b>lengterichels</b> (grauwe wilg)."
+  ],
+  "tuin": "Treurwilgen, knotwilgen (schietwilg), wilgen voor vlechtwerk (katwilg, bittere wilg, amandelwilg), de bonte Japanse sierwilg, de berijpte wilg voor zijn winterse twijgen en de kruipwilg als lage struik.",
+  "wild": "Zeer algemeen: de schietwilg langs wegen en sloten, de boswilg in bosranden en op kapvlakten, de grauwe wilg in moerassige terreinen, de kruipwilg in de duinen, en de katwilg en amandelwilg in grienden langs de rivieren. Wilgen kruisen makkelijk, en veel bastaarden zijn vruchtbaar: dat maakt determineren soms lastig.",
+  "verwar": "Populieren (dezelfde familie) worden door de wind bestoven, hebben knoppen met <b>meerdere schubben</b> en wel een eindknop, en meestal eirond tot driehoekig blad. De wilgbladige eik (<i>Quercus phellos</i>) heeft knoppen in een groepje aan de twijgtop en draagt eikels.",
+  "bronnen": [
+   {
+    "naam": "Trees and Shrubs Online — Salix (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/salix/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix alba",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3093"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix caprea",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3096"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix cinerea",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3098"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix triandra",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3090"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels) — Salix viminalis",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=3095"
+   },
+   {
+    "naam": "Trees and Shrubs Online — Populus (geslacht)",
+    "url": "https://www.treesandshrubsonline.org/articles/populus/"
+   },
+   {
+    "naam": "Flora van Nederland (Heukels): Salicaceae",
+    "url": "https://heukels.naturalis.nl/linnaeus_ng/app/views/highertaxa/taxon.php?id=1829"
    }
   ]
  }

@@ -470,7 +470,7 @@ const SOORTDATA = [
   onderscheid:"Grote boom met <b>lang smal blad dat zilverwit behaard is aan de onderkant</b> — een rij schietwilgen in de wind wordt zilvergrijs. De klassieke knotwilg.",
   weetje:"Bevat salicine, de grondstof waaruit aspirine werd ontwikkeld. Knotten elke drie tot zes jaar, anders scheurt de kop uit." },
 
-{ id:"salix-caprea", g:"Salix", s:"caprea", nl:"Boswilg / katwilg",
+{ id:"salix-caprea", g:"Salix", s:"caprea", nl:"Boswilg",
   standplaats:"Zon tot halfschaduw", water:"Normaal", hoogte:"5–10 m", breedte:"4–6 m",
   blad:"Bladverliezend", bloeitijd:"Maart–april", bloeikleur:"Zilvergrijze katjes, daarna geel",
   groeivorm:"Heester", groei:"Snel", gebruik:["Landschap","Vogelbosje","Bijenplant"],
@@ -493,7 +493,7 @@ const SOORTDATA = [
 
 { id:"salix-purpurea", g:"Salix", s:"purpurea", nl:"Bittere wilg",
   standplaats:"Volle zon", water:"Normaal tot vochtig", hoogte:"2–4 m", breedte:"2–3 m",
-  blad:"Bladverliezend", bloeitijd:"Maart–april", bloeikleur:"Purperrode katjes",
+  blad:"Bladverliezend", bloeitijd:"April", bloeikleur:"Purperrode katjes",
   groeivorm:"Heester", groei:"Snel", gebruik:["Oever","Vlechtwerk","Landschap"],
   onderscheid:"<b>Purperrode twijgen</b> en, uitzonderlijk voor een wilg, <b>bijna tegenoverstaande bladeren</b>. Blad blauwgroen en smal.",
   weetje:"De bast is uitgesproken bitter, vandaar de naam; wordt gebruikt voor fijn vlechtwerk." },
@@ -521,7 +521,7 @@ const SOORTDATA = [
 
 { id:"salix-daphnoides", g:"Salix", s:"daphnoides", nl:"Berijpte wilg",
   standplaats:"Volle zon", water:"Normaal tot vochtig", hoogte:"6–10 m", breedte:"4–6 m",
-  blad:"Bladverliezend", bloeitijd:"Maart", bloeikleur:"Grote zilverwitte katjes",
+  blad:"Bladverliezend", bloeitijd:"Maart–april", bloeikleur:"Grote zilverwitte katjes",
   groeivorm:"Boom", groei:"Snel", gebruik:["Landschap","Bijenplant","Oever"],
   onderscheid:"<b>Twijgen met een blauwwitte, berijpte waslaag</b> die je er met je duim kan afvegen. Onmiskenbaar in de winter.",
   weetje:"Bloeit als een van de eerste wilgen, soms al eind februari; zeer waardevol voor vroege bijen." },
